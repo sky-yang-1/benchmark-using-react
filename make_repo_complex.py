@@ -56,7 +56,7 @@ def create_random_filename(prefix='', suffix='.scn.yaml', length=10):
 
     return prefix + random_string(length) + suffix
 
-def choose_new_folder(cwd = '.'):
+def choose_new_folder(cwd):
     all_files = os.listdir(cwd) 
     if len(all_files) < 1000:
         return cwd
@@ -64,7 +64,7 @@ def choose_new_folder(cwd = '.'):
 
     directories = [d for d in os.listdir(cwd) ]
 
-    if new_folder or len(directories) == 0:
+    if new_folder or len(directories) == 0 or cwd == '.':
         folder_name = 'dir_' +random_string(10)
         folder_path = os.mkdir(os.path.join(cwd,folder_name) )
         return folder_path
