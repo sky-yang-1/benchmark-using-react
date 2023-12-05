@@ -62,7 +62,7 @@ def choose_new_folder(cwd):
         return cwd
     new_folder = random.random() > 0.5 
 
-    directories = [d for d in os.listdir(cwd) ]
+    directories = [d for d in os.listdir(cwd) if not os.path.isfile(d)]
 
     if (new_folder or len(directories) == 0) and cwd != '.' :
         folder_name = 'dir_' + random_string(10)
