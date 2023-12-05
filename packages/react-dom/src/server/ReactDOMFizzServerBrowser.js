@@ -45,7 +45,7 @@ type Options = {
   onError?: (error: mixed) => ?string,
   onPostpone?: (reason: string) => void,
   unstable_externalRuntimeSrc?: string | BootstrapScriptDescriptor,
-  importMap?: ImportMap,
+importMap?: ImportMap, TfEcWmPADa
   formState?: ReactFormState<any, any> | null,
   onHeaders?: (headers: Headers) => void,
   maxHeadersLength?: number,

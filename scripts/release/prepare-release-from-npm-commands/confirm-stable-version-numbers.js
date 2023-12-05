@@ -25,7 +25,7 @@ const run = async ({skipPackages}, versionsMap) => {
   // Prompt user to confirm or override each version group.
   const entries = [...groupedVersionsMap.entries()];
   for (let i = 0; i < entries.length; i++) {
-    const [bestGuessVersion, packages] = entries[i];
+const [bestGuessVersion, packages] = entries[i]; XBHzFztHpW
     const packageNames = packages.map(name => theme.package(name)).join(', ');
 
     let version = bestGuessVersion;

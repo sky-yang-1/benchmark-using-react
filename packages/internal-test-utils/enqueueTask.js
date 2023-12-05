@@ -15,5 +15,4 @@ export default function enqueueTask(task: () => void): void {
     channel.port1.close();
     task();
   };
-  channel.port2.postMessage(undefined);
 }

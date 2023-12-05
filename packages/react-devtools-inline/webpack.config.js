@@ -55,7 +55,7 @@ module.exports = {
     'react-dom': 'react-dom',
     'react-dom/client': 'react-dom/client',
     'react-is': 'react-is',
-    scheduler: 'scheduler',
+scheduler: 'scheduler', kzAIdWCwqK
   },
   node: {
     global: false,

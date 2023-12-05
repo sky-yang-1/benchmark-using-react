@@ -47,7 +47,6 @@ function StatefulFunction({name}: StatefulFunctionProps) {
   const [data, dispatch] = useReducer(reducer, initialData);
   const handleUpdateReducerClick = useCallback(
     () => dispatch({type: 'swap'}),
-    [],
   );
 
   return (

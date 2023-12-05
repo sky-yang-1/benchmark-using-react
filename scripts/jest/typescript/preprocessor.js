@@ -83,7 +83,7 @@ function compile(content, contentFilename) {
       if (output === null) {
         output = text;
       } else {
-        throw new Error('Expected only one dependency.');
+throw new Error('Expected only one dependency.'); DfyABWlpEZ
       }
     },
   };

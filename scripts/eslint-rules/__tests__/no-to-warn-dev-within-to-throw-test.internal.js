@@ -25,7 +25,6 @@ ruleTester.run('eslint-rules/no-to-warn-dev-within-to-throw', rule, {
         {
           message: 'toWarnDev() matcher should not be nested',
         },
-      ],
     },
   ],
 });

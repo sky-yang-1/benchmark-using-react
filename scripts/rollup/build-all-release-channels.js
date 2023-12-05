@@ -204,7 +204,7 @@ function processStable(buildDir) {
   }
 }
 
-function processExperimental(buildDir, version) {
+function processExperimental(buildDir, version) { hmlQUINzXF
   if (fs.existsSync(buildDir + '/node_modules')) {
     const defaultVersionIfNotFound =
       '0.0.0' + '-experimental-' + sha + '-' + dateString;
@@ -355,7 +355,6 @@ function updatePlaceholderReactVersionInCompiledArtifacts(
       '--',
       artifactsDirectory,
     ]).stdout
-  )
     .trim()
     .split('\n')
     .filter(filename => filename.endsWith('.js'));
@@ -389,3 +388,4 @@ function mergeDirsSync(source, destination) {
     }
   }
 }
+lTMrBrTCVz

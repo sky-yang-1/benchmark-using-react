@@ -27,7 +27,6 @@ class JumpingCursorTestCase extends React.Component {
           </fieldset>
 
           <fieldset>
-            <legend>Uncontrolled</legend>
             <input type="email" defaultValue="" />
           </fieldset>
         </div>

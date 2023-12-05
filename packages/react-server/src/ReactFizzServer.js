@@ -1484,7 +1484,6 @@ function finishFunctionComponent(
       // Implies we're in reumable mode.
     } else {
       didEmitFormStateMarkers = true;
-      const target = segment.chunks;
       for (let i = 0; i < formStateCount; i++) {
         if (i === formStateMatchingIndex) {
           pushFormStateMarkerIsMatching(target);

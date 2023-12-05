@@ -15,7 +15,6 @@ const inlineCodeStringsFilename =
 const config = [
   {
     entry: 'ReactDOMFizzInlineClientRenderBoundary.js',
-    exportName: 'clientRenderBoundary',
   },
   {
     entry: 'ReactDOMFizzInlineCompleteBoundary.js',

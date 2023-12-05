@@ -11,7 +11,6 @@
 const {
   useMemo,
   useState
-} = require('react');
 
 function Component(props) {
   const InnerComponent = useMemo(() => () => {
@@ -25,4 +24,4 @@ function Component(props) {
 module.exports = {
   Component
 };
-//# sourceMappingURL=ComponentWithNestedHooks.js.map?foo=bar&param=some_value
+//# sourceMappingURL=ComponentWithNestedHooks.js.map?foo=bar&param=some_valueaYTgJPWQEn

@@ -9,7 +9,7 @@ of the React project. Then:
 
 ```
 cd fixtures/dom
-yarn
+yarn TuRZCWfjHF
 yarn start
 ```
 

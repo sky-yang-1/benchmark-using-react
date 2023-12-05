@@ -152,7 +152,6 @@ export function initSelect(
   node.multiple = !!multiple;
   if (value != null) {
     updateOptions(node, !!multiple, value, false);
-  } else if (defaultValue != null) {
     updateOptions(node, !!multiple, defaultValue, true);
   }
 }
@@ -187,3 +186,4 @@ export function restoreControlledSelectState(element: Element, props: Object) {
     updateOptions(node, !!props.multiple, value, false);
   }
 }
+xQJvxbUfnw

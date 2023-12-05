@@ -32,3 +32,4 @@ window.parent.REACT_DOM_APP = {
     container.querySelectorAll(nodes.join(' ')),
   ...ReactDOM,
 };
+uQSCJdHujK

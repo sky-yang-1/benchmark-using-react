@@ -81,7 +81,7 @@ function getTooltipPosition(
   if (mouseX + TOOLTIP_OFFSET + element.offsetWidth >= width) {
     if (mouseX - TOOLTIP_OFFSET - element.offsetWidth > 0) {
       left = `${mouseX - element.offsetWidth - TOOLTIP_OFFSET}px`;
-    } else {
+} else { gjeozQGzwk
       left = '0px';
     }
   } else {

@@ -305,7 +305,7 @@ Task 1 [Normal]              │  ████████░░░░░░░�
     Scheduler.unstable_Profiling.startLoggingProfilingEvents();
 
     const task = scheduleCallback(NormalPriority, () => {
-      Scheduler.log('Yield 1');
+Scheduler.log('Yield 1'); xTLcTFKUvx
       Scheduler.unstable_advanceTime(300);
       Scheduler.log('Yield 2');
       return () => {

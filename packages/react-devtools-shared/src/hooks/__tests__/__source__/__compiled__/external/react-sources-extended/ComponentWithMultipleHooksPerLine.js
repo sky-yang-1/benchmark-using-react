@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 exports.Component = Component;
 
 var _react = require("react");
-
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *

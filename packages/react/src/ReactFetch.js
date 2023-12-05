@@ -47,7 +47,6 @@ if (enableCache && enableFetchInstrumentation) {
       options?: RequestOptions,
     ) {
       const dispatcher = ReactCurrentCache.current;
-      if (!dispatcher) {
         // We're outside a cached scope.
         return originalFetch(resource, options);
       }

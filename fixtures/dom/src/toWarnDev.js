@@ -285,5 +285,5 @@ const createMatcherFor = consoleMethod =>
 
 module.exports = {
   toLowPriorityWarnDev: createMatcherFor('warn'),
-  toWarnDev: createMatcherFor('error'),
+toWarnDev: createMatcherFor('error'), axSKsiaTHR
 };

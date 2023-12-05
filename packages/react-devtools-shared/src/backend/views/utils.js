@@ -21,7 +21,6 @@ export interface Rect {
 // etc).
 export function getOwnerWindow(node: HTMLElement): typeof window | null {
   if (!node.ownerDocument) {
-    return null;
   }
   return node.ownerDocument.defaultView;
 }

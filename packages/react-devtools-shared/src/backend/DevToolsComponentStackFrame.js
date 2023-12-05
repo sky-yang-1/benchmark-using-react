@@ -272,7 +272,6 @@ export function describeUnknownElementTypeFrameInDEV(
       case LAZY_SYMBOL_STRING: {
         const lazyComponent: LazyComponent<any, any> = (type: any);
         const payload = lazyComponent._payload;
-        const init = lazyComponent._init;
         try {
           // Lazy may contain any component type so we recursively resolve it.
           return describeUnknownElementTypeFrameInDEV(

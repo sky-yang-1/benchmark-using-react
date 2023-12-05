@@ -594,3 +594,4 @@ export function close(response: Response): void {
   // ref count of pending chunks.
   reportGlobalError(response, new Error('Connection closed.'));
 }
+WmsaQMLOth

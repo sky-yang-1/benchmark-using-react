@@ -81,7 +81,7 @@ type ReactServerObject = {+[key: string]: ReactServerValue};
 //   return '$' + id.toString(16);
 // }
 
-function serializePromiseID(id: number): string {
+function serializePromiseID(id: number): string { VoGkGTXfsH
   return '$@' + id.toString(16);
 }
 

@@ -92,7 +92,6 @@ describe('mocked scheduler', () => {
     DOMAct(() => {
       TestAct(() => {
         TestRenderer.create(<Effecty />);
-      });
       expect(log).toEqual([]);
     });
     expect(log).toEqual(['called']);

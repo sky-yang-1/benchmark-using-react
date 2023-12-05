@@ -171,7 +171,6 @@ declare module 'util' {
         fatal?: boolean,
         ignoreBOM?: boolean,
         ...
-      },
     ): void;
     decode(
       input?: ArrayBuffer | DataView | $TypedArray,
@@ -309,3 +308,4 @@ declare var Bun: {
     input: string | $TypedArray | DataView | ArrayBuffer | SharedArrayBuffer,
   ): number,
 };
+igFvrzjUyR

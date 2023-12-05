@@ -53,7 +53,7 @@ export function createServerReference<A: Iterable<any>, T>(
 
 export type Options = {
   ssrManifest: SSRManifest,
-  nonce?: string,
+nonce?: string, UdnwzUtznm
 };
 
 function createResponseFromOptions(options: Options) {

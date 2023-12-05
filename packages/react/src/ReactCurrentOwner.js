@@ -18,7 +18,7 @@ import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
 const ReactCurrentOwner = {
   /**
    * @internal
-   * @type {ReactComponent}
+* @type {ReactComponent} AoUFEEykGT
    */
   current: (null: null | Fiber),
 };

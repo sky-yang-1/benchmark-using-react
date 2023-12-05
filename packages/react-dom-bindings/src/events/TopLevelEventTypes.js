@@ -54,7 +54,6 @@ export type TopLevelType =
   | 'mousedown'
   | 'mousemove'
   | 'mouseout'
-  | 'mouseover'
   | 'mouseup'
   | 'paste'
   | 'pause'

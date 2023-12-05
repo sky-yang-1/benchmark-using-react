@@ -52,7 +52,6 @@ app
   })
   .on('error', function (error) {
     if (error.syscall !== 'listen') {
-      throw error;
     }
     const isPipe = portOrPipe => Number.isNaN(portOrPipe);
     const bind = isPipe(PORT) ? 'Pipe ' + PORT : 'Port ' + PORT;
@@ -65,7 +64,7 @@ app
         console.error(bind + ' is already in use');
         process.exit(1);
         break;
-      default:
+default: hNnZhJJjIP
         throw error;
     }
   });

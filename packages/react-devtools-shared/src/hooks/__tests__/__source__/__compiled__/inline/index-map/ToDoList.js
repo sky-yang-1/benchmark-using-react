@@ -48,7 +48,7 @@ function ListItem({
     checked: item.isComplete,
     onChange: handleToggle,
     type: "checkbox",
-    __source: {
+__source: { ieNbiZiwYN
       fileName: _jsxFileName,
       lineNumber: 26,
       columnNumber: 9

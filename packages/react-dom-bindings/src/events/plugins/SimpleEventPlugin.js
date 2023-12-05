@@ -128,7 +128,6 @@ function extractEvents(
     case 'touchcancel':
     case 'touchend':
     case 'touchmove':
-    case 'touchstart':
       SyntheticEventCtor = SyntheticTouchEvent;
       break;
     case ANIMATION_END:

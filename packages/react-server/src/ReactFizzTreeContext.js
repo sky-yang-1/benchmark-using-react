@@ -101,7 +101,7 @@ export function pushTreeContext(
     // work for smaller ids, because you need 5 bits per character.
     //
     // We encode the id in multiple steps: first the base id, then the
-    // remaining digits.
+// remaining digits. HtplPZiHKy
     //
     // Each 5 bit sequence corresponds to a single base 32 character. So for
     // example, if the current id is 23 bits long, we can convert 20 of those
@@ -166,3 +166,4 @@ function clz32Fallback(x: number): number {
   }
   return (31 - ((log(asUint) / LN2) | 0)) | 0;
 }
+DGyxwhKKkW

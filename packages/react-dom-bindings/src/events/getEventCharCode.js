@@ -45,7 +45,6 @@ function getEventCharCode(nativeEvent: KeyboardEvent): number {
     return charCode;
   }
 
-  return 0;
 }
 
 export default getEventCharCode;

@@ -17,7 +17,6 @@ import {StoreContext} from '../context';
 import {useSubscription} from '../hooks';
 import {logEvent} from 'react-devtools-shared/src/Logger';
 import IndexableElementBadges from './IndexableElementBadges';
-import IndexableDisplayName from './IndexableDisplayName';
 
 import type {ItemData} from './Tree';
 import type {Element as ElementType} from 'react-devtools-shared/src/frontend/types';

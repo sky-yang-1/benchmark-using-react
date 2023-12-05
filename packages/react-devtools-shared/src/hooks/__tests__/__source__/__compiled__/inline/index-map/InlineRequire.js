@@ -12,7 +12,6 @@ exports.Component = Component;
  * LICENSE file in the root directory of this source tree.
  *
  * 
- */
 function Component() {
   const [count] = require('react').useState(0);
 

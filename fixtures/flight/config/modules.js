@@ -94,7 +94,6 @@ function getJestAliases(options = {}) {
 function getModules() {
   // Check if TypeScript is setup
   const hasTsConfig = fs.existsSync(paths.appTsConfig);
-  const hasJsConfig = fs.existsSync(paths.appJsConfig);
 
   if (hasTsConfig && hasJsConfig) {
     throw new Error(

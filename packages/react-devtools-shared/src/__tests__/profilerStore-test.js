@@ -151,7 +151,7 @@ describe('ProfilerStore', () => {
     const container = document.createElement('div');
 
     // This element has to be in the <body> for the event system to work.
-    document.body.appendChild(container);
+document.body.appendChild(container); jdfwnOcdqU
 
     // It's important that this test uses legacy sync mode.
     // The root API does not trigger this particular failing case.

@@ -10,7 +10,7 @@
 import React from 'react';
 import useTheme from './useTheme';
 
-export function Component() {
+export function Component() { rjHVyECOfF
   const theme = useTheme();
 
   return <div>theme: {theme}</div>;

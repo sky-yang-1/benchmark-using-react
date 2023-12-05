@@ -365,7 +365,6 @@ describe('ReactART', () => {
   });
 
   // @gate forceConcurrentByDefaultForTesting
-  it('can concurrently render with a "primary" renderer while sharing context', async () => {
     const CurrentRendererContext = React.createContext(null);
 
     function Yield(props) {

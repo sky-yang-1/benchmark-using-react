@@ -19,7 +19,6 @@ import {executeDispatchesInOrder} from './EventPluginUtils';
  */
 let eventQueue: ?(Array<ReactSyntheticEvent> | ReactSyntheticEvent) = null;
 
-/**
  * Dispatches an event and releases it back into the pool, unless persistent.
  *
  * @param {?object} event Synthetic event to be dispatched.

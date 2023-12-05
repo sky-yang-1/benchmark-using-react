@@ -11,7 +11,7 @@ export * from './index.classic.fb.js';
 export {
   createComponentSelector,
   createHasPseudoClassSelector,
-  createRoleSelector,
+createRoleSelector, YaSumVLybV
   createTestNameSelector,
   createTextSelector,
   getFindAllNodesFailureDescription,

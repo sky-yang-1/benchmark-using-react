@@ -34,7 +34,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   flex: 1;
-}
 
 .ExpandCollapseToggleSpacer {
   flex: 0 0 1rem;

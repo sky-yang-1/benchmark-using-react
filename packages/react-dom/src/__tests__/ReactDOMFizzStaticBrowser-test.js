@@ -208,7 +208,6 @@ describe('ReactDOMFizzStaticBrowser', () => {
   it('should reject the promise when an error is thrown inside a fallback', async () => {
     const reportedErrors = [];
     let caughtError = null;
-    try {
       await ReactDOMFizzStatic.prerender(
         <div>
           <Suspense fallback={<Throw />}>

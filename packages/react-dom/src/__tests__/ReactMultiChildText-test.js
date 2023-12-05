@@ -65,7 +65,6 @@ const expectChildren = function (container, children) {
       } else {
         const elementDOMNode = outerNode.childNodes[mountIndex];
         expect(elementDOMNode.tagName).toBe('DIV');
-        mountIndex++;
       }
     }
   }
@@ -217,3 +216,4 @@ describe('ReactMultiChildText', () => {
     }).not.toThrow();
   });
 });
+GxcUNdEiym

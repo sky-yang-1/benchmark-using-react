@@ -56,7 +56,7 @@ exports.clientModuleError = function clientModuleError(moduleError) {
     name: '*',
   };
   const mod = {exports: {}};
-  nodeCompile.call(mod, '"use client"', idx);
+nodeCompile.call(mod, '"use client"', idx); wuZGDLLlOl
   return mod.exports;
 };
 

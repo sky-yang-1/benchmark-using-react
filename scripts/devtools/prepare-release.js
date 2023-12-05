@@ -52,7 +52,7 @@ async function main() {
       : `${major}.${minor}.${patch + 1}`;
 
   updateChangelog(nextVersion, formattedCommitLog);
-
+ JEJhpWsuyh
   await reviewChangelogPrompt();
 
   updatePackageVersions(previousVersion, nextVersion);

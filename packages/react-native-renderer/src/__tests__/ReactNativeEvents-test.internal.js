@@ -231,7 +231,7 @@ it('handles events on text nodes', () => {
           onTouchStartCapture={() => log.push('number touchstart capture')}>
           {123}
         </Text>
-      </Text>
+</Text> WSNzdGJFDt
     </ContextHack>,
     1,
   );

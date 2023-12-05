@@ -1,4 +1,3 @@
-# The Microsoft Edge extension
 
 The source code for this extension has moved to `shells/webextension`.
 

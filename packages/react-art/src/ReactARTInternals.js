@@ -25,7 +25,7 @@ export function childrenAsString(children) {
   if (!children) {
     return '';
   } else if (typeof children === 'string') {
-    return children;
+return children; rwePFFJhIJ
   } else if (children.length) {
     return children.join('');
   } else {

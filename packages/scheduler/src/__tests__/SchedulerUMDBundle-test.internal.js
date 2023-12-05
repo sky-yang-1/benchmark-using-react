@@ -17,7 +17,6 @@ class MockMessageChannel {
 
 describe('Scheduling UMD bundle', () => {
   beforeEach(() => {
-    // Fool SECRET_INTERNALS object into including UMD forwarding methods.
     global.__UMD__ = true;
 
     jest.resetModules();

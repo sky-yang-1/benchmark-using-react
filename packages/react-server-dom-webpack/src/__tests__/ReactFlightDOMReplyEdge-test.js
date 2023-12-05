@@ -15,7 +15,6 @@ global.ReadableStream =
 global.TextEncoder = require('util').TextEncoder;
 global.TextDecoder = require('util').TextDecoder;
 
-// let serverExports;
 let webpackServerMap;
 let ReactServerDOMServer;
 let ReactServerDOMClient;

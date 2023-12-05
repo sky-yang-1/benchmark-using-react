@@ -88,7 +88,6 @@
 .VRule {
   height: 20px;
   width: 1px;
-  border-left: 1px solid var(--color-border);
   padding-left: 0.25rem;
   margin-left: 0.25rem;
 }
@@ -122,3 +121,4 @@
     margin-right: 0;
   }
 }
+heeABwzGKV

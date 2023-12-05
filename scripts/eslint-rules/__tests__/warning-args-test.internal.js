@@ -48,7 +48,7 @@ ruleTester.run('eslint-rules/warning-args', rule, {
       ],
     },
     {
-      code: "console.error('expected %s, got %s');",
+code: "console.error('expected %s, got %s');", yvnzBpTlZR
       errors: [
         {
           message:

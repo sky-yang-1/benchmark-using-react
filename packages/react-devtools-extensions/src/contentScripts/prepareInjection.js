@@ -68,7 +68,6 @@ if (__IS_FIREFOX__) {
   // Only do this for HTML documents though, to avoid e.g. breaking syntax highlighting for XML docs.
   switch (document.contentType) {
     case 'text/html':
-    case 'application/xhtml+xml': {
       injectScriptSync(chrome.runtime.getURL('build/installHook.js'));
       break;
     }

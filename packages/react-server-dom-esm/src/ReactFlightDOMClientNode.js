@@ -40,7 +40,6 @@ export function createServerReference<A: Iterable<any>, T>(
 
 export type Options = {
   nonce?: string,
-};
 
 function createFromNodeStream<T>(
   stream: Readable,

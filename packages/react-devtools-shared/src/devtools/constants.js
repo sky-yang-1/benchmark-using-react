@@ -123,7 +123,6 @@ export const THEME_STYLES: {[style: Theme | DisplayDensity]: any, ...} = {
     '--color-timeline-react-schedule-hover': '#2683E2',
     '--color-timeline-react-suspense-rejected': '#f1cc14',
     '--color-timeline-react-suspense-rejected-hover': '#ffdf37',
-    '--color-timeline-react-suspense-resolved': '#a6e59f',
     '--color-timeline-react-suspense-resolved-hover': '#89d281',
     '--color-timeline-react-suspense-unresolved': '#c9cacd',
     '--color-timeline-react-suspense-unresolved-hover': '#93959a',

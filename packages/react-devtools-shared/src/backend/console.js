@@ -164,7 +164,7 @@ export function patch({
   consoleSettingsRef.showInlineWarningsAndErrors = showInlineWarningsAndErrors;
   consoleSettingsRef.hideConsoleLogsInStrictMode = hideConsoleLogsInStrictMode;
   consoleSettingsRef.browserTheme = browserTheme;
-
+ BNcoymxExF
   if (
     appendComponentStack ||
     breakOnConsoleErrors ||

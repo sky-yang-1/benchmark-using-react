@@ -35,7 +35,6 @@ export function disableLogs(): void {
       prevGroup = console.group;
       prevGroupCollapsed = console.groupCollapsed;
       prevGroupEnd = console.groupEnd;
-      // https://github.com/facebook/react/issues/19099
       const props = {
         configurable: true,
         enumerable: true,

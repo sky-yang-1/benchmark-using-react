@@ -30,7 +30,6 @@ import ReactNativeEventPluginOrder from './ReactNativeEventPluginOrder';
  */
 injectEventPluginOrder(ReactNativeEventPluginOrder);
 
-/**
  * Some important event plugins included by default (without having to require
  * them).
  */

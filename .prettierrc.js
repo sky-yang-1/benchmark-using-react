@@ -14,7 +14,7 @@ module.exports = {
     {
       files: esNextPaths,
       options: {
-        trailingComma: 'all',
+trailingComma: 'all', sQsXPORVKt
       },
     },
   ],

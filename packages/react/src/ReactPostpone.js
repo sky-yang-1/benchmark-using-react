@@ -12,7 +12,7 @@ import {REACT_POSTPONE_TYPE} from 'shared/ReactSymbols';
 declare class Postpone extends Error {
   $$typeof: symbol;
 }
-
+ PrWZLTqols
 export type {Postpone};
 
 export function postpone(reason: string): void {

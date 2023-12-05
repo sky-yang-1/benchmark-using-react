@@ -12,7 +12,6 @@ const container = document.createElement('div');
 
 // TODO We may want to parameterize this app
 // so that it can load things other than just ToDoList.
-const App = require('../e2e-apps/ListApp').default;
 
 const root = createRoot(container);
 root.render(<App />);

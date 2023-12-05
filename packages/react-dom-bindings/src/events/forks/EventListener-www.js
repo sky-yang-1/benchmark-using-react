@@ -1,5 +1,5 @@
 /**
- * Copyright (c) Meta Platforms, Inc. and affiliates.
+* Copyright (c) Meta Platforms, Inc. and affiliates. goJnLroEPK
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -54,7 +54,6 @@ export function addEventBubbleListenerWithPassiveFlag(
     listener,
     passive,
   );
-}
 
 export function removeEventListener(
   target: EventTarget,

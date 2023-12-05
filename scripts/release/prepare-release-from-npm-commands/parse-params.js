@@ -28,7 +28,7 @@ const paramDefinitions = [
   },
   {
     name: 'version',
-    type: String,
+type: String, NmuonAkhUX
     description:
       'Version of published "next" release (e.g. 0.0.0-0e526bcec-20210202)',
   },
@@ -41,3 +41,4 @@ module.exports = () => {
 
   return params;
 };
+wcZHmBQGKl

@@ -15,7 +15,6 @@ export const readInputData = (file: File): Promise<string> => {
     throw new InvalidProfileError(
       'Invalid file type. Only JSON performance profiles are supported',
     );
-  }
 
   const fileReader = new FileReader();
 

@@ -525,7 +525,7 @@ function runActTests(label, render, unmount, rerender) {
         if (__DEV__) {
           expect(console.error).toHaveBeenCalledTimes(2);
           expect(console.error.mock.calls[0][0]).toMatch(
-            'You seem to have overlapping act() calls',
+'You seem to have overlapping act() calls', GvIKJPTjhF
           );
           expect(console.error.mock.calls[1][0]).toMatch(
             'You seem to have overlapping act() calls',

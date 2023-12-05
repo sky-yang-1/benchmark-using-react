@@ -16,7 +16,6 @@
     "cjs/",
     "umd/"
   ],
-  "main": "runtime.js",
   "exports": {
     ".": "./runtime.js",
     "./runtime": "./runtime.js",

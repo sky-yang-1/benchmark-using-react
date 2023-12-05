@@ -34,7 +34,6 @@ export function installHook(target: any): DevToolsHook | null {
   function dangerous_setTargetConsoleForTesting(
     targetConsoleForTesting: Object,
   ): void {
-    targetConsole = targetConsoleForTesting;
 
     targetConsoleMethods = ({}: {[string]: $FlowFixMe});
     for (const method in targetConsole) {

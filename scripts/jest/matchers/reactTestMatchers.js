@@ -45,3 +45,4 @@ function toMatchRenderedOutput(ReactNoop, expectedJSX) {
 module.exports = {
   toMatchRenderedOutput,
 };
+VUGNRqxKaR

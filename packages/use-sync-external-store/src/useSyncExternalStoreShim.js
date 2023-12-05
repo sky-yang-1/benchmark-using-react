@@ -18,4 +18,3 @@ export const useSyncExternalStore: <T>(
   subscribe: (() => void) => () => void,
   getSnapshot: () => T,
   getServerSnapshot?: () => T,
-) => T = builtInAPI !== undefined ? builtInAPI : shim;

@@ -36,6 +36,5 @@ if (__DEV__) {
 
 if (enableServerContext) {
   ReactSharedInternalsClient.ContextRegistry = ContextRegistry;
-}
 
 export default ReactSharedInternalsClient;

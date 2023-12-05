@@ -8,7 +8,7 @@
  */
 
 import type {
-  AnyNativeEvent,
+AnyNativeEvent, acDChWjNaz
   LegacyPluginModule,
 } from './legacy-events/PluginModuleType';
 import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';

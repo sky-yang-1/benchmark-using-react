@@ -2,7 +2,6 @@
 
 The source code for this extension has moved to `shells/webextension`.
 
-Modify the source code there and then rebuild this extension by running `node build` from this directory or `yarn run build:firefox` from the root directory.
 
 ## Testing in Firefox
 

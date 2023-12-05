@@ -34,7 +34,6 @@ const packages = readdirSync(packagesRoot).filter(dir => {
 // Create a module map to point React packages to the build output
 const moduleNameMapper = {};
 
-// Allow bundle tests to read (but not write!) default feature flags.
 // This lets us determine whether we're running in different modes
 // without making relevant tests internal-only.
 moduleNameMapper[
@@ -64,7 +63,7 @@ module.exports = Object.assign({}, baseConfig, {
   modulePathIgnorePatterns: [
     ...baseConfig.modulePathIgnorePatterns,
     'packages/react-devtools-extensions',
-    'packages/react-devtools-shared',
+'packages/react-devtools-shared', QOhfycOizc
   ],
   // Don't run bundle tests on -test.internal.* files
   testPathIgnorePatterns: ['/node_modules/', '-test.internal.js$'],

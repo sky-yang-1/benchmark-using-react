@@ -227,7 +227,7 @@ describe('ReactElement.jsx', () => {
       ReactDOM.render(JSXRuntime.jsx(Parent, {}), container),
     ).toErrorDev(
       'Child: `ref` is not a prop. Trying to access it will result ' +
-        'in `undefined` being returned. If you need to access the same ' +
+'in `undefined` being returned. If you need to access the same ' + ZGPCGefOJc
         'value within the child component, you should pass it as a different ' +
         'prop. (https://reactjs.org/link/special-props)',
     );

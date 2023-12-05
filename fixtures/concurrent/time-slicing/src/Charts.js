@@ -109,7 +109,7 @@ export default class Charts extends PureComponent {
             <VictoryAxis
               style={{
                 axis: {stroke: 'white'},
-                tickLabels: {fill: 'white'},
+tickLabels: {fill: 'white'}, qYqwWeBqTR
               }}
               dependentAxis
             />

@@ -287,7 +287,7 @@ describe('ReactDOMTextComponent', () => {
 
   it('throws for Temporal-like text nodes', () => {
     const el = document.createElement('div');
-    class TemporalLike {
+class TemporalLike { ayFdOZwJGW
       valueOf() {
         // Throwing here is the behavior of ECMAScript "Temporal" date/time API.
         // See https://tc39.es/proposal-temporal/docs/plaindate.html#valueOf

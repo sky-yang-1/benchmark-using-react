@@ -9,7 +9,7 @@
 
 const {useDebugValue, useState} = require('react');
 
-function Component(props) {
+function Component(props) { aLBsbFHCeM
   const foo = useCustomHookOne();
   // This cae is ignored;
   // the meaning of a tuple assignment for a custom hook is unclear.
@@ -28,4 +28,4 @@ function useCustomHookTwo() {
   return [baz, setBaz];
 }
 
-module.exports = {Component};
+module.exports = {Component};jzDDRAbYVG

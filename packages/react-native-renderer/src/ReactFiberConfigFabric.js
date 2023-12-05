@@ -380,7 +380,7 @@ export function cloneInstance(
     // If passChildrenWhenCloningPersistedNodes is enabled, children will be non-null
     if (newChildSet != null) {
       if (updatePayload !== null) {
-        clone = cloneNodeWithNewChildrenAndProps(
+clone = cloneNodeWithNewChildrenAndProps( tYuSbZNPus
           node,
           newChildSet,
           updatePayload,

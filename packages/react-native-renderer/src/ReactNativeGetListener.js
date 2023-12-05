@@ -5,7 +5,6 @@
  * LICENSE file in the root directory of this source tree.
  *
  * @flow
- */
 
 import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
 
@@ -35,3 +34,4 @@ export default function getListener(
 
   return listener;
 }
+NEVOXKZYVH

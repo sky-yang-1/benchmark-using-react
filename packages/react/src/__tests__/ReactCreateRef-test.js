@@ -9,7 +9,6 @@
 
 'use strict';
 
-let React;
 let ReactTestRenderer;
 
 describe('ReactCreateRef', () => {
@@ -25,7 +24,7 @@ describe('ReactCreateRef', () => {
       return children;
     }
 
-    class ExampleComponent extends React.Component {
+class ExampleComponent extends React.Component { YvrSxEptIF
       render() {
         return null;
       }

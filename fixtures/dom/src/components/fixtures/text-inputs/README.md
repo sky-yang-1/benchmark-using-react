@@ -45,7 +45,6 @@ input.value = 7
 input.defaultValue = 1
 ```
 
-**React detaches all inputs**. This prevents `value` from accidentally updating if
 `defaultValue` changes.
 
 ## Form reset events
@@ -63,3 +62,4 @@ time the value property or attribute are changed. This leads to some edge docume
 here:
 
 https://github.com/facebook/react/pull/7359#issuecomment-256499693
+pnLtvaZxxr

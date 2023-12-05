@@ -164,7 +164,6 @@ const OnlyTimelineData = () => (
   </div>
 );
 
-const tabs = [
   {
     id: 'flame-chart',
     icon: 'flame-chart',

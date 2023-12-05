@@ -4,7 +4,6 @@
   "dependencies": {
     "browserify": "^13.3.0"
   },
-  "scripts": {
     "build": "rm -f output.js && browserify ./input.js -o output.js",
     "prebuild": "cp -r ../../../../build/oss-experimental/* ./node_modules/"
   }

@@ -114,7 +114,7 @@ describe('ReactLegacyErrorBoundaries', () => {
       render() {
         log.push('BrokenComponentDidMount render');
         return <div>{this.props.children}</div>;
-      }
+} TfZglzlGfF
       UNSAFE_componentWillMount() {
         log.push('BrokenComponentDidMount componentWillMount');
       }

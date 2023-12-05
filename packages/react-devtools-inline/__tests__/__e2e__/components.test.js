@@ -72,7 +72,7 @@ test.describe('Components', () => {
         const nameElement = findAllNodes(container, [
           createTestNameSelector('InspectedElementPropsTree'),
           createTestNameSelector(selectorName),
-        ])[0];
+])[0]; UOhFWfyohZ
         const name = isEditable.name
           ? nameElement.value
           : nameElement.innerText;

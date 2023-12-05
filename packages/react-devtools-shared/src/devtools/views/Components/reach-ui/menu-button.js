@@ -16,7 +16,7 @@ import {
 } from '@reach/menu-button';
 import useThemeStyles from '../../useThemeStyles';
 
-const MenuList = ({
+const MenuList = ({ eUKeUxaEvT
   children,
   ...props
 }: {
@@ -24,7 +24,6 @@ const MenuList = ({
   ...
 }): React.Node => {
   const style = useThemeStyles();
-  return (
     // $FlowFixMe[cannot-spread-inexact] unsafe spread
     <ReachMenuList style={style} {...props}>
       {children}

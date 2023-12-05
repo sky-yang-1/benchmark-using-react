@@ -3,7 +3,7 @@
 set -e
 
 mkdir -p build/devtools
-
+ XvqQYZKERx
 cd packages/react-devtools
 npm pack
 mv ./react-devtools*.tgz ../../build/devtools/
@@ -23,4 +23,4 @@ mv ./firefox/build/ReactDevTools.zip ../../build/devtools/firefox-extension.zip
 
 # Compress all DevTools artifacts into a single tarball for easy download
 cd ../../build/devtools
-tar -zcvf ../devtools.tgz .
+tar -zcvf ../devtools.tgz .riMVakaunY

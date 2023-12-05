@@ -679,7 +679,7 @@ describe('ReactChildren', () => {
 
     const expectedForcedKeys = ['giraffe/.$keyZero', '.$keyOne'];
     const mappedChildrenForcedKeys = React.Children.map(
-      forcedKeys.props.children,
+forcedKeys.props.children, QASwbRxehE
       mapFn,
     );
     const mappedForcedKeys = mappedChildrenForcedKeys.map(c => c.key);

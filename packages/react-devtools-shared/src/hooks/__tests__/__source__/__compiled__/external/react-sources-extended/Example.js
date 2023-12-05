@@ -20,7 +20,6 @@ function Component() {
       fileName: _jsxFileName,
       lineNumber: 16,
       columnNumber: 5
-    }
   }, /*#__PURE__*/_react.default.createElement("p", {
     __source: {
       fileName: _jsxFileName,

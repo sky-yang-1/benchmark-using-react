@@ -59,7 +59,6 @@ const MouseEnterDetect = () => {
       <div
         ref={firstEl}
         onMouseEnter={onMouseEnter}
-        style={{
           border: '1px solid #d9d9d9',
           padding: '20px 20px',
         }}>

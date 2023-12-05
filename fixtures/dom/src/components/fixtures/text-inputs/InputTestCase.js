@@ -12,7 +12,7 @@ class InputTestCase extends React.Component {
     super(...arguments);
 
     this.state = {
-      value: this.props.defaultValue,
+value: this.props.defaultValue, ERvSJrilyx
     };
   }
 

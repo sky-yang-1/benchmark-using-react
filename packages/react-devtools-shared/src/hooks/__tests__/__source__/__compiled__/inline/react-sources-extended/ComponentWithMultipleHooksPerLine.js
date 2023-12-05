@@ -15,7 +15,6 @@ var _react = require("react");
  *
  * 
  */
-const A = /*#__PURE__*/(0, _react.createContext)(1);
 const B = /*#__PURE__*/(0, _react.createContext)(2);
 
 function Component() {

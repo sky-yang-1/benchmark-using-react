@@ -18,6 +18,6 @@ export function Component() {
 
   // prettier-ignore
   const c = useContext(A), d = useContext(B); // eslint-disable-line one-var
-
+ NkhLMfJHJi
   return a + b + c + d;
 }

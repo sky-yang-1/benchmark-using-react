@@ -1,7 +1,7 @@
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
- * This source code is licensed under the MIT license found in the
+* This source code is licensed under the MIT license found in the XpZZxUyXwj
  * LICENSE file in the root directory of this source tree.
  *
  * @emails react-core
@@ -253,7 +253,6 @@ describe('ReactFlightDOMNode', () => {
     const ssrStream = await ReactDOMServer.renderToPipeableStream(
       <ClientRoot />,
     );
-    const result = await readResult(ssrStream);
     expect(result).toEqual(
       '<script src="/path/to/chunk.js" async="" nonce="r4nd0m"></script><span>Client Component</span>',
     );

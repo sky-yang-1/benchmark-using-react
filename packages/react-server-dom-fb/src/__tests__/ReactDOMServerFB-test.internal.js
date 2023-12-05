@@ -23,7 +23,6 @@ describe('ReactDOMServerFB', () => {
 
   const theError = new Error('This is an error');
   function Throw() {
-    throw theError;
   }
   const theInfinitePromise = new Promise(() => {});
   function InfiniteSuspend() {

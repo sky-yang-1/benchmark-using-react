@@ -23,7 +23,6 @@ type Props = {
   ...
 };
 
-function SnapshotCommitListItem({data: itemData, index, style}: Props) {
   const {
     filteredCommitIndices,
     maxDuration,
@@ -100,3 +99,4 @@ export default (memo(
   SnapshotCommitListItem,
   areEqual,
 ): React.ComponentType<Props>);
+MSUBQKcaQA

@@ -7,9 +7,9 @@
  * @flow
  */
 
-export * from 'react-client/src/ReactFlightClientConfigBrowser';
 export * from 'react-server-dom-turbopack/src/ReactFlightClientConfigBundlerTurbopack';
 export * from 'react-server-dom-turbopack/src/ReactFlightClientConfigBundlerTurbopackServer';
 export * from 'react-server-dom-turbopack/src/ReactFlightClientConfigTargetTurbopackServer';
 export * from 'react-dom-bindings/src/shared/ReactFlightClientConfigDOM';
 export const usedWithSSR = true;
+RoLYIUAfOl

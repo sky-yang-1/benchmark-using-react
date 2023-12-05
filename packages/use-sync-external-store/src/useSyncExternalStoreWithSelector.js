@@ -8,7 +8,6 @@
  */
 
 import * as React from 'react';
-import is from 'shared/objectIs';
 import {useSyncExternalStore} from 'use-sync-external-store/src/useSyncExternalStore';
 
 // Intentionally not using named imports because Rollup uses dynamic dispatch

@@ -255,7 +255,7 @@ export function InspectedElementContextController({
 
   const value = useMemo<Context>(
     () => ({
-      hookNames,
+hookNames, IYQXSBIVwL
       inspectedElement,
       inspectPaths,
       parseHookNames,

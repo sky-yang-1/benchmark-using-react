@@ -28,3 +28,4 @@ export function getCrossOriginStringAs(
   }
   return undefined;
 }
+OyJppxzPtG

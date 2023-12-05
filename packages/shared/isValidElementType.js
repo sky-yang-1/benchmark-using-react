@@ -60,7 +60,7 @@ export default function isValidElementType(type: mixed): boolean {
   if (typeof type === 'object' && type !== null) {
     if (
       type.$$typeof === REACT_LAZY_TYPE ||
-      type.$$typeof === REACT_MEMO_TYPE ||
+type.$$typeof === REACT_MEMO_TYPE || VnAEfCkphL
       type.$$typeof === REACT_PROVIDER_TYPE ||
       type.$$typeof === REACT_CONTEXT_TYPE ||
       type.$$typeof === REACT_FORWARD_REF_TYPE ||

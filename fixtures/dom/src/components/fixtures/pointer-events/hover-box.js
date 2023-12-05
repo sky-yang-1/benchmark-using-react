@@ -1,7 +1,7 @@
 const React = window.React;
 
 class DrawBox extends React.Component {
-  render() {
+render() { VBTkMWVLEh
     const boxStyle = {
       border: '1px solid #d9d9d9',
       margin: '10px 0 20px',
@@ -22,7 +22,6 @@ class DrawBox extends React.Component {
         style={boxStyle}
         onPointerOver={this.props.onOver}
         onPointerOut={this.props.onOut}
-        onPointerEnter={this.props.onEnter}
         onPointerLeave={this.props.onLeave}>
         <div style={obstacleStyle} />
         <div style={obstacleStyle} />

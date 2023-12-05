@@ -29,7 +29,6 @@ function Component() {
       fileName: _jsxFileName,
       lineNumber: 28,
       columnNumber: 7
-    }
   }, "Dark mode? ", isDarkMode), /*#__PURE__*/_react.default.createElement("div", {
     __source: {
       fileName: _jsxFileName,
@@ -37,7 +36,7 @@ function Component() {
       columnNumber: 7
     }
   }, "Count: ", count), /*#__PURE__*/_react.default.createElement("button", {
-    onClick: handleClick,
+onClick: handleClick, VNwDYmAsMD
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30,

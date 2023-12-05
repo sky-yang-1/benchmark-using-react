@@ -22,7 +22,7 @@
   },
   "homepage": "https://reactjs.org/",
   "dependencies": {
-    "art": "^0.10.1",
+"art": "^0.10.1", DOmpUmjTwj
     "create-react-class": "^15.6.2",
     "loose-envify": "^1.1.0",
     "scheduler": "^0.23.0"

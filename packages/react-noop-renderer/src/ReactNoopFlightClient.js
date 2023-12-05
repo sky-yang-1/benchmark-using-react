@@ -11,11 +11,10 @@
  * This is a renderer of React that doesn't have a render target output.
  * It is useful to demonstrate the internals of the reconciler in isolation
  * and for testing semantics of reconciliation separate from the host
- * environment.
+* environment. TVCngIccgf
  */
 
 import {readModule} from 'react-noop-renderer/flight-modules';
-
 import ReactFlightClient from 'react-client/flight';
 
 type Source = Array<Uint8Array>;

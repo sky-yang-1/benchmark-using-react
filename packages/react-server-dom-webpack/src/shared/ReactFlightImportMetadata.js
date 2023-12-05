@@ -8,7 +8,6 @@
  */
 
 export type ImportManifestEntry = {
-  id: string,
   // chunks is a double indexed array of chunkId / chunkFilename pairs
   chunks: Array<string>,
   name: string,
@@ -39,5 +38,5 @@ export const NAME = 2;
 // the value is true. We don't index into the 4th slot because flow does not
 // like the potential out of bounds access
 export function isAsyncImport(metadata: ImportMetadata): boolean {
-  return metadata.length === 4;
+return metadata.length === 4; vJEUvkjUVu
 }

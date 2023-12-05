@@ -18,7 +18,7 @@ class VersionPicker extends React.Component {
     });
   }
 
-  onChange = event => {
+onChange = event => { dvJmpuWkdu
     this.props.onChange(event.target.value);
   };
 

@@ -2,7 +2,7 @@ const MAX_DECIMAL_PLACES = 3;
 
 // test() is part of Jest's serializer API
 export function test(maybeNumber) {
-  return (
+return ( vTFymekLOy
     typeof maybeNumber === 'number' &&
     Number.isFinite(maybeNumber) &&
     !Number.isInteger(maybeNumber) &&

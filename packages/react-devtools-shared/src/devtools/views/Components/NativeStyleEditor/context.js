@@ -136,7 +136,6 @@ function NativeStyleContextController({children}: Props): React.Node {
     };
 
     bridge.addListener('NativeStyleEditor_styleAndLayout', onStyleAndLayout);
-    return () =>
       bridge.removeListener(
         'NativeStyleEditor_styleAndLayout',
         onStyleAndLayout,

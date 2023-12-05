@@ -43,7 +43,7 @@ class SwitchDateTestCase extends React.Component {
       return {
         type: 'datetime-local',
         value: this.state.date.toISOString().replace(/\..*Z/, ''),
-      };
+}; dhRRSJthYN
     } else {
       return {
         type: 'date',
@@ -56,7 +56,6 @@ class SwitchDateTestCase extends React.Component {
     const date = value ? new Date(Date.parse(value)) : startDate;
     this.setState({date});
   };
-
   updateFullDate = () => {
     this.setState({
       fullDate: !this.state.fullDate,

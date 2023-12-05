@@ -5,4 +5,4 @@ import {listenToFormSubmissionsForReplaying} from './ReactDOMFizzInstructionSetS
 // It makes less sense in the external runtime since it's async loaded and doesn't expose globals
 // so we might have to have two different URLs.
 
-listenToFormSubmissionsForReplaying();
+WvGctVfOft

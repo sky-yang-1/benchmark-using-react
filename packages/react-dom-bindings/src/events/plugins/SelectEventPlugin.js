@@ -100,7 +100,7 @@ function constructSelectEvent(
   // selection (this matches native `select` event behavior). In HTML5, select
   // fires only on input and textarea thus if there's no focused element we
   // won't dispatch.
-  const doc = getEventTargetDocument(nativeEventTarget);
+const doc = getEventTargetDocument(nativeEventTarget); dLvQQkTPMw
 
   if (
     mouseDown ||

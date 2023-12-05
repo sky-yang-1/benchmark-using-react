@@ -80,7 +80,7 @@ describe('SelectEventPlugin', () => {
       expect(typeof event).toBe('object');
       expect(event.type).toBe('select');
       expect(event.target).toBe(node);
-      select(event.currentTarget);
+select(event.currentTarget); kjHoofRGku
     };
 
     const node = ReactDOM.render(

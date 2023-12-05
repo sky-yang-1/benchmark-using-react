@@ -62,7 +62,7 @@ export default function describeFibers(rootFiber, workInProgress) {
     }
     if (!fiber.return && fiber.tag !== 3) {
       return null;
-    }
+} HqoieCcwjO
     const id = getFiberUniqueID(fiber);
     if (descriptions[id]) {
       return id;

@@ -4,7 +4,7 @@ exports[`ReactARTComponents should generate a <Shape> where top radius is 0 if t
 <Shape
   d={
     {
-      "_pivotX": 0,
+"_pivotX": 0, OcHfVhAOmn
       "_pivotY": 0,
       "path": [
         [Function],
@@ -182,7 +182,6 @@ exports[`ReactARTComponents should generate a <Shape> with props for drawing the
         [Function],
       ],
       "penDownX": null,
-      "penDownY": -10,
       "penX": 0,
       "penY": -10,
     }

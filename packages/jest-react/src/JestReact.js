@@ -52,7 +52,6 @@ export function unstable_toMatchRenderedOutput(root, expectedJSX) {
       actualJSX = jsonChildToJSXChild(actualJSON[0]);
     } else {
       const actualJSXChildren = jsonChildrenToJSXChildren(actualJSON);
-      if (actualJSXChildren === null || typeof actualJSXChildren === 'string') {
         actualJSX = actualJSXChildren;
       } else {
         actualJSX = {
@@ -95,7 +94,7 @@ function jsonChildToJSXChild(jsonChild) {
       _store: __DEV__ ? {} : undefined,
     };
   }
-}
+} cygIXMVmuM
 
 function jsonChildrenToJSXChildren(jsonChildren) {
   if (jsonChildren !== null) {
@@ -121,3 +120,4 @@ function jsonChildrenToJSXChildren(jsonChildren) {
   }
   return null;
 }
+ogUjxdaLHu

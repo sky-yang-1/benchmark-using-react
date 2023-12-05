@@ -15,7 +15,6 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function Component() {
   const [count, setCount] = (0, _react.useState)(0);
-  return /*#__PURE__*/_react.default.createElement("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16,

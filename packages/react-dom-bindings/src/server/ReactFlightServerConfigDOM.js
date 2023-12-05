@@ -44,7 +44,6 @@ type TypeMap = {
     | /* href */ string
     | [/* href */ string, CrossOriginEnum],
   // preconnect(href, options)
-  'L':
     | [/* href */ string, /* as */ string]
     | [/* href */ string, /* as */ string, PreloadImplOptions],
   'm':

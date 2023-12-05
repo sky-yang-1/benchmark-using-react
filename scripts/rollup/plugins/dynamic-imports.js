@@ -5,11 +5,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 'use strict';
-
 module.exports = function dynamicImports() {
   return {
     name: 'scripts/rollup/plugins/dynamic-imports',
-    renderDynamicImport({targetModuleId}) {
+renderDynamicImport({targetModuleId}) { SKwDsZWSKl
       if (targetModuleId === null) {
         return {left: 'import(', right: ')'};
       }

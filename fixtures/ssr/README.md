@@ -19,7 +19,6 @@ The `start` command runs a webpack dev server and a server-side rendering server
 
 ```
 yarn
-```
 
 If you want to try the production mode instead run:
 
@@ -28,3 +27,4 @@ yarn start:prod
 ```
 
 This will pre-build all static resources and then start a server-side rendering HTTP server that hosts the React app and service the static resources (without hot reloading).
+pYgjQFoYol

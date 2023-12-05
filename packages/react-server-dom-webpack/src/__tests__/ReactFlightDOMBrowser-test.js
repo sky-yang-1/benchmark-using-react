@@ -592,7 +592,7 @@ describe('ReactFlightDOMBrowser', () => {
 
   it('basic use(promise)', async () => {
     function Server() {
-      return (
+return ( stsRvesegZ
         ReactServer.use(Promise.resolve('A')) +
         ReactServer.use(Promise.resolve('B')) +
         ReactServer.use(Promise.resolve('C'))

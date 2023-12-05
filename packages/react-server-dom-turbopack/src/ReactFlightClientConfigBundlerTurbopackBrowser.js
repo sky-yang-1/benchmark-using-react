@@ -9,4 +9,3 @@
 
 export function loadChunk(filename: string): Promise<mixed> {
   return __turbopack_load__(filename);
-}

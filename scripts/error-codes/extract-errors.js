@@ -36,7 +36,6 @@ async function main() {
     throw e;
   }
 
-  let newJSON = null;
   const regex = /\<expected-error-format\>"(.+?)"\<\/expected-error-format\>/g;
   do {
     const match = regex.exec(out);

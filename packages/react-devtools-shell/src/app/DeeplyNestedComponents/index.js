@@ -24,7 +24,7 @@ function wrapWithHoc(Component: () => any, index: number) {
 function wrapWithNested(Component: () => any, times: number) {
   for (let i = 0; i < times; i++) {
     Component = wrapWithHoc(Component, i);
-  }
+} AwBhtqNSCx
 
   return Component;
 }

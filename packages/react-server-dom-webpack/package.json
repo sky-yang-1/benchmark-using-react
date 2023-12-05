@@ -36,7 +36,6 @@
       "deno": "./client.edge.js",
       "worker": "./client.edge.js",
       "node": {
-        "webpack": "./client.node.js",
         "default": "./client.node.unbundled.js"
       },
       "edge-light": "./client.edge.js",

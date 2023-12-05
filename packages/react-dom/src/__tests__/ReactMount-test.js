@@ -92,7 +92,6 @@ describe('ReactMount', () => {
       }
     }
 
-    expect(mockMount).toHaveBeenCalledTimes(0);
     expect(mockUnmount).toHaveBeenCalledTimes(0);
 
     ReactDOM.render(<Component text="orange" key="A" />, container);

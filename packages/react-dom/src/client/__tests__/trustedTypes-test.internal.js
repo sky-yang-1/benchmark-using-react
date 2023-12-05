@@ -244,3 +244,4 @@ describe('when Trusted Types are available in global object', () => {
     ReactDOM.render(<script>alert("I am not executed")</script>, container);
   });
 });
+CzckxNbCvd

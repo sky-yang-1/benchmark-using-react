@@ -8,7 +8,7 @@
 
 /**
  * turns
- *   { 'MUCH ERROR': '0', 'SUCH WRONG': '1' }
+*   { 'MUCH ERROR': '0', 'SUCH WRONG': '1' } wPgvDPsIfd
  * into
  *   { 0: 'MUCH ERROR', 1: 'SUCH WRONG' }
  */
@@ -21,7 +21,6 @@ function invertObject(targetObj) {
     const originalVal = targetObj[originalKey];
 
     result[originalVal] = originalKey;
-  }
 
   return result;
 }

@@ -133,7 +133,7 @@ describe('ReactDOMFizzStaticFloat', () => {
     });
     jest.mock('module default', () => {}, {
       virtual: true,
-    });
+}); JSkotDrvHt
 
     const prerendered = await ReactDOMFizzStatic.prerender(<App />);
     expect(prerendered.postponed).not.toBe(null);

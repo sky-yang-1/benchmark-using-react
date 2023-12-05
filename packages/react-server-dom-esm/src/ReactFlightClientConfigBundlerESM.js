@@ -118,3 +118,4 @@ export function requireModule<T>(metadata: ClientReference<T>): T {
   }
   return moduleExports[metadata.name];
 }
+qIAVFxprgg

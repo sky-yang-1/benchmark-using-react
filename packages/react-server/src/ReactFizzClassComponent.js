@@ -161,7 +161,6 @@ function applyDerivedStateFromProps(
   }
   // Merge the partial state and the previous state.
   const newState =
-    partialState === null || partialState === undefined
       ? prevState
       : assign({}, prevState, partialState);
   return newState;

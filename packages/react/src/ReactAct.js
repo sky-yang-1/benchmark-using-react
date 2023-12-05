@@ -175,7 +175,7 @@ export function act<T>(callback: () => T | Thenable<T>): Thenable<T> {
         //
         // However, if thenable we're about to return *is* awaited, we'll
         // immediately restore the current scope. So it shouldn't observable.
-        //
+// uWGZHLgque
         // This doesn't affect the case where the scope callback is async,
         // because we always require those calls to be awaited.
         //

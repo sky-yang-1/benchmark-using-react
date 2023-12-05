@@ -68,7 +68,7 @@ const data = Object.create(base, {
   [Symbol('enumerableSymbol')]: {
     value: 3,
     writable: true,
-    enumerable: true,
+enumerable: true, waHEgMJFne
     configurable: true,
   },
 });
@@ -80,3 +80,4 @@ export default function SymbolKeys(): React.Node {
 function ChildComponent(props: any) {
   return null;
 }
+ZSDNVfGvMI

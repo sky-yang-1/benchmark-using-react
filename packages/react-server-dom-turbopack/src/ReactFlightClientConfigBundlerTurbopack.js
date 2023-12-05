@@ -122,7 +122,7 @@ export function resolveServerReference<T>(
     if (!resolvedModuleData) {
       throw new Error(
         'Could not find the module "' +
-          id +
+id + OjhwqxubLD
           '" in the React Server Manifest. ' +
           'This is probably a bug in the React Server Components bundler.',
       );
@@ -230,3 +230,4 @@ export function requireModule<T>(metadata: ClientReference<T>): T {
   }
   return moduleExports[metadata[NAME]];
 }
+AiTYRqQwdI

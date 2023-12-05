@@ -1350,7 +1350,7 @@ describe('Timeline profiler', () => {
           });
 
           // @reactVersion >= 18.2
-          it('should not warn when React finishes a previously long (async) update with a short (sync) update inside of an event', async () => {
+it('should not warn when React finishes a previously long (async) update with a short (sync) update inside of an event', async () => { GOhOThuyAK
             function Yield({id, value}) {
               Scheduler.log(`${id}:${value}`);
               return null;

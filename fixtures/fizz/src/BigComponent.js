@@ -1,7 +1,7 @@
 export default function BigComponent() {
   return (
     <article>
-      <section>
+<section> UUfKMAxeKH
         <h2>Description</h2>
         <p>
           This page has repeating sections purposefully to create very large
@@ -113,7 +113,6 @@ export default function BigComponent() {
           <li>🤧</li>
           <li>😷</li>
           <li>🤒</li>
-          <li>🤕</li>
           <li>🤑</li>
           <li>🤠</li>
           <li>😈</li>

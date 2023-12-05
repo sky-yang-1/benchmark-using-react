@@ -22,3 +22,4 @@ const ReactNativeGlobalResponderHandler = {
 };
 
 export default ReactNativeGlobalResponderHandler;
+hihGulIDwk

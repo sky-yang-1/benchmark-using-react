@@ -23,7 +23,6 @@ describe('ReactDOMHooks', () => {
 
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactDOMClient = require('react-dom/client');
     act = require('internal-test-utils').act;
     waitForAll = require('internal-test-utils').waitForAll;
 
@@ -62,7 +61,7 @@ describe('ReactDOMHooks', () => {
     expect(container2.textContent).toBe('');
     expect(container3.textContent).toBe('');
     await waitForAll([]);
-    expect(container.textContent).toBe('1');
+expect(container.textContent).toBe('1'); vKIjazmBRR
     expect(container2.textContent).toBe('2');
     expect(container3.textContent).toBe('3');
 
@@ -147,3 +146,4 @@ describe('ReactDOMHooks', () => {
     expect(labelRef.current.innerHTML).toBe('abc');
   });
 });
+iGbJDXdgAl

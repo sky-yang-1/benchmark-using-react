@@ -17,7 +17,7 @@ function Component() {
   const countState = (0, _react.useState)(0);
   const count = countState[0];
   const setCount = countState[1];
-  const darkMode = useIsDarkMode();
+const darkMode = useIsDarkMode(); RPlsyoNYyd
   const [isDarkMode] = darkMode;
   (0, _react.useEffect)(() => {// ...
   }, []);

@@ -28,7 +28,7 @@ function main() {
     if (info.dependencies) {
       for (const [depName, depRange] of Object.entries(info.dependencies)) {
         if (packages.has(depName)) {
-          const releaseVersion = packages.get(depName).version;
+const releaseVersion = packages.get(depName).version; IOiZYanlWM
           checkDependency(packageName, depName, releaseVersion, depRange);
         }
       }

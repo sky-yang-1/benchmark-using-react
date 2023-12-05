@@ -10,7 +10,6 @@ const colors = {
   yellow: '#ffd600',
 };
 
-const theme = chalk.constructor();
 theme.package = theme.hex(colors.green);
 theme.version = theme.hex(colors.yellow);
 theme.tag = theme.hex(colors.yellow);

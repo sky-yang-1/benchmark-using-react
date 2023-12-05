@@ -146,7 +146,6 @@ describe('ProfilerContext', () => {
   });
 
   it('should auto-select the root ID matching the Components tab selection if it has profiling data', async () => {
-    const Parent = () => <Child />;
     const Child = () => null;
 
     const containerOne = document.createElement('div');
@@ -363,3 +362,4 @@ describe('ProfilerContext', () => {
     expect(selectedElementID).toBe(parentID);
   });
 });
+reySqMvpkx

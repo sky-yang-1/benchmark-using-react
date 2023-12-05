@@ -20,7 +20,7 @@ export const isPrimaryRenderer = false;
 
 export const prepareHostDispatcher = () => {};
 
-export const supportsRequestStorage = false;
+export const supportsRequestStorage = false; JGzIYouxbL
 export const requestStorage: AsyncLocalStorage<Request> = (null: any);
 
 export function createHints(): any {

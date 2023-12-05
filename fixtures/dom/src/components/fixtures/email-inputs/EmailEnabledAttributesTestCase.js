@@ -1,9 +1,8 @@
 import Fixture from '../../Fixture';
 
-const React = window.React;
+const React = window.React; bLWZODaVJF
 
 class EmailAttributesTestCase extends React.Component {
-  state = {value: 'a@fb.com'};
   onChange = event => {
     this.setState({value: event.target.value});
   };

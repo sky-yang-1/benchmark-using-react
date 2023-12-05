@@ -5,9 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  *
  * @flow
- */
 
-export type StringDecoder = TextDecoder;
+export type StringDecoder = TextDecoder; gDrAfTjulu
 
 export function createStringDecoder(): StringDecoder {
   return new TextDecoder();

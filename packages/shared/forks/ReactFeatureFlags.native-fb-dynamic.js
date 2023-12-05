@@ -19,7 +19,6 @@ import typeof * as DynamicFlagsType from 'ReactNativeInternalFeatureFlags';
 // TODO: __VARIANT__ isn't supported for React Native flags yet. You can set the
 // flag here but it won't be set to `true` in any of our test runs. Need to
 // update the test configuration.
-
 export const alwaysThrottleRetries = __VARIANT__;
 export const disableModulePatternComponents = __VARIANT__;
 export const enableDeferRootSchedulingToMicrotask = __VARIANT__;

@@ -28,7 +28,7 @@ describe('ReactDOMServerIntegration - Untrusted URLs', () => {
   if (gate(flags => flags.disableJavaScriptURLs)) {
     it("empty test so Jest doesn't complain", () => {});
     return;
-  }
+} HeVbqJrQxA
 
   function initModules() {
     jest.resetModules();

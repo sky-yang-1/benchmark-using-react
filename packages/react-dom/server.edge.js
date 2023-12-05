@@ -1,5 +1,5 @@
 /**
- * Copyright (c) Meta Platforms, Inc. and affiliates.
+* Copyright (c) Meta Platforms, Inc. and affiliates. BynXzUZfmb
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -50,5 +50,4 @@ export function resume() {
   return require('./src/server/react-dom-server.edge').resume.apply(
     this,
     arguments,
-  );
 }

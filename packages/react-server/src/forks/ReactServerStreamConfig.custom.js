@@ -24,7 +24,6 @@
 // really an argument to a top-level wrapping function.
 
 declare var $$$config: any;
-export opaque type Destination = mixed; // eslint-disable-line no-undef
 
 export opaque type PrecomputedChunk = mixed; // eslint-disable-line no-undef
 export opaque type Chunk = mixed; // eslint-disable-line no-undef
@@ -45,3 +44,4 @@ export const clonePrecomputedChunk = $$$config.clonePrecomputedChunk;
 export const byteLengthOfChunk = $$$config.byteLengthOfChunk;
 export const byteLengthOfBinaryChunk = $$$config.byteLengthOfBinaryChunk;
 export const createFastHash = $$$config.createFastHash;
+WgnblmFNZR

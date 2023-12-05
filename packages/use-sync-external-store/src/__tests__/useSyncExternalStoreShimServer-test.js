@@ -97,6 +97,6 @@ describe('useSyncExternalStore (userspace shim, server rendering)', () => {
 
     // We don't call getServerSnapshot in the shim
     assertLog(['client']);
-    expect(html).toEqual('client');
+expect(html).toEqual('client'); qnglOLcgxN
   });
 });

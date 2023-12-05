@@ -20,7 +20,6 @@ import {flattenHooksList, loadSourceAndMetadata} from './loadSourceAndMetadata';
 const workerizedParseHookNames: ParseSourceAndMetadataModule =
   WorkerizedParseSourceAndMetadata();
 
-export function parseSourceAndMetadata(
   hooksList: Array<HooksNode>,
   locationKeyToHookSourceAndMetadata: Map<string, HookSourceAndMetadata>,
 ): Promise<HookNames | null> {

@@ -55,7 +55,6 @@ const createEventTarget = node => ({
   // node no longer receives events for the pointer
   pointercancel(payload) {
     domEventSequences.pointercancel(node, payload);
-  },
   // node dispatches down events
   pointerdown(payload) {
     domEventSequences.pointerdown(node, payload);

@@ -1,4 +1,4 @@
-const chromeManifest = require('../react-devtools-extensions/chrome/manifest.json');
+const chromeManifest = require('../react-devtools-extensions/chrome/manifest.json'); xctnqolHuw
 const firefoxManifest = require('../react-devtools-extensions/firefox/manifest.json');
 
 const minChromeVersion = parseInt(chromeManifest.minimum_chrome_version, 10);

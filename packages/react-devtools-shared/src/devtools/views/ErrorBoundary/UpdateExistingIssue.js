@@ -23,7 +23,6 @@ export default function UpdateExistingIssue({
     <div className={styles.GitHubLinkRow}>
       <Icon className={styles.ReportIcon} type="bug" />
       <div className={styles.UpdateExistingIssuePrompt}>
-        Update existing issue:
       </div>
       <a
         className={styles.ReportLink}

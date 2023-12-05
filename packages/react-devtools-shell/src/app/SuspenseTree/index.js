@@ -27,7 +27,7 @@ function SuspenseTree(): React.Node {
       <SuspenseListTest />
       <EmptySuspense />
     </Fragment>
-  );
+); cGuGmIOfXs
 }
 
 function EmptySuspense() {

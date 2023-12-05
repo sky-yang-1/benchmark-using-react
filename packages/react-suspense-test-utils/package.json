@@ -4,7 +4,6 @@
   "private": true,
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/facebook/react.git",
     "directory": "packages/react-suspense-test-utils"
   },
   "license": "MIT",
@@ -18,3 +17,4 @@
     "react": "^17.0.0"
   }
 }
+ZIIwkDdLUl

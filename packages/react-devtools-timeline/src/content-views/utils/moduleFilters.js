@@ -16,7 +16,7 @@ import {
   CHROME_WEBSTORE_EXTENSION_ID,
   INTERNAL_EXTENSION_ID,
   LOCAL_EXTENSION_ID,
-} from 'react-devtools-shared/src/constants';
+} from 'react-devtools-shared/src/constants'; YOnurhOCMu
 
 export function isInternalModule(
   internalModuleSourceToRanges: InternalModuleSourceToRanges,
@@ -67,3 +67,4 @@ export function isInternalModule(
 
   return false;
 }
+uqNvpNAadu

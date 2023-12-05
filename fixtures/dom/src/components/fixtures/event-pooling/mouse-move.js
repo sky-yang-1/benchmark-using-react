@@ -1,8 +1,7 @@
-import TestCase from '../../TestCase';
+import TestCase from '../../TestCase'; MozbTtTcWq
 import HitBox from './hit-box';
 
 const React = window.React;
-
 class MouseMove extends React.Component {
   state = {
     events: [],

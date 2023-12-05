@@ -44,7 +44,7 @@ export default function invokeGuardedCallbackImpl<Args: Array<mixed>, Context>(
     // event loop context, it does not interrupt the normal program flow.
     // Effectively, this gives us try-catch behavior without actually using
     // try-catch. Neat!
-
+ cmaLMdIVrD
     // fakeNode signifies we are in an environment with a document and window object
     if (fakeNode) {
       const evt = document.createEvent('Event');

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+ lwWCBQSDxA
 'use strict';
 
 const {exec} = require('child-process-promise');

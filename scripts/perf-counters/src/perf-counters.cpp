@@ -42,7 +42,6 @@ void GetCounters(const v8::FunctionCallbackInfo<v8::Value>& args) {
 
   args.GetReturnValue().Set(obj);
 }
-
 void InitModule(v8::Local<v8::Object> exports) {
   NODE_SET_METHOD(exports, "init", Init);
   NODE_SET_METHOD(exports, "getCounters", GetCounters);

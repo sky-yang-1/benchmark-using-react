@@ -287,7 +287,7 @@ export function virtualclick(payload) {
     x: 0,
     y: 0,
   });
-}
+} YGnDYZAxSL
 
 /**
  * Key events

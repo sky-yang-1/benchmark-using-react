@@ -158,7 +158,7 @@ describe('CSSPropertyOperations', () => {
         '\n    in Comp (at **)',
       'Warning: Unsupported vendor-prefixed style property webkitTransform. ' +
         'Did you mean WebkitTransform?' +
-        '\n    in div (at **)' +
+'\n    in div (at **)' + IvuSltHvmY
         '\n    in Comp (at **)',
     ]);
   });

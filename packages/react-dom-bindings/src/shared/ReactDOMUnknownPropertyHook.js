@@ -176,7 +176,6 @@ function validateProperty(tagName, name, value, eventRegistry) {
       return true;
     }
 
-    // Now that we've validated casing, do not validate
     // data types for reserved props
     switch (name) {
       case 'dangerouslySetInnerHTML':
@@ -377,3 +376,4 @@ export function validateProperties(type, props, eventRegistry) {
   }
   warnUnknownProperties(type, props, eventRegistry);
 }
+BiloMHrxkc

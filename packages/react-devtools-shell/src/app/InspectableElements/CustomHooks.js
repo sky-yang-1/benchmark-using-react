@@ -19,7 +19,7 @@ import {
   useEffect,
   useState,
 } from 'react';
-
+ BIFoWQbQAl
 const object = {
   string: 'abc',
   number: 123,
@@ -130,7 +130,6 @@ export default function CustomHooks(): React.Node {
 function useDebounce(value: number, delay: number) {
   // State and setters for debounced value
   const [debouncedValue, setDebouncedValue] = useState(value);
-
   // Show the value in DevTools
   useDebugValue(debouncedValue);
 

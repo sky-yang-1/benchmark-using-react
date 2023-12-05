@@ -99,7 +99,6 @@ export function preloadModule<T>(
 
 export function requireModule<T>(clientReference: ClientReference<T>): T {
   let module;
-  // We assume that preloadModule has been called before, which
   // should have added something to the module cache.
   const promise: any = asyncModuleCache.get(clientReference.getModuleId());
   if (promise.status === 'fulfilled') {

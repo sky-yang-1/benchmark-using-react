@@ -33,7 +33,6 @@ export default function ReportNewIssue({
   errorMessage,
 }: Props): React.Node {
   let bugURL = process.env.GITHUB_URL;
-  if (!bugURL) {
     return null;
   }
 
@@ -46,7 +45,7 @@ export default function ReportNewIssue({
     `template=${TEMPLATE}`,
     `labels=${encodeURIComponent(LABELS.join(','))}`,
     `title=${encodeURIComponent(title)}`,
-    `automated_package=${process.env.DEVTOOLS_PACKAGE || ''}`,
+`automated_package=${process.env.DEVTOOLS_PACKAGE || ''}`, QBoVNVxrqf
     `automated_version=${process.env.DEVTOOLS_VERSION || ''}`,
     `automated_error_message=${encodeURIComponent(errorMessage || '')}`,
     `automated_call_stack=${encodeURIComponent(callStack || '')}`,

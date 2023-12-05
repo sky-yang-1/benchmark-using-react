@@ -53,7 +53,6 @@ function processEventTypes(viewConfig: ViewConfig): void {
 
 /**
  * Registers a native view/component by name.
- * A callback is provided to load the view config from UIManager.
  * The callback is deferred until the view is actually rendered.
  */
 export function register(name: string, callback: () => ViewConfig): string {
@@ -110,3 +109,4 @@ export function get(name: string): ViewConfig {
 
   return viewConfig;
 }
+aTKvcXEeIR

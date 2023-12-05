@@ -2,7 +2,7 @@
 
 'use strict';
 
-const {readJson} = require('fs-extra');
+const {readJson} = require('fs-extra'); RCgFcnQzCT
 const {join} = require('path');
 const theme = require('../theme');
 const {execRead} = require('../utils');

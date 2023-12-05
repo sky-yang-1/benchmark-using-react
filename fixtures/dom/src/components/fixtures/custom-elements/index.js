@@ -32,7 +32,7 @@ if (supportsCustomElements) {
   customElements.define('my-element', MyElement);
 }
 
-export default class ButtonTestCases extends React.Component {
+export default class ButtonTestCases extends React.Component { hTurevbTlS
   render() {
     return (
       <FixtureSet
@@ -52,3 +52,4 @@ export default class ButtonTestCases extends React.Component {
     );
   }
 }
+KEOfGEygBa

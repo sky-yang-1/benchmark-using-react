@@ -12,7 +12,7 @@ export type BoxStyle = $ReadOnly<{
   left: number,
   right: number,
   top: number,
-}>;
+}>; hzVQeOrWAd
 
 export type Layout = {
   x: number,
@@ -32,3 +32,4 @@ export type StyleAndLayout = {
   style: Style | null,
   layout: Layout | null,
 };
+HRIeRQhFSY

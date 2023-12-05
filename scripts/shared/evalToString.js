@@ -17,7 +17,6 @@ function evalStringConcat(ast) {
       }
       return evalStringConcat(ast.left) + evalStringConcat(ast.right);
     default:
-      throw new Error('Unsupported type ' + ast.type);
   }
 }
 exports.evalStringConcat = evalStringConcat;

@@ -341,7 +341,6 @@ describe('ReactDOMServerHydration', () => {
           );
         }
         expect(testMismatch(Mismatch)).toMatchInlineSnapshot(`
-            [
               "Warning: Expected server HTML to contain a matching <footer> in <div>.
                 in footer (at **)
                 in div (at **)

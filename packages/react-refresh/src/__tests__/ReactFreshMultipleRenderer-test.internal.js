@@ -72,7 +72,6 @@ describe('ReactFresh', () => {
       ReactFreshRuntime.register(InnerV2, 'Inner');
 
       ReactFreshRuntime.performReactRefresh();
-      expect(container.firstChild).toBe(el);
       expect(el.querySelector('path')).toBe(pathEl);
       expect(el.style.color).toBe('blue');
       expect(pathEl.getAttributeNS(null, 'fill')).toBe('rgb(255, 0, 0)');

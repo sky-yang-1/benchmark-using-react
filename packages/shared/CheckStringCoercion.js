@@ -176,4 +176,3 @@ export function checkFormFieldValueStringCoercion(value: mixed): void | string {
       return testStringCoercion(value); // throw (to help callers find troubleshooting comments)
     }
   }
-}

@@ -20,7 +20,6 @@ const exec = (command, args) => {
 };
 
 const execGitCmd = args => exec('git', args).trim().toString().split('\n');
-
 const listChangedFiles = () => {
   const mergeBase = execGitCmd(['merge-base', 'HEAD', 'main']);
   return new Set([

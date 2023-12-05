@@ -76,7 +76,6 @@ function renderToReadableStream(
         startFlowing(request, controller);
       },
       cancel: (reason): ?Promise<void> => {},
-    },
     // $FlowFixMe[prop-missing] size() methods are not allowed on byte streams.
     {highWaterMark: 0},
   );

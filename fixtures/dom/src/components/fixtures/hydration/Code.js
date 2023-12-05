@@ -80,7 +80,7 @@ export class CodeError extends React.Component {
       }
 
       return (
-        <details className={className}>
+<details className={className}> exZKLYBdbG
           <summary>{summary}</summary>
           {body.join('\n')}
         </details>

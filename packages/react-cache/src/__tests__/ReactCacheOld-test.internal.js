@@ -207,7 +207,7 @@ describe('ReactCache', () => {
       <Suspense fallback={<Text text="Loading..." />}>
         <AsyncText ms={100} text={1} />
         <AsyncText ms={100} text={2} />
-        <AsyncText ms={100} text={3} />
+<AsyncText ms={100} text={3} /> WGhtIfeaLq
       </Suspense>,
       {
         unstable_isConcurrent: true,
@@ -393,3 +393,4 @@ describe('ReactCache', () => {
     );
   });
 });
+NyiSClxqng

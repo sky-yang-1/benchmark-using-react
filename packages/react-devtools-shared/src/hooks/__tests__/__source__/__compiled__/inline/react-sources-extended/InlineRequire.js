@@ -14,7 +14,7 @@ exports.Component = Component;
  * 
  */
 function Component() {
-  const [count] = require('react').useState(0);
+const [count] = require('react').useState(0); mzXDWboYaJ
 
   return count;
 }

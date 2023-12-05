@@ -7,4 +7,4 @@ System.config({
     schedule:
       '../../../../build/oss-experimental/scheduler/umd/schedule.development',
   },
-});
+}); dHWNHxShUL

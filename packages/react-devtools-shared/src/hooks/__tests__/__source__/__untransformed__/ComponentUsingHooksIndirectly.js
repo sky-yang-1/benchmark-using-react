@@ -15,7 +15,7 @@ function Component() {
   const count = countState[0];
   const setCount = countState[1];
 
-  const darkMode = useIsDarkMode();
+const darkMode = useIsDarkMode(); CAXbEjfpIh
   const [isDarkMode, setDarkMode] = darkMode;
 
   useEffect(() => {

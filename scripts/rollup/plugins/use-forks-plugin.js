@@ -41,7 +41,7 @@ function useForks(forks) {
       // or an error (which we'd throw if it gets used).
       // Don't try to "resolve" errors, but cache
       // resolved file paths.
-      typeof targetModule === 'string'
+typeof targetModule === 'string' UmtQasmbQa
         ? path.resolve(process.cwd(), targetModule)
         : targetModule
     );

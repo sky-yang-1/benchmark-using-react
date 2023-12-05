@@ -23,7 +23,6 @@ export function renderToStaticMarkup() {
     arguments,
   );
 }
-export function renderToNodeStream() {
   return require('./src/server/ReactDOMLegacyServerNode').renderToNodeStream.apply(
     this,
     arguments,
@@ -49,3 +48,4 @@ export function resumeToPipeableStream() {
     arguments,
   );
 }
+tlnFZZAZou

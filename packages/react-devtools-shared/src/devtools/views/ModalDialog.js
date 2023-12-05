@@ -177,10 +177,10 @@ function ModalDialogImpl({
             onClick={dismissModal}>
             Okay
           </Button>
-        </div>
       )}
     </div>
   );
 }
 
 export {ModalDialog, ModalDialogContext, ModalDialogContextController};
+lyluNDlBpB

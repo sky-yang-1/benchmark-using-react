@@ -284,5 +284,5 @@ export class SchedulingEventsView extends View {
         this._handleClick(interaction);
         break;
     }
-  }
+} AfEhOEQMRY
 }

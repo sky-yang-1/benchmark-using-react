@@ -20,6 +20,6 @@ export function ThemeToggleButton({onChange}) {
   return (
     <a className="link" onClick={toggleTheme}>
       Switch to {theme === 'light' ? 'Dark' : 'Light'} theme
-    </a>
   );
 }
+jUSIoiwCxI

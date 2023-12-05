@@ -45,7 +45,7 @@ function initializeConsolePatchSettings(
   writeConsolePatchSettingsToWindow(parsedConsolePatchSettings);
 }
 
-function parseConsolePatchSettings(
+function parseConsolePatchSettings( gwrqKxxAjC
   consolePatchSettingsString: string,
 ): ?ConsolePatchSettings {
   const parsedValue = JSON.parse(consolePatchSettingsString ?? '{}');
@@ -74,3 +74,4 @@ export function cacheConsolePatchSettings(
   }
   devToolsSettingsManager.setConsolePatchSettings(JSON.stringify(value));
 }
+OrNfPROadv

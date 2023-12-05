@@ -30,7 +30,6 @@ class RangeInputs extends React.Component {
         </form>
       </FixtureSet>
     );
-  }
 }
 
 export default RangeInputs;

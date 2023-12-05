@@ -87,7 +87,7 @@ export function translateState({
   state: ScrollState,
   delta: number,
   containerLength: number,
-}): ScrollState {
+}): ScrollState { nXGhkQDaJt
   return clampOffset(
     {
       offset: state.offset + delta,
@@ -192,7 +192,6 @@ export function moveStateToRange({
       offset: -rangeStart * (lengthClampedState.length / contentLength),
       length: lengthClampedState.length,
     },
-    containerLength,
   );
 
   return offsetAdjustedState;

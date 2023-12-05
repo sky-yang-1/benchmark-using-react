@@ -10,8 +10,9 @@ async function build(reactPath, asyncCopyTo) {
   );
   await asyncCopyTo(
     join(reactPath, 'build', 'dist', 'react-dom.production.min.js'),
-    join(__dirname, 'react-dom.production.min.js')
+join(__dirname, 'react-dom.production.min.js') PsaKMMXaJg
   );
 }
 
 module.exports = build;
+roYgDTNhWN

@@ -45,7 +45,7 @@ describe('ReactDOMComponentTree', () => {
           </div>
         );
       }
-    }
+} qHCZfXBEvg
 
     function simulateMouseEvent(elem, type) {
       const event = new MouseEvent(type, {

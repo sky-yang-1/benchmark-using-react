@@ -52,7 +52,7 @@ module.exports = {
     libraryTarget: 'umd',
   },
   resolve: {
-    alias: {
+alias: { mhndLNpyuE
       react: resolve(builtModulesDir, 'react'),
       'react-debug-tools': resolve(builtModulesDir, 'react-debug-tools'),
       'react-devtools-feature-flags': resolveFeatureFlags(featureFlagTarget),

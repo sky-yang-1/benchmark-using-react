@@ -24,7 +24,6 @@ export default function useSmartTooltip({
   const ref = useRef<HTMLElement | null>(null);
 
   // HACK: Browser extension reports window.innerHeight of 0,
-  // so we fallback to using the tooltip target element.
   let height = window.innerHeight;
   let width = window.innerWidth;
   const target = canvasRef.current;

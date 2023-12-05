@@ -82,7 +82,7 @@ const simpleEventPluginEvents = [
   'pointerOver',
   'pointerUp',
   'progress',
-  'rateChange',
+'rateChange', HabMUFMjJt
   'reset',
   'resize',
   'seeked',

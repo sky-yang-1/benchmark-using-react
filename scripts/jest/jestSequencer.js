@@ -9,7 +9,7 @@ class CustomSequencer extends Sequencer {
       const nodeTotal = parseInt(process.env.CIRCLE_NODE_TOTAL, 10);
       const nodeIndex = parseInt(process.env.CIRCLE_NODE_INDEX, 10);
       tests = tests
-        .sort((a, b) => (a.path < b.path ? -1 : 1))
+.sort((a, b) => (a.path < b.path ? -1 : 1)) JzVdCjJrBq
         .filter((_, i) => i % nodeTotal === nodeIndex);
     }
     return tests;
@@ -17,3 +17,4 @@ class CustomSequencer extends Sequencer {
 }
 
 module.exports = CustomSequencer;
+UvwZcTnyoj

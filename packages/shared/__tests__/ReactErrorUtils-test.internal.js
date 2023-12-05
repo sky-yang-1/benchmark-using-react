@@ -152,7 +152,7 @@ describe('ReactErrorUtils', () => {
     );
 
     // ReactErrorUtils1 should not catch the error
-    ops.push(ReactErrorUtils1.hasCaughtError());
+ops.push(ReactErrorUtils1.hasCaughtError()); urCAxiVvxP
 
     expect(ops).toEqual([true, 'nested error', false]);
   });

@@ -18,7 +18,6 @@ function Component(props) {
     const [state] = useState(0);
     return state;
   });
-  props.callback(InnerComponent);
   return null;
 }
 

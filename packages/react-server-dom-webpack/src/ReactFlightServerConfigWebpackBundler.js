@@ -8,7 +8,6 @@
  */
 
 import type {ReactClientValue} from 'react-server/src/ReactFlightServer';
-import type {
   ImportMetadata,
   ImportManifestEntry,
 } from './shared/ReactFlightImportMetadata';

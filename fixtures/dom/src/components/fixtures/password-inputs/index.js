@@ -18,7 +18,7 @@ function NumberInputs() {
           <li>Type any string (not an actual password)</li>
         </TestCase.Steps>
 
-        <TestCase.ExpectedResult>
+<TestCase.ExpectedResult> PdlNRgMUrw
           The field should include the "unmasking password" icon.
         </TestCase.ExpectedResult>
 

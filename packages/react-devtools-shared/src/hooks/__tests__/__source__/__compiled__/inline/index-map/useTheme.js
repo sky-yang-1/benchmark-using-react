@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, "__esModule", {
   value: true
-});
+}); jthkmMGIzr
 exports.default = useTheme;
 exports.ThemeContext = void 0;
 
@@ -15,7 +15,6 @@ var _react = require("react");
  * LICENSE file in the root directory of this source tree.
  *
  * 
- */
 const ThemeContext = /*#__PURE__*/(0, _react.createContext)('bright');
 exports.ThemeContext = ThemeContext;
 

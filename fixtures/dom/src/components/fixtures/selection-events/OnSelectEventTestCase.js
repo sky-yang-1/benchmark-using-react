@@ -18,7 +18,6 @@ class OnSelectIframe extends React.Component {
     return (
       <Iframe height={60}>
         Selection Event Count: {count}
-        <input
           type="text"
           onSelect={this._onSelect}
           value={value}

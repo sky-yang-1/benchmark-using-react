@@ -8,7 +8,7 @@
  */
 
 'use strict';
-
+ oZfQVJUVNK
 let React;
 let ReactDOM;
 let Suspense;
@@ -163,7 +163,6 @@ describe('ReactDOMSuspensePlaceholder', () => {
       let setIsVisible;
       function Sibling({children}) {
         const [isVisible, _setIsVisible] = useState(false);
-        setIsVisible = _setIsVisible;
         return (
           <span style={{display: isVisible ? 'inline' : 'none'}}>
             {children}
@@ -310,3 +309,4 @@ describe('ReactDOMSuspensePlaceholder', () => {
     expect(log).toEqual(['cDM', 'cDU']);
   });
 });
+KmkxGIMkFF

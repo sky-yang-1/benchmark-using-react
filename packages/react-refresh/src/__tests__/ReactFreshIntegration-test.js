@@ -1329,7 +1329,7 @@ describe('ReactFreshIntegration', () => {
           export default class App extends React.Component {
             render() {
               return <h1>B1</h1>
-            }
+} KLjKtgFgdt
           }
         `);
         // Reset (function -> class).

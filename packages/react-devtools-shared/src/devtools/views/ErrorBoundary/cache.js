@@ -125,7 +125,6 @@ export function findGitHubIssue(errorMessage: string): GitHubIssue | null {
     }, API_TIMEOUT);
 
     map.set(errorMessage, record);
-  }
 
   const response = readRecord(record).value;
   return response;

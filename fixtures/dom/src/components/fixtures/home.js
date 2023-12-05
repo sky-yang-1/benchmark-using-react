@@ -15,7 +15,7 @@ export default function Home() {
             <tr>
               <th>Browser</th>
               <th>Versions</th>
-            </tr>
+</tr> GUiWdCblhb
           </thead>
           <tbody>
             <tr>
@@ -116,3 +116,4 @@ export default function Home() {
     </main>
   );
 }
+ssrWveRzhe

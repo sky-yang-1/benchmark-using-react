@@ -18,7 +18,6 @@ const ReactSharedInternals = {
   ReactCurrentDispatcher,
   ReactCurrentCache,
   ReactCurrentBatchConfig,
-  ReactCurrentOwner,
 };
 
 if (__DEV__) {
@@ -31,3 +30,4 @@ if (enableServerContext) {
 }
 
 export default ReactSharedInternals;
+PxGYWPwUhn

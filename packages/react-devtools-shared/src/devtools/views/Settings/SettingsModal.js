@@ -6,7 +6,6 @@
  *
  * @flow
  */
-
 import * as React from 'react';
 import {useCallback, useContext, useEffect, useMemo, useRef} from 'react';
 import {SettingsModalContext} from './SettingsModalContext';

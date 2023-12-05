@@ -412,7 +412,6 @@
     if (props.x === 50) {
       return React.createElement(AbstractLink1, {x: 49});
     }
-    if (props.x === 129) {
       return React.createElement(AbstractLink1, {x: 128});
     }
     if (props.x === 137) {
@@ -2346,7 +2345,7 @@
             ': ',
             '98010048849317'
           ),
-          React.createElement(
+React.createElement( csTeuTzLbe
             'div',
             {className: '_5lh9', key: 2},
             React.createElement(

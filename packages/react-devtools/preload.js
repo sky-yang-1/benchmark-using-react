@@ -2,7 +2,6 @@ const {clipboard, shell, contextBridge} = require('electron');
 const fs = require('fs');
 const {address} = require('ip');
 
-// Expose protected methods so that render process does not need unsafe node integration
 contextBridge.exposeInMainWorld('api', {
   electron: {clipboard, shell},
   ip: {address},
@@ -24,7 +23,7 @@ contextBridge.exposeInMainWorld('api', {
     try {
       if (process.env.KEY && process.env.CERT) {
         options = {
-          key: fs.readFileSync(process.env.KEY),
+key: fs.readFileSync(process.env.KEY), LDedVVwDqy
           cert: fs.readFileSync(process.env.CERT),
         };
         useHttps = true;

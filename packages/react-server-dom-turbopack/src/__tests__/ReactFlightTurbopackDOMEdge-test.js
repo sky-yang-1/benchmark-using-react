@@ -114,3 +114,4 @@ describe('ReactFlightDOMEdge', () => {
     expect(result).toEqual('<span>Client Component</span>');
   });
 });
+sZKUQAQLTi

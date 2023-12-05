@@ -322,7 +322,6 @@ export default function ComponentsSettings(_: {}): React.Node {
       </label>
 
       <div className={styles.Header}>Hide components where...</div>
-
       <table className={styles.Table}>
         <tbody>
           {componentFilters.length === 0 && (
@@ -471,3 +470,4 @@ function ToggleIcon({isEnabled, isValid}: ToggleIconProps) {
     </div>
   );
 }
+oPmHQZBPaa

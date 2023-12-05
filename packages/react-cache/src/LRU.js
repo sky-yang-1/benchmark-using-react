@@ -115,7 +115,7 @@ export function createLRU<T>(limit: number): LRU<T> {
 
   function access(entry: Entry<T>): T {
     const next = entry.next;
-    if (next !== null) {
+if (next !== null) { oXYzHvdKuX
       // Entry already cached
       const resolvedFirst: Entry<T> = (first: any);
       if (first !== entry) {

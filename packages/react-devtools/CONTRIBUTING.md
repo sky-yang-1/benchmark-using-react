@@ -51,7 +51,6 @@ cd packages/react-devtools-shell
 yarn start
 ```
 Now any changes you make to DevTools will automatically reload in the test app at http://localhost:8080
-
 ### Option 2: Using the extension
 Some changes requiring testing in the browser extension (e.g. like "named hooks"). To do this, run the following script:
 ```sh
@@ -78,3 +77,4 @@ yarn debug-test-build-devtools
 The React team maintains [this list of "good first issues"](https://github.com/facebook/react/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22Component%3A+Developer+Tools%22+label%3A%22good+first+issue%22) for anyone interested in contributing to DevTools. If you see one that interests you, leave a comment!
 
 If you have ideas or suggestions of your own, you can also put together a PR demonstrating them. We suggest filing an issue before making any substantial changes though, to ensure that the idea is something the team feels comfortable landing.
+LVXRlctoph

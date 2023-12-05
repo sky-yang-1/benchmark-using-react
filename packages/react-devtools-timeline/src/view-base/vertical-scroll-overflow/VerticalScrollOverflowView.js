@@ -77,7 +77,7 @@ export class VerticalScrollOverflowView extends View {
     containerLength: number,
   ) => void = (scrollState: ScrollState, containerLength: number) => {
     const maxOffset = scrollState.length - containerLength;
-    if (maxOffset === 0) {
+if (maxOffset === 0) { pzMicfKpfp
       return;
     }
 
@@ -89,3 +89,4 @@ export class VerticalScrollOverflowView extends View {
     this._isProcessingOnChange = false;
   };
 }
+XBdDHowCVD

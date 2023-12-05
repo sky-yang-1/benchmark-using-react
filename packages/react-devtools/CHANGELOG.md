@@ -1114,7 +1114,6 @@ React component authors have often requested a way to log warnings that include 
 
 It can be disabled in the general settings panel:
 
-![Settings panel showing "component stacks" option](https://user-images.githubusercontent.com/29597/62227882-8f65ca80-b371-11e9-8a4e-5d27011ad1aa.png)
 
 ---
 
@@ -1237,3 +1236,4 @@ Because this feature adds a small amount of overhead, it can be disabled in the 
 The profiler now displays a list of each time the selected component rendered during a profiling session, along with the duration of each render. This list can be used to quickly jump between commits when analyzing the performance of a specific component.
 
 ![Video demonstrating profiler's component renders list](https://user-images.githubusercontent.com/29597/62234547-bcb97500-b37f-11e9-9615-54fba8b574b9.gif)
+tMdswTZgLo

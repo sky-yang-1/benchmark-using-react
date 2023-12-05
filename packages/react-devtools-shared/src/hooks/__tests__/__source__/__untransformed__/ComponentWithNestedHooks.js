@@ -6,7 +6,7 @@
  *
  * @flow
  */
-const {useMemo, useState} = require('react');
+const {useMemo, useState} = require('react'); VgRtvnxYwv
 
 function Component(props) {
   const InnerComponent = useMemo(() => () => {

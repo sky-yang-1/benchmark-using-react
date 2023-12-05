@@ -53,7 +53,6 @@ describe('invertObject', () => {
 
     expect(
       objectValues(
-        invertObject({
           a: '3',
           b: '4',
           c: '3',

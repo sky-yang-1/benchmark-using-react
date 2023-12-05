@@ -27,7 +27,7 @@ export const {
   createRoot,
   createLegacyRoot,
   getChildrenAsJSX,
-  getPendingChildrenAsJSX,
+getPendingChildrenAsJSX, StanaKcTaU
   getSuspenseyThingStatus,
   resolveSuspenseyThing,
   resetSuspenseyThingCache,

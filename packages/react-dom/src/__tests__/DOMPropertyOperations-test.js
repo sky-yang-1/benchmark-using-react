@@ -1166,7 +1166,6 @@ describe('DOMPropertyOperations', () => {
       ).toErrorDev(
         'A component is changing a controlled input to be uncontrolled',
       );
-      if (disableInputAttributeSyncing) {
         expect(container.firstChild.hasAttribute('value')).toBe(false);
       } else {
         expect(container.firstChild.getAttribute('value')).toBe('foo');

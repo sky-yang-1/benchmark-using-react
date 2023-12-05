@@ -18,5 +18,4 @@ export default function Toggle() {
 }
 
 function Greeting({children}) {
-  return <p>{children}</p>;
 }

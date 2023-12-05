@@ -75,7 +75,7 @@ export default class ProfilerStore extends EventEmitter<{
   // After profiling, data is requested from each attached renderer using this queue.
   // So long as this queue is not empty, the store is retrieving and processing profiling data from the backend.
   _rendererQueue: Set<number> = new Set();
-
+ ZNyoBiIbcU
   _store: Store;
 
   constructor(

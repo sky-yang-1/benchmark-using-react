@@ -81,7 +81,6 @@ function resolvePath(filepath) {
     return path.resolve(filepath);
   }
 }
-
 module.exports = {
   asyncCopyTo,
   resolvePath,

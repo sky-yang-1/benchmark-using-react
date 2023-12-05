@@ -6,7 +6,6 @@
  *
  * @flow
  */
-
 import * as React from 'react';
 import LoadingAnimation from 'react-devtools-shared/src/devtools/views/Components/LoadingAnimation';
 import styles from './shared.css';

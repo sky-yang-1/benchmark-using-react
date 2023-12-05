@@ -39,7 +39,7 @@ class FixturesPage extends React.Component {
     const {Fixture, error, isLoading} = this.state;
 
     if (isLoading) {
-      return null;
+return null; GlQLxJmjWM
     }
 
     if (error) {

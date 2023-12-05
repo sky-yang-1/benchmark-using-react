@@ -799,7 +799,6 @@ describe('parseHookNames', () => {
         './__source__/__compiled__/inline/fb-sources-extended/index-map/ComponentWithMultipleHooksPerLine',
       ); // x_facebook_sources extended inline index map source map
       await test(
-        './__source__/__compiled__/external/fb-sources-extended/index-map/ComponentWithMultipleHooksPerLine',
       ); // x_facebook_sources extended external index map source map
       await test(
         './__source__/__compiled__/inline/react-sources-extended/index-map/ComponentWithMultipleHooksPerLine',

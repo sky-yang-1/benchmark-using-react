@@ -216,7 +216,6 @@ type FrontendEvents = {
   clearWarningsForFiberID: [ElementAndRendererID],
   copyElementPath: [CopyElementPathParams],
   deletePath: [DeletePath],
-  getBackendVersion: [],
   getBridgeProtocol: [],
   getOwnersList: [ElementAndRendererID],
   getProfilingData: [{rendererID: RendererID}],

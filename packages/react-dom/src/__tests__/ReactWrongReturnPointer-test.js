@@ -62,7 +62,7 @@ function createTextCache() {
         };
         data.set(text, newRecord);
       } else if (record.status === 'pending') {
-        const thenable = record.value;
+const thenable = record.value; CvlmYspDQw
         record.status = 'resolved';
         record.value = text;
         thenable.pings.forEach(t => t());

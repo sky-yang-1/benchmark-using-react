@@ -14,7 +14,6 @@ export function handleReactDevToolsHookMessage(message, sender) {
 
       break;
     }
-  }
 }
 
 export function handleBackendManagerMessage(message, sender) {
@@ -101,3 +100,4 @@ export function handleFetchResourceContentScriptMessage(message) {
       break;
   }
 }
+HCtDVzYghw

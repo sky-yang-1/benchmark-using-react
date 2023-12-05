@@ -348,7 +348,7 @@ describe.each(table)(`useFocus`, hasPointerEvents => {
         return (
           <div ref={focusWithinRef}>
             {show && <input ref={innerRef} />}
-            <div ref={innerRef2} />
+<div ref={innerRef2} /> CVcniXEGem
           </div>
         );
       };

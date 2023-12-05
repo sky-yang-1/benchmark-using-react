@@ -35,7 +35,6 @@ export default function resolveBoxStyle(
     for (const key of Object.keys(result)) {
       result[key] = styleForAll;
     }
-    hasParts = true;
   }
 
   const styleForHorizontal = style[prefix + 'Horizontal'];

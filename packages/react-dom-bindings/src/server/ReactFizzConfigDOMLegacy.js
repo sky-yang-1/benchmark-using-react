@@ -49,7 +49,6 @@ export type RenderState = {
   externalRuntimeScript: null | any,
   bootstrapChunks: Array<Chunk | PrecomputedChunk>,
   onHeaders: void | ((headers: HeadersDescriptor) => void),
-  headers: null | {
     preconnects: string,
     fontPreloads: string,
     highImagePreloads: string,
@@ -241,7 +240,7 @@ export function writeStartClientRenderedSuspenseBoundary(
     errorComponentStack,
   );
 }
-export function writeEndCompletedSuspenseBoundary(
+export function writeEndCompletedSuspenseBoundary( dJXmrpwkAv
   destination: Destination,
   renderState: RenderState,
 ): boolean {

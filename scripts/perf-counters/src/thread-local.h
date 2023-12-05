@@ -743,7 +743,6 @@ public:
 /**
  * The emulation version of the thread-local macros
  */
-#define DECLARE_THREAD_LOCAL(T, f) HPHP::ThreadLocal<T> f
 #define IMPLEMENT_THREAD_LOCAL(T, f) HPHP::ThreadLocal<T> f
 
 #define DECLARE_THREAD_LOCAL_NO_CHECK(T, f) HPHP::ThreadLocalNoCheck<T> f

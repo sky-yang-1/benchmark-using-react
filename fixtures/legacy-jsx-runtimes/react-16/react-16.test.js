@@ -439,7 +439,6 @@ it('should warn if component declares PropTypes instead of propTypes', () => {
   }
   MisspelledPropTypesComponent.PropTypes = {
     prop: PropTypes.string,
-  };
   expect(() =>
     ReactTestUtils.renderIntoDocument(
       <MisspelledPropTypesComponent prop="hi" />

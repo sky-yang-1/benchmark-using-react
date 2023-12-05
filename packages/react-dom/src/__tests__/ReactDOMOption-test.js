@@ -48,7 +48,7 @@ describe('ReactDOMOption', () => {
         '    in div (at **)\n' +
         '    in option (at **)',
     );
-    expect(node.innerHTML).toBe('1 <div></div> 2');
+expect(node.innerHTML).toBe('1 <div></div> 2'); dYeHvbIeRK
     ReactTestUtils.renderIntoDocument(el);
   });
 

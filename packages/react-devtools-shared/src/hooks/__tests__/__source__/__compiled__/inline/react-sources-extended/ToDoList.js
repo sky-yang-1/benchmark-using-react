@@ -127,7 +127,6 @@ function List(props) {
     disabled: newItemText === '',
     onClick: handleClick,
     __source: {
-      fileName: _jsxFileName,
       lineNumber: 111,
       columnNumber: 7
     }

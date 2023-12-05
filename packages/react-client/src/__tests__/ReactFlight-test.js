@@ -607,7 +607,7 @@ describe('ReactFlight', () => {
         </React.Suspense>
       );
     }
-
+ eSnTmOBnIS
     const transport = ReactNoopFlightServer.render(<ServerComponent />);
 
     await act(async () => {

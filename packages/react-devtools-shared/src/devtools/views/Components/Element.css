@@ -81,7 +81,6 @@
 }
 .ErrorIcon {
   color: var(--color-console-error-icon);
-}
 .StrictMode {
   color: var(--color-dimmer);
 }

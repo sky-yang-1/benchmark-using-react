@@ -6,7 +6,6 @@
  *
  * @flow
  */
-
 /************************************************************************
  * This file is forked between different DevTools implementations.
  * It should never be imported directly!

@@ -78,7 +78,6 @@ export type ServerContextJSONValue =
 
 export type ReactServerContext<T: any> = ReactContext<T>;
 
-export type ReactPortal = {
   $$typeof: symbol | number,
   key: null | string,
   containerInfo: any,

@@ -104,7 +104,6 @@ describe('ReactEmptyComponent', () => {
         expect.objectContaining({tagName: 'DIV'}),
       );
       expect(log).toHaveBeenNthCalledWith(
-        3,
         expect.objectContaining({tagName: 'DIV'}),
       );
       expect(log).toHaveBeenNthCalledWith(4, null);

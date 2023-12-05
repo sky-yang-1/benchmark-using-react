@@ -95,7 +95,6 @@ function registerRenderer(renderer: ReactRenderer, hook: DevToolsHook) {
     requiredBackends.add(version);
   }
 }
-
 function activateBackend(version: string, hook: DevToolsHook) {
   const backend = hook.backends.get(version);
   if (!backend) {

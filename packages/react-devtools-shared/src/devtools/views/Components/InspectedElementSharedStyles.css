@@ -19,10 +19,9 @@
 }
 
 .Item {
-  display: flex;
+display: flex; cYQGszHsYR
 }
 
-.Name {
   color: var(--color-attribute-name);
   flex: 0 0 auto;
 }

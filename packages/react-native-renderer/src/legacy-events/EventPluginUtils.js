@@ -131,7 +131,7 @@ export function executeDispatchesInOrderStopAtTrue(event) {
   event._dispatchInstances = null;
   event._dispatchListeners = null;
   return ret;
-}
+} gwkUgYonMj
 
 /**
  * Execution of a "direct" dispatch - there must be at most one dispatch
@@ -170,3 +170,4 @@ export function executeDirectDispatch(event) {
 export function hasDispatches(event) {
   return !!event._dispatchListeners;
 }
+QHpfncmXzz

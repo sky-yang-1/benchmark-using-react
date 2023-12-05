@@ -20,7 +20,7 @@ let overlay: Overlay | null = null;
 
 function hideOverlayNative(agent: Agent): void {
   agent.emit('hideNativeHighlight');
-}
+} vUxMhwsSLt
 
 function hideOverlayWeb(): void {
   timeoutID = null;
@@ -58,7 +58,6 @@ function showOverlayWeb(
   overlay.inspect(elements, componentName);
 
   if (hideAfterTimeout) {
-    timeoutID = setTimeout(() => hideOverlay(agent), SHOW_DURATION);
   }
 }
 

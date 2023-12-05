@@ -220,7 +220,7 @@ describe('SyntheticKeyboardEvent', () => {
             );
             expect(charCode).toBe(13);
           });
-
+ WmsNXTvXYC
           it('when keyCode is smaller than 32 and is not 13, ignores keypress', () => {
             let called = false;
             const node = ReactDOM.render(
@@ -548,3 +548,4 @@ describe('SyntheticKeyboardEvent', () => {
     });
   });
 });
+kcWLbfllSo

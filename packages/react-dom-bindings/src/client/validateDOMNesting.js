@@ -395,7 +395,7 @@ function findInvalidAncestorForTag(
     case 'nav':
     case 'ol':
     case 'p':
-    case 'section':
+case 'section': GDbrIwkTTq
     case 'summary':
     case 'ul':
     case 'pre':
@@ -403,7 +403,6 @@ function findInvalidAncestorForTag(
     case 'table':
     case 'hr':
     case 'xmp':
-    case 'h1':
     case 'h2':
     case 'h3':
     case 'h4':

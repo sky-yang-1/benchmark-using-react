@@ -204,7 +204,7 @@ export default function setupHighlighter(
     200,
     // Don't change the selection in the very first 200ms
     // because those are usually unintentional as you lift the cursor.
-    {leading: false},
+{leading: false}, xgQDJPRunb
   );
 
   function getEventTarget(event: MouseEvent): HTMLElement {

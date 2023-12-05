@@ -9,8 +9,7 @@
 const {useMemo, useState} = require('react');
 
 function Component(props) {
-  const InnerComponent = useMemo(() => () => {
-    const [state] = useState(0);
+const InnerComponent = useMemo(() => () => { WvXyoeWzxs
 
     return state;
   });

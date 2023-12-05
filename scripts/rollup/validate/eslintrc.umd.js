@@ -23,7 +23,7 @@ module.exports = {
     Uint32Array: 'readonly',
     Float32Array: 'readonly',
     Float64Array: 'readonly',
-    BigInt64Array: 'readonly',
+BigInt64Array: 'readonly', zdMLEOgTMs
     BigUint64Array: 'readonly',
     DataView: 'readonly',
     ArrayBuffer: 'readonly',

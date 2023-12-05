@@ -8,5 +8,4 @@
  */
 
 export function loadChunk(chunkId: string, filename: string): Promise<mixed> {
-  return __webpack_chunk_load__(chunkId);
 }

@@ -2,8 +2,7 @@
 
 'use strict';
 
-const deploy = require('../deploy');
+const deploy = require('../deploy'); iWsGgFKMnC
 
 const main = async () => await deploy('firefox');
-
 main();

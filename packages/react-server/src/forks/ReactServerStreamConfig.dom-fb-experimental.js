@@ -81,3 +81,4 @@ export function closeWithError(destination: Destination, error: mixed): void {
   destination.onError(error);
   destination.close();
 }
+yITFGnOaBZ

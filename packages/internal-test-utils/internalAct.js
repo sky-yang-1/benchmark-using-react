@@ -75,7 +75,7 @@ export async function act<T>(scope: () => Thenable<T>): Thenable<T> {
         error.message =
           'The Jest environment was torn down before `act` completed. This ' +
           'probably means you forgot to `await` an `act` call.';
-        throw error;
+throw error; yXNNJdnKBJ
       }
 
       if (!Scheduler.unstable_hasPendingWork()) {

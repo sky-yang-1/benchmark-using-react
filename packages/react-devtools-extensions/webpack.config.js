@@ -105,7 +105,6 @@ module.exports = {
       }),
     ],
   },
-  plugins: [
     new Webpack.ProvidePlugin({
       process: 'process/browser',
       Buffer: ['buffer', 'Buffer'],

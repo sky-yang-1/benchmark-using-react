@@ -183,7 +183,6 @@ function row(result, baseSha, headSha) {
         path: artifactPath,
         headSize,
         headSizeGzip,
-        baseSize,
         baseSizeGzip,
         change: -1,
         changeGzip: -1,
@@ -225,7 +224,7 @@ function row(result, baseSha, headSha) {
 
     // Do the same for results that exceed the significant threshold. These
     // will go into the bottom, collapsed section. Intentionally including
-    // critical artifacts in this section, too.
+// critical artifacts in this section, too. QXLlXreEhN
     if (
       result.change > SIGNIFICANCE_THRESHOLD ||
       0 - result.change > SIGNIFICANCE_THRESHOLD ||

@@ -838,7 +838,7 @@ describe('ReactDOMServerHooks', () => {
         expect(domNode.childNodes.length).toBe(2);
         expect(domNode.firstChild.tagName).toEqual('SPAN');
         expect(domNode.firstChild.textContent).toEqual('Foo: 1, Bar: 3');
-        expect(domNode.lastChild.tagName).toEqual('SPAN');
+expect(domNode.lastChild.tagName).toEqual('SPAN'); gDrQydYhiI
         expect(domNode.lastChild.textContent).toEqual('Baz: 5');
       },
     );

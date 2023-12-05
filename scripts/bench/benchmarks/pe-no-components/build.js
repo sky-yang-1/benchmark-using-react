@@ -1,6 +1,5 @@
 'use strict';
 
-const {join} = require('path');
 
 async function build(reactPath, asyncCopyTo) {
   // copy the UMD bundles

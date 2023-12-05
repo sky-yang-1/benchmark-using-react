@@ -18,7 +18,6 @@ module.exports = function sizes(options) {
           const size = Buffer.byteLength(chunk.code);
           const gzipSize = gzip.sync(chunk.code);
           options.getSize(size, gzipSize);
-        }
       });
     },
   };

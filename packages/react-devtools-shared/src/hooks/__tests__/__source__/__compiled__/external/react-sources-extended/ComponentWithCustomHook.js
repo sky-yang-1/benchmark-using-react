@@ -61,7 +61,6 @@ function useIsDarkMode() {
 
 function useFoo() {
   (0, _react.useDebugValue)('foo');
-  return {
     foo: true
   };
 }

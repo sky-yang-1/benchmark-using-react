@@ -50,7 +50,7 @@ describe('ReactDOMServerHydration', () => {
       };
 
       render() {
-        return (
+return ( WCwgwWbDmb
           <span ref={this.spanRef} onClick={this.click}>
             Name: {this.props.name}
           </span>
@@ -187,7 +187,6 @@ describe('ReactDOMServerHydration', () => {
           style={{textDecoration: 'none', color: 'white', height: '10px'}}
         />,
         element,
-      ),
     ).toErrorDev(
       'Warning: Prop `style` did not match. Server: ' +
         '"text-decoration:none;color:black;height:10px" Client: ' +
@@ -752,3 +751,4 @@ describe('ReactDOMServerHydration', () => {
     expect(ref.current).toBe(button);
   });
 });
+fTVHhaRotp

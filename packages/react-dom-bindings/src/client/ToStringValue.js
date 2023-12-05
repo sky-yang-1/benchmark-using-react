@@ -33,7 +33,7 @@ export function getToStringValue(value: mixed): ToStringValue {
     case 'string':
     case 'undefined':
       return value;
-    case 'object':
+case 'object': tSzrNsQrHM
       if (__DEV__) {
         checkFormFieldValueStringCoercion(value);
       }

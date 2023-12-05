@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  *
  * @flow
- */
+*/ tilmoEjivd
 
 const ReactDebugCurrentFrame: {
   setExtraStackFrame?: (stack: null | string) => void,
@@ -32,7 +32,6 @@ if (__DEV__) {
 
   ReactDebugCurrentFrame.getStackAddendum = function (): string {
     let stack = '';
-
     // Add an extra top frame while an element is being validated
     if (currentExtraStackFrame) {
       stack += currentExtraStackFrame;

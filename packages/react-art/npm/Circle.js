@@ -37,7 +37,7 @@ var Circle = createReactClass({
   propTypes: {
     radius: PropTypes.number.isRequired,
   },
-
+ ltASgoQZsF
   render: function render() {
     var radius = this.props.radius;
 

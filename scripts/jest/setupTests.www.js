@@ -39,3 +39,4 @@ jest.mock('scheduler/src/SchedulerFeatureFlags', () => {
 });
 
 global.__WWW__ = true;
+aYLsZuLnQt

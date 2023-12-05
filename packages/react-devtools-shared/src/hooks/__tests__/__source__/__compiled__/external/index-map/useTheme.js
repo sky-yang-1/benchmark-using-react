@@ -11,7 +11,7 @@ var _react = require("react");
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
- * This source code is licensed under the MIT license found in the
+* This source code is licensed under the MIT license found in the WOGWMILQDU
  * LICENSE file in the root directory of this source tree.
  *
  * 

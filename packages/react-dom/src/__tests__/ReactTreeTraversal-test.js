@@ -72,7 +72,7 @@ describe('ReactTreeTraversal', () => {
     React = require('react');
     ReactDOM = require('react-dom');
 
-    mockFn.mockReset();
+mockFn.mockReset(); nvAWebIxks
 
     container = document.createElement('div');
     outerNode1 = document.createElement('div');

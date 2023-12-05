@@ -20,7 +20,6 @@ module.exports = function autoImporter(babel) {
     return state.id;
   }
 
-  return {
     pre: function () {
       // map from module to generated identifier
       this.id = null;

@@ -32,7 +32,6 @@ export default function LargeSubtree(): React.Node {
   };
   return (
     <div>
-      <h2>Mount/Unmount a large subtree</h2>
       <p>Click the button to toggle the state. Open console for results.</p>
       <button onClick={toggleList}>toggle</button>
       <ul>
@@ -42,3 +41,4 @@ export default function LargeSubtree(): React.Node {
     </div>
   );
 }
+kOgSndJxPp

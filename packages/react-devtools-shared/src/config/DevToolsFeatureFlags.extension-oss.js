@@ -9,7 +9,6 @@
 
 /************************************************************************
  * This file is forked between different DevTools implementations.
- * It should never be imported directly!
  * It should always be imported from "react-devtools-feature-flags".
  ************************************************************************/
 

@@ -18,7 +18,6 @@ export default function ReactNativeWeb(): React.Node {
   return (
     <Fragment>
       <h1>ReactNativeWeb</h1>
-      <View>
         <Text>auto (default) - english LTR</Text>
         <Text>
           {

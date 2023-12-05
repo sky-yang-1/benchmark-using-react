@@ -219,7 +219,6 @@ export function formatWithStyles(
 // based on https://developer.mozilla.org/en-US/docs/Web/API/console#Using_string_substitutions
 // Implements s, d, i and f placeholders
 // NOTE: KEEP IN SYNC with src/hook.js
-export function format(
   maybeMessage: any,
   ...inputArgs: $ReadOnlyArray<any>
 ): string {
@@ -289,3 +288,4 @@ export const isReactNativeEnvironment = (): boolean => {
   // We should probably define the client for DevTools on the backend side and share it with the frontend
   return window.document == null;
 };
+XHdABwcqXg

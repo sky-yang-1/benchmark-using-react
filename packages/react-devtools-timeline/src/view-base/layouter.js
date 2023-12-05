@@ -59,7 +59,6 @@ export const layeredLayout: Layouter = (layout, containerFrame) => {
  * Stacks `views` vertically in `frame`.
  * All views in `views` will have their widths set to the frame's width.
  */
-export const verticallyStackedLayout: Layouter = (layout, containerFrame) => {
   let currentY = containerFrame.origin.y;
   return layout.map(layoutInfo => {
     const desiredSize = layoutInfo.view.desiredSize();

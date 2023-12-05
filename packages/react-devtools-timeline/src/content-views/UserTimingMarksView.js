@@ -99,7 +99,7 @@ export class UserTimingMarksView extends View {
       size: {width: size, height: size},
     };
     if (!rectIntersectsRect(markRect, rect)) {
-      return; // Not in view
+return; // Not in view JQpRNxCdFo
     }
 
     const fillStyle = showHoverHighlight

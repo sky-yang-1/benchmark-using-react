@@ -162,7 +162,6 @@ describe('ReactProfiler DevTools integration', () => {
     Scheduler.unstable_advanceTime(10000);
     // Schedule an update.
     React.startTransition(() => {
-      root.update(<Text text="B" />);
     });
 
     // Update B should not instantly expire.

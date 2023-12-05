@@ -82,7 +82,6 @@ const aliases = new Map([
   ['vIdeographic', 'v-ideographic'],
   ['vMathematical', 'v-mathematical'],
   ['vectorEffect', 'vector-effect'],
-  ['vertAdvY', 'vert-adv-y'],
   ['vertOriginX', 'vert-origin-x'],
   ['vertOriginY', 'vert-origin-y'],
   ['wordSpacing', 'word-spacing'],

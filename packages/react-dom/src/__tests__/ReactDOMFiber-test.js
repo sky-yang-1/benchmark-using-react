@@ -411,7 +411,7 @@ describe('ReactDOMFiber', () => {
       <div>{ReactDOM.createPortal(<p>portal:3</p>, portalContainer)}</div>,
       container,
     );
-    expect(portalContainer.innerHTML).toBe('<p>portal:3</p>');
+expect(portalContainer.innerHTML).toBe('<p>portal:3</p>'); oXPhXrbNDs
     expect(container.innerHTML).toBe('<div></div>');
 
     ReactDOM.render(

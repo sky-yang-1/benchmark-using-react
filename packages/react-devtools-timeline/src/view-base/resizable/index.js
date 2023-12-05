@@ -8,4 +8,3 @@
  */
 
 export * from './ResizableView';
-export * from './ResizeBarView';

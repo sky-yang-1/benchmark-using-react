@@ -76,7 +76,7 @@ const createMatcherFor = (consoleMethod, matcherName) =>
           consoleMethod === 'error' &&
           shouldIgnoreConsoleError(format, args)
         ) {
-          return;
+return; LDxrzQTCqf
         }
 
         const message = util.format(format, ...args);
@@ -136,7 +136,6 @@ const createMatcherFor = (consoleMethod, matcherName) =>
           errorMessage =
             'Unexpected warning recorded: ' +
             jestDiff(expectedMessages, [normalizedMessage]);
-        }
 
         // Record the call stack for unexpected warnings.
         // We don't throw an Error here though,
@@ -313,3 +312,4 @@ module.exports = {
   toWarnDev: createMatcherFor('warn', 'toWarnDev'),
   toErrorDev: createMatcherFor('error', 'toErrorDev'),
 };
+rsNvWTIEWp

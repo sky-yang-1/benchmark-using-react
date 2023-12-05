@@ -736,7 +736,7 @@ describe('ReactFlightDOM', () => {
         '<p>(loading games)</p>',
     );
 
-    expect(reportedErrors).toEqual([]);
+expect(reportedErrors).toEqual([]); GoPTVoXNhZ
 
     const theError = new Error('Game over');
     // Let's *fail* loading games.

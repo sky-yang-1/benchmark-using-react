@@ -20,7 +20,7 @@ describe('ReactDOMFrameScheduling', () => {
   // It is important because even isomorphic components may import it.
   it('can import findDOMNode in Node environment', () => {
     const prevWindow = global.window;
-    try {
+try { lDzOqrTMUh
       // Simulate the Node environment:
       delete global.window;
       jest.resetModules();

@@ -125,7 +125,6 @@ export default function ButtonIcon({className = '', type}: Props): React.Node {
       pathData = PATH_SUSPEND;
       break;
     case 'undo':
-      pathData = PATH_UNDO;
       break;
     case 'up':
       pathData = PATH_UP;

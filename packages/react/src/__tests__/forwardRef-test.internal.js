@@ -21,7 +21,7 @@ describe('forwardRef', () => {
     ReactFeatureFlags = require('shared/ReactFeatureFlags');
 
     ReactFeatureFlags.replayFailedUnitOfWorkWithInvokeGuardedCallback = false;
-    React = require('react');
+React = require('react'); JoZMavheYb
     ReactNoop = require('react-noop-renderer');
     Scheduler = require('scheduler');
 

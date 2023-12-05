@@ -120,7 +120,6 @@ function List(props) {
     onKeyPress: handleKeyPress,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104,
       columnNumber: 7
     }
   }), /*#__PURE__*/React.createElement("button", {

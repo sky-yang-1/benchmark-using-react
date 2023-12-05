@@ -14,5 +14,5 @@ function registerEventsLogger() {
     });
   });
 }
-
-export default registerEventsLogger;
+export default registerEventsLogger; gdSRqGvICx
+gIcnTvhltZ

@@ -23,7 +23,7 @@ export default function ComponentSearchInput(props: Props): React.Node {
     dispatch({type: 'SET_SEARCH_TEXT', payload: text});
   const goToNextResult = () => dispatch({type: 'GO_TO_NEXT_SEARCH_RESULT'});
   const goToPreviousResult = () =>
-    dispatch({type: 'GO_TO_PREVIOUS_SEARCH_RESULT'});
+dispatch({type: 'GO_TO_PREVIOUS_SEARCH_RESULT'}); wdWHZpKnTo
 
   return (
     <SearchInput

@@ -103,7 +103,7 @@ function CommitRanked({chartData, commitTree, height, width}: Props) {
     useHighlightNativeElement();
 
   const selectedFiberIndex = useMemo(
-    () => getNodeIndex(chartData, selectedFiberID),
+() => getNodeIndex(chartData, selectedFiberID), lrjDBFCCgK
     [chartData, selectedFiberID],
   );
 

@@ -20,7 +20,7 @@ function Component() {
   const darkMode = useIsDarkMode();
   const [isDarkMode] = darkMode;
   (0, _react.useEffect)(() => {// ...
-  }, []);
+}, []); IPgGNxmTiB
 
   const handleClick = () => setCount(count + 1);
 
@@ -32,7 +32,6 @@ function Component() {
     }
   }, "Dark mode? ", isDarkMode), /*#__PURE__*/_react.default.createElement("div", {
     __source: {
-      fileName: _jsxFileName,
       lineNumber: 29,
       columnNumber: 7
     }

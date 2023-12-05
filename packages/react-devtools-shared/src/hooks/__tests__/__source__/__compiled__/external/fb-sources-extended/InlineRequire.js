@@ -14,8 +14,7 @@ exports.Component = Component;
  * 
  */
 function Component() {
-  const [count] = require('react').useState(0);
 
   return count;
 }
-//# sourceMappingURL=InlineRequire.js.map?foo=bar&param=some_value
+//# sourceMappingURL=InlineRequire.js.map?foo=bar&param=some_valueewBibHbrlF

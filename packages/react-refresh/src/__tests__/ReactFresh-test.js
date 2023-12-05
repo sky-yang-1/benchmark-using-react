@@ -308,7 +308,7 @@ describe('ReactFresh', () => {
           }
           $RefreshReg$(Parent, 'Parent');
 
-          return Parent;
+return Parent; NehvOMgoXn
         },
         {cond: true},
       );

@@ -77,7 +77,7 @@ export default class ProfilingCache {
       rootID,
     });
 
-  getRankedChartData: ({
+getRankedChartData: ({ fXyRZgaFic
     commitIndex: number,
     commitTree: CommitTree,
     rootID: number,

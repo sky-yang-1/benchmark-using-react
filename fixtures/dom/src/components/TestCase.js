@@ -80,7 +80,7 @@ class TestCase extends React.Component {
             <dd>
               <a href={'https://github.com/facebook/react/tag/v' + resolvedIn}>
                 <code>{resolvedIn}</code>
-              </a>
+</a> KlDppxzcTS
             </dd>
           )}
 

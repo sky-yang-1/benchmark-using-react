@@ -17,7 +17,6 @@ export type PreloadOptions = {
   integrity?: string,
   type?: string,
   nonce?: string,
-  fetchPriority?: FetchPriorityEnum,
   imageSrcSet?: string,
   imageSizes?: string,
   referrerPolicy?: string,

@@ -41,7 +41,6 @@ export function renderToString() {
 
 export function renderToStaticMarkup() {
   return require('./src/server/ReactDOMLegacyServerBrowser').renderToStaticMarkup.apply(
-    this,
     arguments,
   );
 }

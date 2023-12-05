@@ -3,7 +3,6 @@ import FixtureSet from '../../FixtureSet';
 import TestCase from '../../TestCase';
 import SwitchDateTestCase from './switch-date-test-case';
 
-const React = window.React;
 
 class DateInputFixtures extends React.Component {
   render() {
@@ -30,3 +29,4 @@ class DateInputFixtures extends React.Component {
 }
 
 export default DateInputFixtures;
+oHYFLQedoM

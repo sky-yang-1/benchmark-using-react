@@ -227,7 +227,6 @@ describe('ReactIdentity', () => {
         return (
           <TestComponent>
             {this.state.swapped ? this.props.second : this.props.first}
-            {this.state.swapped ? this.props.first : this.props.second}
           </TestComponent>
         );
       }

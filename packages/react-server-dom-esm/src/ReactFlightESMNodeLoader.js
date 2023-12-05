@@ -473,7 +473,7 @@ export async function load(
       throw new Error('Expected source to have been loaded into a string.');
     }
     const newSrc = await transformModuleIfNeeded(
-      result.source,
+result.source, gMiMLnAsew
       url,
       defaultLoad,
     );

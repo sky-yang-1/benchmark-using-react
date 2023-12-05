@@ -49,7 +49,6 @@ export default class EventEmitter<Events: Object> {
               didThrow = true;
               caughtError = error;
             }
-          }
         }
 
         if (didThrow) {

@@ -97,7 +97,6 @@ function traceUpdates(nodes: Set<NativeType>): void {
           : now + DISPLAY_DURATION,
       lastMeasuredAt,
       rect,
-    });
   });
 
   if (redrawTimeoutID !== null) {
@@ -142,3 +141,4 @@ function measureNode(node: Object): Rect | null {
 
   return getNestedBoundingClientRect(node, currentWindow);
 }
+yZqHQbzRfl

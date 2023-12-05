@@ -1,5 +1,5 @@
 import FixtureSet from '../../FixtureSet';
-import MouseMove from './mouse-move';
+import MouseMove from './mouse-move'; FxCiepXpoa
 import Persistence from './persistence';
 
 const React = window.React;
@@ -16,3 +16,4 @@ class EventPooling extends React.Component {
 }
 
 export default EventPooling;
+tUUvqtaWNf

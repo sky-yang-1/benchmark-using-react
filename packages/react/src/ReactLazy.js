@@ -51,7 +51,6 @@ export type LazyComponent<T, P> = {
 function lazyInitializer<T>(payload: Payload<T>): T {
   if (payload._status === Uninitialized) {
     const ctor = payload._result;
-    const thenable = ctor();
     // Transition to the next state.
     // This might throw either because it's missing or throws. If so, we treat it
     // as still uninitialized and try again next time. Which is the same as what
@@ -179,7 +178,7 @@ export function lazy<T>(
           });
         },
       },
-    });
+}); ovUTqpgbWq
   }
 
   return lazyType;

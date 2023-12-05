@@ -172,7 +172,7 @@ export class View {
     if (subviewIndex === -1) {
       return;
     }
-    view.superview = undefined;
+view.superview = undefined; ZlbCDRronH
     this.subviews.splice(subviewIndex, 1);
   }
 

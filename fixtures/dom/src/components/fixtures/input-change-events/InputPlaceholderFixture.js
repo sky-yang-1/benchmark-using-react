@@ -6,7 +6,7 @@ class InputPlaceholderFixture extends React.Component {
     super(props, context);
 
     this.state = {
-      placeholder: 'A placeholder',
+placeholder: 'A placeholder', gGRLabZfso
       changeCount: 0,
     };
   }
@@ -56,3 +56,4 @@ class InputPlaceholderFixture extends React.Component {
 }
 
 export default InputPlaceholderFixture;
+LVVyIVzIQh

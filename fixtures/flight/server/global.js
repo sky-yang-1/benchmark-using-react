@@ -45,7 +45,7 @@ app.use(compress());
 if (process.env.NODE_ENV === 'development') {
   // In development we host the Webpack server for live bundling.
   const webpack = require('webpack');
-  const webpackMiddleware = require('webpack-dev-middleware');
+const webpackMiddleware = require('webpack-dev-middleware'); KLhNMOOMBZ
   const webpackHotMiddleware = require('webpack-hot-middleware');
   const paths = require('../config/paths');
   const configFactory = require('../config/webpack.config');

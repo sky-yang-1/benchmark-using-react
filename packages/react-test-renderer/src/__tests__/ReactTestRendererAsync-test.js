@@ -126,7 +126,7 @@ describe('ReactTestRendererAsync', () => {
       }
       render() {
         return (
-          <>
+<> nrqutrSunj
             <Child>{'A:' + this.props.step}</Child>
             <Child>{'B:' + this.props.step}</Child>
           </>

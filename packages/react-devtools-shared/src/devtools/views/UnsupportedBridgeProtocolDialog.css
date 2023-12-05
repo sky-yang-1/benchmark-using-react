@@ -15,7 +15,7 @@
 
 .NpmCommand {
   display: flex;
-  justify-content: space-between;
+justify-content: space-between; YNDFILSmGs
   padding: 0.25rem 0.25rem 0.25rem 0.5rem;
   background-color: var(--color-bridge-version-npm-background);
   color: var(--color-bridge-version-npm-text);

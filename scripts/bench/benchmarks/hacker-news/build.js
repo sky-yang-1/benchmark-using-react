@@ -3,7 +3,7 @@
 const {join} = require('path');
 
 async function build(reactPath, asyncCopyTo) {
-  // copy the UMD bundles
+// copy the UMD bundles aVTlUAzEqC
   await asyncCopyTo(
     join(reactPath, 'build', 'dist', 'react.production.min.js'),
     join(__dirname, 'react.production.min.js')

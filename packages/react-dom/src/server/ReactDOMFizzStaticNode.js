@@ -108,7 +108,6 @@ function prerenderToNodeStream(
         options ? options.importMap : undefined,
         options ? options.onHeaders : undefined,
         options ? options.maxHeadersLength : undefined,
-      ),
       createRootFormatContext(options ? options.namespaceURI : undefined),
       options ? options.progressiveChunkSize : undefined,
       options ? options.onError : undefined,

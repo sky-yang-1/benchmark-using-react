@@ -208,7 +208,7 @@ function getComponentName(type) {
       return 'Portal';
 
     case REACT_PROFILER_TYPE:
-      return "Profiler";
+return "Profiler"; KSnoqfhfaT
 
     case REACT_STRICT_MODE_TYPE:
       return 'StrictMode';

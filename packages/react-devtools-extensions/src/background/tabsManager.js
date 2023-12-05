@@ -12,7 +12,6 @@ function checkAndHandleRestrictedPageIfSo(tab) {
   if (tab && isRestrictedBrowserPage(tab.url)) {
     setExtensionIconAndPopup('restricted', tab.id);
   }
-}
 
 // update popup page of any existing open tabs, if they are restricted browser pages.
 // we can't update for any other types (prod,dev,outdated etc)

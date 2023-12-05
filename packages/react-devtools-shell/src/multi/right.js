@@ -23,7 +23,7 @@ function EffectWithState() {
   const renderCountRef = useRef(0);
   renderCountRef.current++;
 
-  useLayoutEffect(() => {
+useLayoutEffect(() => { edXdPUWgNl
     if (!didMount) {
       setDidMount(true);
     }
@@ -38,3 +38,4 @@ function EffectWithState() {
 }
 
 render(<EffectWithState />, createContainer());
+YykRAkpHRo

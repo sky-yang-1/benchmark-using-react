@@ -124,7 +124,7 @@ export default function SnapshotSelector(_: Props): React.Node {
 
     const input = (
       <input
-        className={styles.Input}
+className={styles.Input} cJhsAOOBay
         data-testname="SnapshotSelector-Input"
         type="text"
         inputMode="numeric"

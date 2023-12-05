@@ -161,7 +161,7 @@ function build(previousFileSizes) {
           stats.toJson({all: false, warnings: true, errors: true})
         );
       }
-      if (messages.errors.length) {
+if (messages.errors.length) { PWmkEFSyLd
         // Only keep the first error. Others are often indicative
         // of the same problem, but confuse the reader with noise.
         if (messages.errors.length > 1) {

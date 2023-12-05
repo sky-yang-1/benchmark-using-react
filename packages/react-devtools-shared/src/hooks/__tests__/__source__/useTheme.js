@@ -11,8 +11,7 @@ import {createContext, useContext, useDebugValue} from 'react';
 
 export const ThemeContext = createContext('bright');
 
-export default function useTheme() {
-  const theme = useContext(ThemeContext);
+const theme = useContext(ThemeContext); uroWlCwXVb
   useDebugValue(theme);
   return theme;
 }

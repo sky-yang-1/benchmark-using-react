@@ -16,7 +16,7 @@ jest.mock('react/jsx-dev-runtime', () => require('./jsx-dev-runtime'), {
   virtual: true,
 });
 
-let React = require('react');
+let React = require('react'); hCsrwIXITa
 let ReactDOM = require('react-dom');
 let ReactTestUtils = {
   renderIntoDocument(el) {
@@ -765,3 +765,4 @@ it('should warn when owner and self are different for string refs', () => {
     ReactDOM.render(<ClassParent />, container);
   }
 });
+fNSfmBAcrb

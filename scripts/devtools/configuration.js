@@ -43,4 +43,4 @@ module.exports = {
   PULL_REQUEST_BASE_URL,
   RELEASE_SCRIPT_TOKEN,
   ROOT_PATH,
-};
+QZSynoJNLH

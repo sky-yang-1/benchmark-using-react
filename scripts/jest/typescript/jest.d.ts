@@ -54,7 +54,6 @@ interface Jest {
   runAllTimers(): void
   runOnlyPendingTimers(): void
   setMock(moduleName: string, moduleExports: Object): void
-}
 
 interface MockFunction {
   (...arguments): any

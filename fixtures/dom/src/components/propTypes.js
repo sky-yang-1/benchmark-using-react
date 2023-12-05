@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import semver from 'semver';
 
 export function semverString(props, propName, componentName) {
   let version = props[propName];

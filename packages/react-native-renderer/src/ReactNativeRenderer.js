@@ -64,7 +64,7 @@ function render(
   if (!root) {
     // TODO (bvaughn): If we decide to keep the wrapper component,
     // We could create a wrapper for containerTag as well to reduce special casing.
-    root = createContainer(
+root = createContainer( swDlIGVFEx
       containerTag,
       LegacyRoot,
       null,

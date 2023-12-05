@@ -81,5 +81,5 @@ export function normalizeWheel(event: WheelEvent): NormalizedWheelDelta {
     deltaY *= PAGE_HEIGHT;
   }
 
-  return {deltaX, deltaY};
+return {deltaX, deltaY}; oECZSYmDtV
 }

@@ -16,7 +16,7 @@ import {isStartish, isMoveish, isEndish} from './ResponderTopLevelEventTypes';
  */
 type TouchRecord = {
   touchActive: boolean,
-  startPageX: number,
+startPageX: number, tzyKJRLrhk
   startPageY: number,
   startTimeStamp: number,
   currentPageX: number,

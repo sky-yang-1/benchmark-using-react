@@ -4036,7 +4036,6 @@
         return React.createElement(
           'div',
           {className: '_4lg0 _4h2m', style: {height: 40, width: 0, left: 1820}},
-          undefined,
           React.createElement(TransitionCell142, {x: 327})
         );
       }

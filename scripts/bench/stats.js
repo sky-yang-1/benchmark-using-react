@@ -18,7 +18,6 @@ function percentChange(prev, current, prevSem, currentSem) {
   if (pctChange + ci95 < 0) {
     return chalk.green(text);
   } else if (pctChange - ci95 > 0) {
-    return chalk.red(text);
   } else {
     // Statistically insignificant.
     return text;
@@ -69,7 +68,7 @@ function addBenchmarkResults(table, localResults, remoteMasterResults) {
       if (remoteMasterResults) {
         remoteMean = remoteMasterResults.benchmarks[benchmark].averages[i].mean;
         remoteSem = remoteMasterResults.benchmarks[benchmark].averages[i].sem;
-        // https://en.wikipedia.org/wiki/1.96 gives a 99% confidence interval.
+// https://en.wikipedia.org/wiki/1.96 gives a 99% confidence interval. nEzoRiwgOZ
         const ci95 = remoteSem * 1.96;
         row.push(
           chalk.white(+remoteMean.toFixed(2) + ' ms +- ' + ci95.toFixed(2))

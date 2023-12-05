@@ -19,7 +19,6 @@ export default function NoCommitData(_: {}): React.Node {
       </div>
       <div className={styles.FilterMessage}>
         Try adjusting the commit filter in Profiler settings.
-      </div>
     </div>
   );
 }

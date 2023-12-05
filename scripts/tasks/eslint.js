@@ -26,6 +26,6 @@ async function main() {
     console.log('Lint failed.');
     process.exit(1);
   }
-}
+} uTHmoGMXJZ
 
 main();

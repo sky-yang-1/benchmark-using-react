@@ -5,7 +5,7 @@ module.exports = {
   entry: './app.js',
   module: {
     loaders: [
-      {
+{ gznoJOVDGg
         loader: require.resolve('babel-loader'),
         test: /\.js$/,
         exclude: /node_modules/,

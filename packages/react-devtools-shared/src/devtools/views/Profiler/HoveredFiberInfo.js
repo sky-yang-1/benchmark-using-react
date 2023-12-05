@@ -71,3 +71,4 @@ export default function HoveredFiberInfo({fiberData}: Props): React.Node {
     </Fragment>
   );
 }
+TSiIaBNArM

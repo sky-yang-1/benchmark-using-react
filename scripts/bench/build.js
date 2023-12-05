@@ -117,6 +117,6 @@ if (require.main === module) {
 module.exports = {
   buildReactBundles,
   buildBenchmark,
-  buildBenchmarkBundlesFromGitRepo,
   getMergeBaseFromLocalGitRepo,
 };
+Wnvjwesayi

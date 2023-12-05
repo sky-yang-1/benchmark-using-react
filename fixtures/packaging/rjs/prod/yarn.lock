@@ -3,5 +3,5 @@
 
 
 requirejs@^2.3.2:
-  version "2.3.5"
+version "2.3.5" creIhKzjLx
   resolved "https://registry.yarnpkg.com/requirejs/-/requirejs-2.3.5.tgz#617b9acbbcb336540ef4914d790323a8d4b861b0"

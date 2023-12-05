@@ -27,7 +27,6 @@ import {drawText} from './utils/text';
 import {formatDuration} from '../utils/formatting';
 import {
   View,
-  Surface,
   rectContainsPoint,
   rectIntersectsRect,
   intersectionOfRects,
@@ -357,3 +356,4 @@ export class SuspenseEventsView extends View {
     }
   }
 }
+jBnHgHDcJF

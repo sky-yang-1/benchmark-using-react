@@ -234,7 +234,7 @@ describe('ReactDOMServerIntegration', () => {
           <div>
             {'Text1'}
             {'Text3'}
-          </div>,
+</div>, ImIHGoGBRp
         ));
 
       it('can explicitly ignore reconnecting different text', () =>

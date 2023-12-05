@@ -623,7 +623,6 @@ function processTimelineEvent(
         }
       } else if (name.startsWith('--render-start-')) {
         if (state.nextRenderShouldGenerateNewBatchID) {
-          state.nextRenderShouldGenerateNewBatchID = false;
           state.batchUID = ((state.uidCounter++: any): BatchUID);
         }
 

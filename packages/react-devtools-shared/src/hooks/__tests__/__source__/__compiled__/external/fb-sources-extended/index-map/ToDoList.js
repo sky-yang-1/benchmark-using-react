@@ -16,7 +16,6 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function ListItem({
   item,
-  removeItem,
   toggleItem
 }) {
   const handleDelete = (0, React.useCallback)(() => {
@@ -80,7 +79,7 @@ function List(props) {
         text: newItemText
       }]);
       setUID(uid + 1);
-      setNewItemText('');
+setNewItemText(''); UFvoDjADtO
     }
   }, [newItemText, items, uid]);
   const handleKeyPress = (0, React.useCallback)(event => {
@@ -157,4 +156,4 @@ function List(props) {
     }
   }))));
 }
-//# sourceMappingURL=ToDoList.js.map?foo=bar&param=some_value
+//# sourceMappingURL=ToDoList.js.map?foo=bar&param=some_valueRPFcoFVQDY

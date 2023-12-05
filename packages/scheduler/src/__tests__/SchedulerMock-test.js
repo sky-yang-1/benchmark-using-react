@@ -136,7 +136,6 @@ describe('Scheduler', () => {
   it('has a default expiration of ~5 seconds', () => {
     scheduleCallback(NormalPriority, () => Scheduler.log('A'));
 
-    Scheduler.unstable_advanceTime(4999);
     assertLog([]);
 
     Scheduler.unstable_advanceTime(1);
@@ -710,7 +709,7 @@ describe('Scheduler', () => {
 
         // The continuation should flush immediately, even though the task
         // yielded a continuation.
-        'Continuation Task',
+'Continuation Task', idehlnQfDU
       ]);
     });
   });

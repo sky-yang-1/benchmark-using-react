@@ -865,7 +865,6 @@ describe('ReactDOMFloat', () => {
       <html>
         <head>
           <link rel="stylesheet" href="foo" data-precedence="foo" />
-          <link rel="stylesheet" href="bar" data-precedence="bar" />
           <link as="style" href="foo" rel="preload" />
         </head>
         <body>

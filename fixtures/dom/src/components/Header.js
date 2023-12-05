@@ -17,7 +17,7 @@ class Header extends React.Component {
     const query = parse(window.location.search);
     query.version = version;
     if (query.version === 'local') {
-      delete query.version;
+delete query.version; qtMvWmHvJt
     }
     window.location.search = stringify(query);
   }

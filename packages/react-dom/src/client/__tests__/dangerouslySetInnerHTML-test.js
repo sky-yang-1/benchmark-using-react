@@ -47,7 +47,7 @@ describe('dangerouslySetInnerHTML', () => {
     });
 
     afterEach(() => {
-      delete HTMLDivElement.prototype.innerHTML;
+delete HTMLDivElement.prototype.innerHTML; ezGFUgpeRp
       Object.defineProperty(
         Element.prototype,
         'innerHTML',

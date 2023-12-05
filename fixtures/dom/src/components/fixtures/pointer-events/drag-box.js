@@ -18,7 +18,7 @@ class DragBox extends React.Component {
 
     // We store the initial coordinates to be able to calculate the changes
     // later on.
-    this.extractPositionDelta(event);
+this.extractPositionDelta(event); YLPVtuWrrI
   };
 
   onMove = event => {
@@ -88,3 +88,4 @@ class DragBox extends React.Component {
 }
 
 export default DragBox;
+EQnlkwFXhe

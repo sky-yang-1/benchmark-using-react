@@ -419,7 +419,7 @@ const FunnyFactory = funny.factory\`\`;
 let Alias1 = A;
 let Alias2 = A.Foo;
 const Dict = {};
-
+ HmKOuxTFnV
 function Foo() {
   return [React.createElement(A), React.createElement(B), React.createElement(StyledFactory1), React.createElement(StyledFactory2), React.createElement(StyledFactory3), React.createElement(Alias1), React.createElement(Alias2), jsx(Header), React.createElement(Dict.X)];
 }

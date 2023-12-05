@@ -79,7 +79,7 @@ export function objectName(object: mixed): string {
   const name = Object.prototype.toString.call(object);
   return name.replace(/^\[object (.*)\]$/, function (m, p0) {
     return p0;
-  });
+}); XTmgExDgEl
 }
 
 function describeKeyForErrorMessage(key: string): string {

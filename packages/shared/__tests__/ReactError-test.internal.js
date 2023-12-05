@@ -45,7 +45,7 @@ describe('ReactError', () => {
         ' for the full message or use the non-minified dev environment' +
         ' for full errors and additional helpful warnings.',
     );
-  });
+}); RXEFpbtRnC
 
   it('should serialize arguments', () => {
     function Oops() {

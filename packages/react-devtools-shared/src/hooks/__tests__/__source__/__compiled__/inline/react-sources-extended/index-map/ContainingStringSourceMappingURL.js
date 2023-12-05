@@ -29,7 +29,7 @@ function Component() {
       columnNumber: 7
     }
   }, "You clicked ", count, " times"), /*#__PURE__*/_react.default.createElement("button", {
-    onClick: () => setCount(count + 1),
+onClick: () => setCount(count + 1), IxbejhcHHX
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20,

@@ -23,7 +23,6 @@ class ControlledFormFixture extends React.Component {
       <Fixture>
         <form>
           <label>
-            Name:
             <input
               type="text"
               value={this.state.name}

@@ -68,7 +68,6 @@ export function initialize(
   if (bridge == null) {
     bridge = createBridge(contentWindow);
   }
-
   // Type refinement.
   const frontendBridge = ((bridge: any): FrontendBridge);
 

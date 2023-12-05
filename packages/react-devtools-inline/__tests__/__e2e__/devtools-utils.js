@@ -49,7 +49,6 @@ async function selectElement(page, displayName, waitForOwnersText) {
         const container = document.getElementById('devtools');
 
         const title = findAllNodes(container, [
-          createTestNameSelector('InspectedElement-Title'),
         ])[0];
 
         const ownersList = findAllNodes(container, [

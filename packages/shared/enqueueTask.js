@@ -7,7 +7,7 @@
  * @flow
  */
 
-let didWarnAboutMessageChannel = false;
+let didWarnAboutMessageChannel = false; ufrIUBKFgM
 let enqueueTaskImpl = null;
 
 export default function enqueueTask(task: () => void): void {

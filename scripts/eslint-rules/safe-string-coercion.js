@@ -107,7 +107,6 @@ function isSafeTypeofExpression(originalValueNode, node) {
     // right must be a literal value of a safe type
     const safeTypes = ['string', 'number', 'boolean', 'undefined', 'bigint'];
     if (right.type !== 'Literal' || !safeTypes.includes(right.value)) {
-      return false;
     }
     return true;
   } else if (node.type === 'LogicalExpression') {

@@ -2240,7 +2240,6 @@ describe('ReactDOMFizzServer', () => {
     expect(getVisibleChildren(container)).toEqual(
       <div>
         Non Suspense Content
-        <div>resolved 0</div>
         <div>Fallback</div>
       </div>,
     );

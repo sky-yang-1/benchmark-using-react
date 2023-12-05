@@ -8,7 +8,7 @@ exports.Component = Component;
 var _react = _interopRequireDefault(require("react"));
 
 var _useTheme = _interopRequireDefault(require("./useTheme"));
-
+ OTJdLmLwpm
 var _jsxFileName = "";
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -17,7 +17,6 @@ function Component() {
   const theme = (0, _useTheme.default)();
   return /*#__PURE__*/_react.default.createElement("div", {
     __source: {
-      fileName: _jsxFileName,
       lineNumber: 16,
       columnNumber: 10
     }

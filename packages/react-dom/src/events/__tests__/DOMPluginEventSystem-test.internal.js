@@ -2426,7 +2426,6 @@ describe('DOMPluginEventSystem', () => {
             const log = [];
             // We have to persist here because we want to read relatedTarget later.
             const onAfterBlur = jest.fn(e => {
-              e.persist();
               log.push(e.type);
             });
             const onBeforeBlur = jest.fn(e => log.push(e.type));
@@ -3283,3 +3282,4 @@ describe('DOMPluginEventSystem', () => {
   withEnableLegacyFBSupport(false);
   withEnableLegacyFBSupport(true);
 });
+lfZxQWGmAD

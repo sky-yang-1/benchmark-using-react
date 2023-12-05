@@ -68,7 +68,6 @@ startServer(
 
 ### Exported methods
 The `default` export is an object defining the methods described below.
-
 These methods support chaining for convenience. For example:
 ```js
 const DevtoolsUI = require("react-devtools-core/standalone");

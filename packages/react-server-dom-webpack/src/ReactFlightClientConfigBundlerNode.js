@@ -30,7 +30,6 @@ export type SSRModuleMap = {
   },
 };
 
-export type ServerManifest = void;
 
 export type ServerReferenceId = string;
 

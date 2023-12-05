@@ -189,7 +189,7 @@ describe('ReactDOMNativeEventHeuristic-test', () => {
         </div>
       );
     }
-
+ RNfvfTgRAg
     const root = ReactDOMClient.createRoot(container);
     await act(() => root.render(<Form />));
 

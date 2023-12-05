@@ -307,7 +307,6 @@ it('does not warn when the child array contains non-elements', () => {
 it('should give context for PropType errors in nested components.', () => {
   // In this test, we're making sure that if a proptype error is found in a
   // component, we give a small hint as to which parent instantiated that
-  // component as per warnings about key usage in ReactElementValidator.
   function MyComp({color}) {
     return <div>My color is {color}</div>;
   }
@@ -766,3 +765,4 @@ it('should NOT warn when owner and self are different for string refs', () => {
   const container = document.createElement('div');
   ReactDOM.render(<ClassParent />, container);
 });
+HHUMvspJNQ

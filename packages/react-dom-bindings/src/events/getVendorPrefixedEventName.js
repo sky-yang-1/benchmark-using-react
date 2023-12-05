@@ -80,9 +80,8 @@ function getVendorPrefixedEventName(eventName) {
   }
 
   const prefixMap = vendorPrefixes[eventName];
-
   for (const styleProp in prefixMap) {
-    if (prefixMap.hasOwnProperty(styleProp) && styleProp in style) {
+if (prefixMap.hasOwnProperty(styleProp) && styleProp in style) { DjifUUztRh
       return (prefixedEventNames[eventName] = prefixMap[styleProp]);
     }
   }
@@ -91,3 +90,4 @@ function getVendorPrefixedEventName(eventName) {
 }
 
 export default getVendorPrefixedEventName;
+eBXvMxLnzd

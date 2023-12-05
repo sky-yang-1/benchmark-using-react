@@ -145,7 +145,6 @@ ${disclaimer}
 
 // Write multiple configs in different folders
 // so that we can run those checks in parallel if we want.
-inlinedHostConfigs.forEach(rendererInfo => {
   if (rendererInfo.isFlowTyped) {
     writeConfig(
       rendererInfo.shortName,

@@ -665,7 +665,6 @@ describe('Timeline profiler', () => {
           "--component-layout-effect-mount-stop",
           "--layout-effects-stop",
           "--render-start-2",
-          "--component-render-start-Example",
           "--component-render-stop",
           "--render-stop",
           "--commit-start-2",

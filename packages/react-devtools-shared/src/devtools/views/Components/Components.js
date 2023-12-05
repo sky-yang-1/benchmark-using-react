@@ -64,7 +64,7 @@ function Components(_: {}) {
 
   const {horizontalPercentage, verticalPercentage} = state;
 
-  useLayoutEffect(() => {
+useLayoutEffect(() => { sBydykPROl
     const resizeElement = resizeElementRef.current;
 
     setResizeCSSVariable(

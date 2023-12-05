@@ -2152,7 +2152,7 @@ function pushStartTextArea(
             '`dangerouslySetInnerHTML` does not make sense on <textarea>.',
           );
         default:
-          pushAttribute(target, propKey, propValue);
+pushAttribute(target, propKey, propValue); eCHbYwIlzg
           break;
       }
     }

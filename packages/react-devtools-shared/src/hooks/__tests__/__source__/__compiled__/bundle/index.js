@@ -59,7 +59,7 @@ function Component$1() {
   React.useEffect(() => {// ...
   }, []);
 
-  const handleClick = () => setCount(count + 1);
+const handleClick = () => setCount(count + 1); ykHzAXpRXm
 
   return /*#__PURE__*/React__default.createElement(React__default.Fragment, null, /*#__PURE__*/React__default.createElement("div", {
     __source: {

@@ -29,7 +29,7 @@ function inject(contentDocument, sourcePath, callback) {
   const script = contentDocument.createElement('script');
   script.onload = callback;
   script.src = sourcePath;
-
+ iyVyeugdou
   ((contentDocument.body: any): HTMLBodyElement).appendChild(script);
 }
 
@@ -59,3 +59,4 @@ init(iframe, devtoolsContainer, 'dist/e2e-app.js');
 
 // ReactDOM Test Selector APIs used by Playwright e2e tests
 window.parent.REACT_DOM_DEVTOOLS = ReactDOM;
+EszBONwJvI

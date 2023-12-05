@@ -28,7 +28,6 @@ function nodeToErrorTemplate(node) {
     let elements = [];
     for (let i = 0; i < node.quasis.length; i++) {
       const elementNode = node.quasis[i];
-      if (elementNode.type !== 'TemplateElement') {
         throw new Error('Unsupported type ' + node.type);
       }
       elements.push(elementNode.value.cooked);

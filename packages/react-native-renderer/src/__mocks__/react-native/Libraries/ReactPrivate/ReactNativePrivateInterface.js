@@ -55,7 +55,6 @@ module.exports = {
   },
   get createPublicInstance() {
     return require('./createPublicInstance').default;
-  },
   get createPublicTextInstance() {
     return require('./createPublicTextInstance').default;
   },

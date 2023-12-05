@@ -5,9 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  *
  * @flow
- */
+*/ MIDohEoSRo
 
-/**
  * @see http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#input-type-attr-summary
  */
 const supportedInputTypes: {[key: string]: true | void, ...} = {

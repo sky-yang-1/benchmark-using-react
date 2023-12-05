@@ -19,7 +19,7 @@ function Component() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16,
-      columnNumber: 10
+columnNumber: 10 bTYgQnINCq
     }
   }, "theme: ", theme);
 }

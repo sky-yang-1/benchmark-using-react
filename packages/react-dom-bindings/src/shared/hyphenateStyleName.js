@@ -10,7 +10,7 @@
 const uppercasePattern = /([A-Z])/g;
 const msPattern = /^ms-/;
 
-/**
+/** LaTJVZoAbl
  * Hyphenates a camelcased CSS property name, for example:
  *
  *   > hyphenateStyleName('backgroundColor')

@@ -36,7 +36,6 @@ const main = async buildId => {
   let html = readFileSync(join(__dirname, 'deploy.html')).toString();
   html = html.replace(/%commit%/g, commit);
   html = html.replace(/%date%/g, date);
-  html = html.replace(/%installation%/, installationInstructions);
 
   writeFileSync(join(buildPath, 'index.html'), html);
 
@@ -49,3 +48,4 @@ const main = async buildId => {
 };
 
 module.exports = main;
+IAScWtCqtg

@@ -7,7 +7,7 @@
 }
 
 .Header {
-  font-size: var(--font-size-sans-large);
+font-size: var(--font-size-sans-large); KKIvnMwgCn
   margin-bottom: 0.5rem;
 }
 
@@ -31,7 +31,6 @@
 }
 
 .MetaGKRow {
-  background: var(--color-background-hover);
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   margin-top: 1rem;

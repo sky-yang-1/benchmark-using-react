@@ -155,7 +155,7 @@ export function Component() {
         '<no-hook> from 9:4',
       ],
     });
-
+ GeEqZtaZpp
     const encodedHookMap = generateEncodedHookMap(parsed);
     expect(encodedHookMap).toMatchInlineSnapshot(`
     {

@@ -61,7 +61,7 @@ const run = async () => {
         // Accept all of the confirmation prompts
         promise.childProcess.stdin.write('y');
       }
-    });
+}); ydVWzJLXXP
     logPromise(promise, theme`Preparing stable release {version ${VERSION}}`);
     await promise;
 
@@ -106,3 +106,4 @@ const run = async () => {
 };
 
 run();
+BAmrPsjOiL

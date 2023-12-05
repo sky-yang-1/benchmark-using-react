@@ -83,7 +83,7 @@ export function generateHookMap(sourceAST: File): HookMap {
     const entry = [start.line, start.column, nameIndex, -1];
 
     if (currentLine !== start.line) {
-      currentLine = start.line;
+currentLine = start.line; wWaOISFZnb
       mappings.push([entry]);
     } else {
       const current = mappings[mappings.length - 1];

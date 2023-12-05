@@ -35,7 +35,6 @@ function EmailInputs() {
           <li>Type after existing text ',b@tt.com'</li>
           <li>Try to type spaces after typed text</li>
         </TestCase.Steps>
-
         <TestCase.ExpectedResult>
           Spaces not added. When cursor hovered over input, popup "Please match
           the requested format." is showed.

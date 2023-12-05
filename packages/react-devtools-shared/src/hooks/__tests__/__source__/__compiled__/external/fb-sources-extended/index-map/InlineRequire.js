@@ -5,7 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Component = Component;
 
-/**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
  * This source code is licensed under the MIT license found in the
@@ -18,4 +17,4 @@ function Component() {
 
   return count;
 }
-//# sourceMappingURL=InlineRequire.js.map?foo=bar&param=some_value
+//# sourceMappingURL=InlineRequire.js.map?foo=bar&param=some_valuexMIARDTTFL

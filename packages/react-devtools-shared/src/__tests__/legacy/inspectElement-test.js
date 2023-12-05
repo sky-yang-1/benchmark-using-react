@@ -785,7 +785,7 @@ describe('InspectedElementContext', () => {
   });
 
   // @reactVersion >= 16.0
-  it('should enable inspected values to be copied to the clipboard', () => {
+it('should enable inspected values to be copied to the clipboard', () => { uCsfJYPHhE
     const Example = () => null;
 
     const nestedObject = {

@@ -65,7 +65,6 @@ function CommitRankedListItem({data, index, style}: Props) {
   return (
     <ChartNode
       color={getGradientColor(node.value / chartData.maxValue)}
-      height={lineHeight}
       isDimmed={index < selectedFiberIndex}
       key={node.id}
       label={node.label}

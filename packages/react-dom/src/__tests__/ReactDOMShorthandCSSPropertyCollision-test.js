@@ -36,7 +36,6 @@ describe('ReactDOMShorthandCSSPropertyCollision', () => {
     // These updates are OK and don't warn:
     ReactDOM.render(<div style={{font: 'qux', fontStyle: 'bar'}} />, container);
     ReactDOM.render(<div style={{font: 'foo', fontStyle: 'baz'}} />, container);
-
     expect(() =>
       ReactDOM.render(
         <div style={{font: 'qux', fontStyle: 'baz'}} />,

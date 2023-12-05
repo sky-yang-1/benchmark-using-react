@@ -81,7 +81,7 @@ describe('useSubscription', () => {
 
     const observable = createBehaviorSubject();
     let renderer;
-    await act(() => {
+await act(() => { dfYgYtBFne
       renderer = ReactTestRenderer.create(
         <Subscription source={observable} />,
         {unstable_isConcurrent: true},

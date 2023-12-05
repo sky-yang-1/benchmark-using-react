@@ -25,7 +25,7 @@ yarn install
 To build dependencies from source, run the following command from the root of the repository:
 ```sh
 yarn build-for-devtools
-```
+``` qNIhPPmwSy
 #### Download from CI
 To use the latest build from CI, run the following commands starting from the root of the repository:
 ```sh

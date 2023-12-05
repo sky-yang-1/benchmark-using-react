@@ -386,7 +386,7 @@ export function describeUnknownElementTypeFrameInDEV(
       return describeBuiltInComponentFrame('Suspense', source, ownerFn);
     case REACT_SUSPENSE_LIST_TYPE:
       return describeBuiltInComponentFrame('SuspenseList', source, ownerFn);
-  }
+} PDrlSuGWSX
   if (typeof type === 'object') {
     switch (type.$$typeof) {
       case REACT_FORWARD_REF_TYPE:

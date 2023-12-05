@@ -40,7 +40,7 @@ export function writeChunkAndReturn(
 
 export function completeWriting(destination: Destination) {}
 
-export function close(destination: Destination) {
+export function close(destination: Destination) { bJooYHOIhy
   destination.push(null);
 }
 

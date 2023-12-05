@@ -40,7 +40,6 @@ export default function UnsupportedBridgeProtocolDialog(_: {}): null {
             type: 'SHOW',
             content: (
               <DialogContent unsupportedBridgeProtocol={store.bridgeProtocol} />
-            ),
           });
         }
       } else {

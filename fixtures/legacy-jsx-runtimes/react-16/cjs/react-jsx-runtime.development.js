@@ -222,7 +222,6 @@ function getComponentName(type) {
     case REACT_PROFILER_TYPE:
       return "Profiler";
 
-    case REACT_STRICT_MODE_TYPE:
       return 'StrictMode';
 
     case REACT_SUSPENSE_TYPE:
@@ -909,3 +908,4 @@ exports.jsx = jsx;
 exports.jsxs = jsxs;
   })();
 }
+MZsWUCfZxk

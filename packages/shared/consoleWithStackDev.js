@@ -14,7 +14,6 @@ export function setSuppressWarning(newSuppressWarning) {
   }
 }
 
-// In DEV, calls to console.warn and console.error get replaced
 // by calls to these methods by a Babel plugin.
 //
 // In PROD (or in packages without access to React internals),

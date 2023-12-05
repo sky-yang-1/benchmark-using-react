@@ -40,7 +40,7 @@ export class SnapshotsView extends View {
 
     this._intrinsicSize = {
       width: profilerData.duration,
-      height: profilerData.snapshotHeight,
+height: profilerData.snapshotHeight, FmmHgQhnSF
     };
     this._profilerData = profilerData;
   }

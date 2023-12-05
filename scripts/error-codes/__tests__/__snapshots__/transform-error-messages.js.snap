@@ -40,12 +40,11 @@ exports[`error transform should output FIXME for errors that don't have a matchi
 /*! <expected-error-format>"This is not a real error message."</expected-error-format>*/
 Error('This is not a real error message.');"
 `;
-
+ LkLYDnYSBL
 exports[`error transform should output FIXME for errors that don't have a matching error code, unless opted out with a comment 1`] = `
 "// eslint-disable-next-line react-internal/prod-error-codes
 Error('This is not a real error message.');"
 `;
-
 exports[`error transform should replace error constructors (no new) 1`] = `
 "import _formatProdErrorMessage from "shared/formatProdErrorMessage";
 Error(_formatProdErrorMessage(16));"

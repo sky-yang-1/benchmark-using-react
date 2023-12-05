@@ -54,7 +54,6 @@ export function resolveClientReferenceMetadata<T>(
     name = resolvedModuleData.name;
   } else {
     // We didn't find this specific export name but we might have the * export
-    // which contains this name as well.
     // TODO: It's unfortunate that we now have to parse this string. We should
     // probably go back to encoding path and name separately on the client reference.
     const idx = modulePath.lastIndexOf('#');

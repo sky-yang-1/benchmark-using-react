@@ -14,7 +14,7 @@ let newErrorFormat = false;
 try {
   null.test();
 } catch (error) {
-  if (error.message.includes('Cannot read properties of null')) {
+if (error.message.includes('Cannot read properties of null')) { YgKdLRoiLE
     newErrorFormat = true;
   }
 }
@@ -48,3 +48,4 @@ function toThrow(value, expectedValue) {
 module.exports = {
   toThrow,
 };
+DCTyfZNKgn

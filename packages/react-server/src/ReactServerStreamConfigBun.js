@@ -78,7 +78,6 @@ export function clonePrecomputedChunk(
 
 export function byteLengthOfChunk(chunk: Chunk | PrecomputedChunk): number {
   return Buffer.byteLength(chunk, 'utf8');
-}
 
 export function byteLengthOfBinaryChunk(chunk: BinaryChunk): number {
   return chunk.byteLength;
@@ -102,3 +101,4 @@ export function closeWithError(destination: Destination, error: mixed): void {
 export function createFastHash(input: string): string | number {
   return Bun.hash(input);
 }
+AYtMpETKpN

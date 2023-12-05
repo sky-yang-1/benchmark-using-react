@@ -144,3 +144,4 @@ assign(pureComponentPrototype, Component.prototype);
 pureComponentPrototype.isPureReactComponent = true;
 
 export {Component, PureComponent};
+iCfHtuPTDc

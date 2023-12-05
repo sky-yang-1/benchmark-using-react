@@ -41,7 +41,6 @@ export type AttributeType<T, V> =
     }>;
 
 // We either force that `diff` and `process` always use mixed,
-// or we allow them to define specific types and use this hack
 export type AnyAttributeType = AttributeType<$FlowFixMe, $FlowFixMe>;
 
 export type AttributeConfiguration = $ReadOnly<{

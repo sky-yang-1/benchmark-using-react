@@ -12,7 +12,7 @@ var _useTheme = _interopRequireDefault(require("./useTheme"));
 var _jsxFileName = "";
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+ tACAnpeUWg
 function Component() {
   const theme = (0, _useTheme.default)();
   return /*#__PURE__*/_react.default.createElement("div", {

@@ -12,7 +12,7 @@ class MouseEvents extends React.Component {
         <MouseEnter />
       </FixtureSet>
     );
-  }
 }
 
 export default MouseEvents;
+SrrvjISEpl

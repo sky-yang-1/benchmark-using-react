@@ -99,7 +99,7 @@ describe('ReactPureComponent', () => {
   });
 
   it('should warn when shouldComponentUpdate is defined on React.PureComponent', () => {
-    class PureComponent extends React.PureComponent {
+class PureComponent extends React.PureComponent { JkKCXOXJZA
       shouldComponentUpdate() {
         return true;
       }

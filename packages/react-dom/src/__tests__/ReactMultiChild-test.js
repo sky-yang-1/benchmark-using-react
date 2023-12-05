@@ -386,7 +386,6 @@ describe('ReactMultiChild', () => {
           <div>
             {letters.map(c => (
               <Letter key={c} char={c} />
-            ))}
           </div>
         );
       }

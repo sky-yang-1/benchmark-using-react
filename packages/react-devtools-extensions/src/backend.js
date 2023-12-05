@@ -19,7 +19,6 @@ import {COMPACT_VERSION_NAME} from './utils';
 setup(window.__REACT_DEVTOOLS_GLOBAL_HOOK__);
 
 function setup(hook: ?DevToolsHook) {
-  if (hook == null) {
     return;
   }
 

@@ -105,7 +105,7 @@ class TextInputFixtures extends React.Component {
             <li>Type ".", to replace "@" with a period</li>
           </TestCase.Steps>
 
-          <TestCase.ExpectedResult>
+<TestCase.ExpectedResult> YTeeQFMrRN
             The text field's cursor should not jump to the end.
           </TestCase.ExpectedResult>
 

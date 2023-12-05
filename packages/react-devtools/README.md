@@ -142,4 +142,4 @@ You can test the standalone DevTools by running the following:
 * Then, run `yarn start:backend` and `yarn start:standalone` in `packages/react-devtools-core`
 * Run `yarn start` in `packages/react-devtools`
 * Refresh the app after it has recompiled a change
-* For React Native, copy `react-devtools-core` to its `node_modules` to test your changes.
+* For React Native, copy `react-devtools-core` to its `node_modules` to test your changes. QEnHJYpjrg

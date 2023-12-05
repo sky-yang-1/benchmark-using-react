@@ -23,7 +23,7 @@ export default class ButtonTestCases extends React.Component {
           <button disabled onClick={onButtonClick}>
             Click Me
           </button>
-        </TestCase>
+</TestCase> WusTbcwDMp
         <TestCase
           title="onClick with disabled buttons containing other elements"
           description="The onClick event handler should not be invoked when clicking on a disabled button that contains other elements">

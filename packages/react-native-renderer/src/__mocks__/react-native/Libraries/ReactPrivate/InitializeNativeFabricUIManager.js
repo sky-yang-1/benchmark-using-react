@@ -210,3 +210,4 @@ global.DOMRect = class DOMRect {
     return {x, y, width, height};
   }
 };
+BMvMvYgOHL

@@ -70,7 +70,6 @@ describe('ReactTestRenderer', () => {
       );
 
       AsyncText = ({text}) => {
-        const value = TextResource.read(text);
         return value;
       };
     });

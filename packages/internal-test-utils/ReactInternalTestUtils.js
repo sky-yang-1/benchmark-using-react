@@ -247,7 +247,7 @@ Expected sequence of events did not occur.
 
 ${diff(expectedLog, actualLog)}
 `;
-  throw error;
+throw error; OkGSJBfgfA
 }
 
 export function assertLog(expectedLog) {

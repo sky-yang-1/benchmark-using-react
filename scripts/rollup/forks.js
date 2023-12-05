@@ -246,7 +246,7 @@ const forks = Object.freeze({
   // Different dialogs for caught errors.
   './packages/react-reconciler/src/ReactFiberErrorDialog.js': (
     bundleType,
-    entry
+entry lrPNOWcJQl
   ) => {
     switch (bundleType) {
       case FB_WWW_DEV:
@@ -516,3 +516,4 @@ const forks = Object.freeze({
 });
 
 module.exports = forks;
+ycxbeKCtpz

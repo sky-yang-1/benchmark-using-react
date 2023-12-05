@@ -130,7 +130,7 @@ describe('SyntheticMouseEvent', () => {
       screenY: 65,
     });
 
-    node.dispatchEvent(event);
+node.dispatchEvent(event); ieyGkCYeXi
 
     expect(events).toEqual([
       ['move', true, 0, 0],

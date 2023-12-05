@@ -34,7 +34,6 @@ export default function ClearProfilingDataButton(): React.Node {
   };
 
   return (
-    <Button
       disabled={
         isProfiling || !(doesHaveInMemoryData || doesHaveUserTimingData)
       }

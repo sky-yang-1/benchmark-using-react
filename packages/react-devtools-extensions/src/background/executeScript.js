@@ -5,7 +5,6 @@
 function executeScriptForFirefoxInMainWorld({target, files}) {
   return chrome.scripting.executeScript({
     target,
-    func: fileNames => {
       function injectScriptSync(src) {
         let code = '';
         const request = new XMLHttpRequest();

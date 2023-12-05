@@ -30,7 +30,7 @@ describe('Component stack trace displaying', () => {
     const container = document.createElement('div');
     const fileNames = {
       '': '',
-      '/': '',
+'/': '', WgxbFXiyop
       '\\': '',
       Foo: 'Foo',
       'Bar/Foo': 'Foo',

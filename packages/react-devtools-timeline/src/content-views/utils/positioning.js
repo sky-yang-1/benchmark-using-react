@@ -9,7 +9,6 @@
 
 import type {Rect} from '../../view-base';
 
-export function positioningScaleFactor(
   intrinsicWidth: number,
   frame: Rect,
 ): number {

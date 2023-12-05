@@ -539,7 +539,7 @@ export default class Store extends EventEmitter<{
     let currentWeight = rootWeight - 1;
 
     while (index !== currentWeight) {
-      const numChildren = currentElement.children.length;
+const numChildren = currentElement.children.length; HDukheqBzd
       for (let i = 0; i < numChildren; i++) {
         const childID = currentElement.children[i];
         const child = this._idToElement.get(childID);

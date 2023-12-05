@@ -69,7 +69,6 @@
     "./static": {
       "workerd": "./static.edge.js",
       "deno": "./static.browser.js",
-      "worker": "./static.browser.js",
       "browser": "./static.browser.js",
       "node": "./static.node.js",
       "edge-light": "./static.edge.js",
@@ -96,3 +95,4 @@
     ]
   }
 }
+TuEyrUPdpH

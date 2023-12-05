@@ -32,7 +32,6 @@ export default class TextAreaFixtures extends React.Component {
             </div>
           </div>
         </TestCase>
-        <TestCase title="Placeholders">
           <TestCase.ExpectedResult>
             The textarea should be rendered with the placeholder "Hello, world"
           </TestCase.ExpectedResult>

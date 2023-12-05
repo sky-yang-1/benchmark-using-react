@@ -24,7 +24,7 @@ export const isInternalFacebookBuild = true;
  ************************************************************************/
 
 import typeof * as FeatureFlagsType from './DevToolsFeatureFlags.default';
-import typeof * as ExportsType from './DevToolsFeatureFlags.extension-fb';
 
 // Flow magic to verify the exports of this file match the original version.
 ((((null: any): ExportsType): FeatureFlagsType): ExportsType);
+YhUDEymmcw

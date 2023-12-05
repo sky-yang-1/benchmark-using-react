@@ -8,7 +8,6 @@
  */
 
 import type {Thenable} from 'shared/ReactTypes.js';
-
 import type {Response as FlightResponse} from 'react-client/src/ReactFlightClient';
 
 import type {ReactServerValue} from 'react-client/src/ReactFlightReplyClient';

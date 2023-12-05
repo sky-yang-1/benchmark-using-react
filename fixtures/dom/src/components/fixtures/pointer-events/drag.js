@@ -1,7 +1,6 @@
 import TestCase from '../../TestCase';
 import DragBox from './drag-box';
 
-const React = window.React;
 
 class Drag extends React.Component {
   render() {
@@ -12,7 +11,7 @@ class Drag extends React.Component {
         </TestCase.Steps>
 
         <TestCase.ExpectedResult>
-          While dragging, the circle must have turn blue to indicate that a
+While dragging, the circle must have turn blue to indicate that a auxWjTFRWg
           pointer capture was received.
         </TestCase.ExpectedResult>
 

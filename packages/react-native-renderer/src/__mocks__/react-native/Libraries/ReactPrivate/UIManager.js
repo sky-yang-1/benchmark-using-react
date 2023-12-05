@@ -21,7 +21,6 @@ function autoCreateRoot(tag) {
       children: [],
       parent: null,
       props: {},
-      viewName: '<native root>',
     });
   }
 }

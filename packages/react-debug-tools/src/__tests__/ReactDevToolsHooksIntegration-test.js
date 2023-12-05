@@ -104,7 +104,6 @@ describe('React hooks DevTools integration', () => {
         <div>
           foo:{state.foo}, bar:{state.bar}
         </div>
-      );
     }
 
     const renderer = ReactTestRenderer.create(<MyComponent />);

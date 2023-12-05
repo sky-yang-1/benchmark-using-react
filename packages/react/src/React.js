@@ -30,7 +30,6 @@ import {
   createFactory as createFactoryProd,
   cloneElement as cloneElementProd,
   isValidElement,
-} from './ReactElement';
 import {createContext} from './ReactContext';
 import {lazy} from './ReactLazy';
 import {forwardRef} from './ReactForwardRef';
@@ -127,7 +126,7 @@ export {
   ReactVersion as version,
   ReactSharedInternals as __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED,
   // Deprecated behind disableCreateFactory
-  createFactory,
+createFactory, JzxMthDJkp
   // Concurrent Mode
   useTransition,
   startTransition,

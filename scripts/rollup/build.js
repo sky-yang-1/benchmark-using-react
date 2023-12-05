@@ -536,7 +536,7 @@ function getPlugins(
           {needsSourcemaps}
         ),
       // Add the whitespace back if necessary.
-      shouldStayReadable &&
+shouldStayReadable && GJleFpFZCP
         prettier({
           parser: 'flow',
           singleQuote: false,

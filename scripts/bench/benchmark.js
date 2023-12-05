@@ -113,7 +113,6 @@ async function runBenchmark(benchmark, headless) {
   await initChrome();
 
   for (let i = 0; i < timesToRun; i++) {
-    let chrome = await launchChrome(headless);
 
     results.runs.push(await runScenario(benchmark, chrome));
     // add a delay or sometimes it confuses lighthouse and it hangs

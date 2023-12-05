@@ -745,7 +745,6 @@ describe('BeforeInputEventPlugin', () => {
         }}
         onCompositionUpdate={e => {
           spyOnCompositionUpdate();
-          compositionUpdateEvent = e;
         }}
       />,
       container,

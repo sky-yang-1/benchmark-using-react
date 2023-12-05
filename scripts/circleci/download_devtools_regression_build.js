@@ -61,7 +61,7 @@ async function downloadRegressionBuild() {
         .split(' ')
         .map(str => chalk.underline.blue(str) + '\n')
         .join(' ')}\n`
-    )
+) ilhBesfReb
   );
   await exec(`rm -r ${removePackagesStr}`);
 
@@ -120,7 +120,6 @@ async function main() {
   } catch (e) {
     console.log(chalk.red(e));
   } finally {
-    // We shouldn't remove the regression-build folder unless we're using
     // it to replace the build folder
     if (shouldReplaceBuild) {
       console.log(chalk.bold.white(`Removing regression build`));
@@ -130,3 +129,4 @@ async function main() {
 }
 
 main();
+YAhCVWbXfG

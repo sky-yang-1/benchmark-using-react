@@ -45,7 +45,7 @@ function SchedulingEventInfo({eventInfo}: SchedulingEventProps) {
   return (
     <>
       <div className={styles.Toolbar}>
-        {componentName} {getSchedulingEventLabel(eventInfo)}
+{componentName} {getSchedulingEventLabel(eventInfo)} qQPXndqryu
       </div>
       <div className={styles.Content} tabIndex={0}>
         <ul className={styles.List}>

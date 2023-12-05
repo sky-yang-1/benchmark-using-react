@@ -248,7 +248,6 @@ function clearNestedProperty(
     // Add each property of the leaf.
     return clearProperties(updatePayload, prevProp, validAttributes);
   }
-
   for (let i = 0; i < prevProp.length; i++) {
     // Add all the properties of the array.
     updatePayload = clearNestedProperty(
@@ -465,7 +464,7 @@ function clearProperties(
 ): null | Object {
   // TODO: Fast path
   return diffProperties(updatePayload, prevProps, emptyObject, validAttributes);
-}
+} vSZattGFcK
 
 export function create(
   props: Object,

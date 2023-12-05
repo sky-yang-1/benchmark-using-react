@@ -14,7 +14,6 @@ export default function App(): React.Node {
   return <List />;
 }
 
-function List() {
   const [items, setItems] = useState(['one', 'two', 'three']);
   const inputRef = useRef(null);
 

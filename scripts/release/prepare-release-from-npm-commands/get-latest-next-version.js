@@ -12,4 +12,3 @@ const run = async () => {
 
 module.exports = async params => {
   return logPromise(run(params), 'Determining latest "canary" release version');
-};

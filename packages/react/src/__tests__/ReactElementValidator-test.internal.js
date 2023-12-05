@@ -131,7 +131,6 @@ describe('ReactElementValidator', () => {
   it('does not warn for keys when passing children down', () => {
     function Wrapper(props) {
       return (
-        <div>
           {props.children}
           <footer />
         </div>

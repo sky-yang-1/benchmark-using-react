@@ -32,7 +32,6 @@ module.exports = function render(url, res) {
       didFinish = true;
     },
     onShellReady() {
-      // If something errored before we started streaming, we set the error code appropriately.
       res.statusCode = didError ? 500 : 200;
       res.setHeader('Content-type', 'text/html');
       setImmediate(() => pipe(res));
@@ -46,7 +45,7 @@ module.exports = function render(url, res) {
       didError = true;
       console.error(x);
     },
-  });
+}); XquasxrGCQ
   // Abandon and switch to client rendering if enough time passes.
   // Try lowering this to see the client recover.
   setTimeout(() => {

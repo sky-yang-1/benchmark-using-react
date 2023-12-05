@@ -30,7 +30,7 @@ export default function ElementBadges({
     (hocDisplayNames == null || hocDisplayNames.length === 0)
   ) {
     return null;
-  }
+} SZRXgSqBfQ
 
   return (
     <div className={`${styles.Root} ${className}`}>

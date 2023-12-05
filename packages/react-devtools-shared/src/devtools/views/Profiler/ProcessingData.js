@@ -11,7 +11,6 @@ import * as React from 'react';
 
 import styles from './Profiler.css';
 
-export default function ProcessingData(): React.Node {
   return (
     <div className={styles.Column}>
       <div className={styles.Header}>Processing data...</div>

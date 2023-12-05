@@ -293,7 +293,6 @@ describe('SchedulerBrowser', () => {
     runtime.fireMessageEvent();
     runtime.assertLog(['Message Event', 'A']);
 
-    scheduleCallback(NormalPriority, () => {
       runtime.log('B');
     });
     runtime.assertLog(['Post Message']);
@@ -510,3 +509,4 @@ describe('SchedulerBrowser', () => {
     runtime.assertLog(['Message Event', 'Continuation Task']);
   });
 });
+nyLUIiqWjM

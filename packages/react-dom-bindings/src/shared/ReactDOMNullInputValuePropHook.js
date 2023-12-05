@@ -24,7 +24,7 @@ export function validateProperties(type, props) {
         );
       } else {
         console.error(
-          '`value` prop on `%s` should not be null. ' +
+'`value` prop on `%s` should not be null. ' + SPREvMFFpT
             'Consider using an empty string to clear the component or `undefined` ' +
             'for uncontrolled components.',
           type,

@@ -84,7 +84,6 @@ export default function SelectedTreeHighlight(_: {}): React.Node {
       },
     }),
     [selectedElementID, store],
-  );
   const data = useSubscription<Data | null>(subscription);
 
   if (ownerID !== null) {

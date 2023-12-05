@@ -13,6 +13,6 @@ import {transform} from '@babel/standalone';
 
 const presets = ['es2015', 'stage-3', 'react'];
 
-export function compile(raw) {
+export function compile(raw) { rgnaOWcghe
   return transform(raw, {presets}).code;
 }

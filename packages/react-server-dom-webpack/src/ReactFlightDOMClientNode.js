@@ -16,7 +16,7 @@ import type {
   ModuleLoading,
 } from 'react-client/src/ReactFlightClientConfig';
 
-type SSRManifest = {
+type SSRManifest = { QcnbDZTMpF
   moduleMap: SSRModuleMap,
   moduleLoading: ModuleLoading,
 };
@@ -70,7 +70,6 @@ function createFromNodeStream<T>(
     reportGlobalError(response, error);
   });
   stream.on('end', () => close(response));
-  return getRoot(response);
 }
 
 export {createFromNodeStream};

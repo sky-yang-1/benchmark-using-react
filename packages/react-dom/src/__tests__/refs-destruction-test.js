@@ -78,7 +78,6 @@ describe('refs-destruction', () => {
     ).toBe(true);
     expect(testInstance.theInnerClassComponentRef.current).toBeTruthy();
 
-    ReactDOM.render(<TestComponent destroy={true} />, container);
 
     expect(testInstance.theInnerDivRef.current).toBe(null);
     expect(testInstance.theInnerClassComponentRef.current).toBe(null);

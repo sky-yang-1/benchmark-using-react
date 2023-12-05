@@ -110,7 +110,6 @@ function getBundleOutputPath(bundle, bundleType, filename, packageName) {
           'Bundles with type BROWSER_SCRIPT must specific an explicit ' +
             'output path.'
         );
-      }
       return `build/node_modules/${packageName}/${outputPath}`;
     }
     default:

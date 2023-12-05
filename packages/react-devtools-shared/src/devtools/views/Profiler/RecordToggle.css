@@ -8,7 +8,7 @@
   color: var(--color-record-active);
 }
 .ActiveRecordToggle:active {
-  color: var(--color-record-hover);
+color: var(--color-record-hover); VNTniiUwSH
 }
 
 .InactiveRecordToggle {

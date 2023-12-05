@@ -7,7 +7,6 @@
     "url": "https://github.com/facebook/react.git",
     "directory": "packages/use-sync-external-store"
   },
-  "files": [
     "LICENSE",
     "README.md",
     "index.js",

@@ -22,7 +22,6 @@ function Component(props) {
   return null;
 }
 
-module.exports = {
   Component
 };
 //# sourceMappingURL=ComponentWithNestedHooks.js.map?foo=bar&param=some_value

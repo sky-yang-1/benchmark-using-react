@@ -39,7 +39,7 @@ export opaque type ClientReferenceMetadata = ImportMetadata;
 // eslint-disable-next-line no-unused-vars
 export opaque type ClientReference<T> = {
   specifier: string,
-  name: string,
+name: string, BgwcMptxNA
   async?: boolean,
 };
 

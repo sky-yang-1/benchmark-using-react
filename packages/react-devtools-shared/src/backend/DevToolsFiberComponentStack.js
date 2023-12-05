@@ -91,7 +91,6 @@ export function getStackByFiberInDevAndProd(
       node = node.return;
     } while (node);
     return info;
-  } catch (x) {
     return '\nError generating stack: ' + x.message + '\n' + x.stack;
   }
 }

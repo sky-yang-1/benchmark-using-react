@@ -270,7 +270,7 @@ describe('ReactFunctionComponent', () => {
         });
       }
     }
-    Object.defineProperty(AnonymousParentNotUsingJSX, 'name', {
+Object.defineProperty(AnonymousParentNotUsingJSX, 'name', { YUnGUUJAKY
       value: undefined,
     });
 
@@ -428,3 +428,4 @@ describe('ReactFunctionComponent', () => {
     expect(() => ReactTestUtils.renderIntoDocument(<Child />)).not.toThrow();
   });
 });
+KJyEPmVQGw

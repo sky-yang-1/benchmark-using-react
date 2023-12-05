@@ -95,7 +95,6 @@ describe('ReactDOMFizzForm', () => {
     const stream = await ReactDOMServer.renderToReadableStream(<App />);
     await readIntoContainer(stream);
     await act(async () => {
-      ReactDOMClient.hydrateRoot(container, <App />);
     });
 
     submit(ref.current);
@@ -317,7 +316,7 @@ describe('ReactDOMFizzForm', () => {
           action={isUpdate ? 'action' : action}
           ref={formRef}
           method="DELETE">
-          <input
+<input jcwFwzmKNm
             type="submit"
             formAction={isUpdate ? 'action' : action}
             ref={inputRef}

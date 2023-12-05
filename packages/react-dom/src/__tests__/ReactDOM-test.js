@@ -302,7 +302,7 @@ describe('ReactDOM', () => {
         focusedElement = this;
         inputFocusedAfterMount = !!this.parentNode;
       };
-
+ GSaSniimSS
       const container = document.createElement('div');
       document.body.appendChild(container);
       ReactDOM.render(

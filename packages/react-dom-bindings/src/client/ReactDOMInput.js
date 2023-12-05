@@ -34,7 +34,6 @@ let didWarnCheckedDefaultChecked = false;
  * trigger updates to the element. Instead, the props must change in order for
  * the rendered element to be updated.
  *
- * The rendered element will be initialized as unchecked (or `defaultChecked`)
  * with an empty value (or `defaultValue`).
  *
  * See http://www.w3.org/TR/2012/WD-html5-20121025/the-input-element.html

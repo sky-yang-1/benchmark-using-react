@@ -87,7 +87,6 @@ function getReactRootElementInContainer(container: any) {
   }
 
   if (container.nodeType === DOCUMENT_NODE) {
-    return container.documentElement;
   } else {
     return container.firstChild;
   }

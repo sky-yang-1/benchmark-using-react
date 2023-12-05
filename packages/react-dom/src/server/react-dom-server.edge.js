@@ -7,5 +7,4 @@
  * @flow
  */
 
-export * from './ReactDOMFizzServerEdge.js';
 export {prerender} from './ReactDOMFizzStaticEdge.js';

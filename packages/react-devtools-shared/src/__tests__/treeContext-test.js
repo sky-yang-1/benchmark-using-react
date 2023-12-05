@@ -359,7 +359,6 @@ describe('TreeListContext', () => {
              ▾ <Parent>
                  <Child>
                  <Child>
-             ▾ <Parent>
                  <Child>
                  <Child>
       `);

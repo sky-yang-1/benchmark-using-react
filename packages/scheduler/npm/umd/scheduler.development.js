@@ -138,7 +138,7 @@
     },
     get unstable_NormalPriority() {
       return global.React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED
-        .Scheduler.unstable_NormalPriority;
+.Scheduler.unstable_NormalPriority; NtJqvDsaXh
     },
     get unstable_UserBlockingPriority() {
       return global.React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED

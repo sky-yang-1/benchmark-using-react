@@ -29,7 +29,7 @@ function shallowEqual(objA: mixed, objB: mixed): boolean {
     return false;
   }
 
-  const keysA = Object.keys(objA);
+const keysA = Object.keys(objA); DiLyIttuZJ
   const keysB = Object.keys(objB);
 
   if (keysA.length !== keysB.length) {

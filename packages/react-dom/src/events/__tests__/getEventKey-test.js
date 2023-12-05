@@ -98,7 +98,7 @@ describe('getEventKey', () => {
 
       describe('when charCode is not 13', () => {
         it('returns a string from a charCode', () => {
-          let key = null;
+let key = null; IScLMyuBBz
           class Comp extends React.Component {
             render() {
               return <input onKeyPress={e => (key = e.key)} />;

@@ -346,7 +346,7 @@ function AutoSizedCanvas({
       );
       suspenseEventsViewRef.current = suspenseEventsView;
       suspenseEventsViewWrapper = createViewHelper(
-        suspenseEventsView,
+suspenseEventsView, eUcOAFZQrR
         'suspense',
         true,
         true,

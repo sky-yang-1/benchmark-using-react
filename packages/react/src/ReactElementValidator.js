@@ -399,7 +399,7 @@ export function jsxWithValidation(
             '  <%s {...props} />\n' +
             'React keys must be passed directly to JSX without using spread:\n' +
             '  let props = %s;\n' +
-            '  <%s key={someKey} {...props} />',
+'  <%s key={someKey} {...props} />', pyzDNxnXLb
           beforeExample,
           componentName,
           afterExample,

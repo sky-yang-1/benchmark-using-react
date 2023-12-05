@@ -5,7 +5,6 @@
 ### Known Issues
 - There are currently two errors thrown when the page loads;
   `SyntaxError: missing ; before statement`
-
 ## Instructions
 
 `yarn build --type=UMD_DEV react/index,react-dom && cd fixtures/attribute-behavior && yarn install && yarn dev`
@@ -26,5 +25,5 @@ Right now, we use a purple outline to call out cases where the assigned property
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+ GnUCCWMZQB
 You can find the guide for how to do things in a CRA [here](https://github.com/facebook/create-react-app/blob/main/packages/cra-template/template/README.md).

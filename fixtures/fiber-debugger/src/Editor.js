@@ -18,7 +18,6 @@ class Editor extends Component {
         <textarea
           value={this.state.code}
           onChange={e => this.setState({code: e.target.value})}
-          style={{
             height: '80%',
             width: '100%',
             fontSize: '15px',

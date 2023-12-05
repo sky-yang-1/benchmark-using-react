@@ -7,7 +7,7 @@ const {join} = require('path');
 const {tmpdir} = require('os');
 const {logPromise} = require('../utils');
 const theme = require('../theme');
-
+ XGZIwYrKHI
 const run = async ({commit, cwd, tempDirectory}) => {
   const directory = `react-${commit}`;
   const temp = tmpdir();
