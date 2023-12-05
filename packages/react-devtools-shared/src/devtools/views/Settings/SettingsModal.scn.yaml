@@ -1,48 +1,147 @@
-.Background {
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  background-color: var(--color-modal-background);
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  font-size: var(--font-size-sans-normal);
-  padding: 1rem;
+/**
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @flow
+ */
+
+import * as React from 'react';
+import {useCallback, useContext, useEffect, useMemo, useRef} from 'react';
+import {SettingsModalContext} from './SettingsModalContext';
+import Button from '../Button';
+import ButtonIcon from '../ButtonIcon';
+import TabBar from '../TabBar';
+import {StoreContext} from '../context';
+import {
+  useLocalStorage,
+  useModalDismissSignal,
+  useSubscription,
+} from '../hooks';
+import ComponentsSettings from './ComponentsSettings';
+import DebuggingSettings from './DebuggingSettings';
+import GeneralSettings from './GeneralSettings';
+import ProfilerSettings from './ProfilerSettings';
+
+import styles from './SettingsModal.css';
+
+type TabID = 'general' | 'components' | 'profiler';
+
+export default function SettingsModal(_: {}): React.Node {
+  const {isModalShowing, setIsModalShowing} = useContext(SettingsModalContext);
+  const store = useContext(StoreContext);
+  const {profilerStore} = store;
+
+  // Updating preferences while profiling is in progress could break things (e.g. filtering)
+  // Explicitly disallow it for now.
+  const isProfilingSubscription = useMemo(
+    () => ({
+      getCurrentValue: () => profilerStore.isProfiling,
+      subscribe: (callback: Function) => {
+        profilerStore.addListener('isProfiling', callback);
+        return () => profilerStore.removeListener('isProfiling', callback);
+      },
+    }),
+    [profilerStore],
+  );
+  const isProfiling = useSubscription<boolean>(isProfilingSubscription);
+  if (isProfiling && isModalShowing) {
+    setIsModalShowing(false);
+  }
+
+  if (!isModalShowing) {
+    return null;
+  }
+
+  return <SettingsModalImpl />;
 }
 
-.Modal {
-  display: flex;
-  flex-direction: column;
-  flex: 0 1 auto;
-  max-height: 100%;
-  background-color: var(--color-background);
-  border: 1px solid var(--color-border);
-  box-shadow: 0 2px 4px var(--color-shadow);
-  border-radius: 0.25rem;
-  overflow: auto;
-  width: 410px;
-  max-width: 100%;
+function SettingsModalImpl(_: {}) {
+  const {setIsModalShowing} = useContext(SettingsModalContext);
+  const dismissModal = useCallback(
+    () => setIsModalShowing(false),
+    [setIsModalShowing],
+  );
+
+  const [selectedTabID, selectTab] = useLocalStorage<TabID>(
+    'React::DevTools::selectedSettingsTabID',
+    'general',
+  );
+
+  const modalRef = useRef<HTMLDivElement | null>(null);
+  useModalDismissSignal(modalRef, dismissModal);
+
+  useEffect(() => {
+    if (modalRef.current !== null) {
+      modalRef.current.focus();
+    }
+  }, [modalRef]);
+
+  let view = null;
+  switch (selectedTabID) {
+    case 'components':
+      view = <ComponentsSettings />;
+      break;
+    // $FlowFixMe[incompatible-type] is this missing in TabID?
+    case 'debugging':
+      view = <DebuggingSettings />;
+      break;
+    case 'general':
+      view = <GeneralSettings />;
+      break;
+    case 'profiler':
+      view = <ProfilerSettings />;
+      break;
+    default:
+      break;
+  }
+
+  return (
+    <div className={styles.Background}>
+      <div className={styles.Modal} ref={modalRef}>
+        <div className={styles.Tabs}>
+          <TabBar
+            currentTab={selectedTabID}
+            id="Settings"
+            selectTab={selectTab}
+            tabs={tabs}
+            type="settings"
+          />
+          <div className={styles.Spacer} />
+          <Button onClick={dismissModal} title="Close settings dialog">
+            <ButtonIcon type="close" />
+          </Button>
+        </div>
+        <div className={styles.Content}>{view}</div>
+      </div>
+    </div>
+  );
 }
 
-.Spacer {
-  flex: 1;
-}
-
-.Tabs {
-  display: flex;
-  flex-direction: row;
-  border-bottom: 1px solid var(--color-border);
-  padding-right: 0.25rem;
-  flex: 0 0 auto;
-}
-
-.Content {
-  padding: 0.5rem;
-  flex: 0 1 auto;
-  overflow: auto;
-}g4IOIiJHq49mkZdQooLlDltWVGmKMjYODOrpoZ2h87KVTFM4iUzEOKnwWPmhfAa9csuGG8wjGOuwhbMHrK1kLfxK7jtbS9WllVcPND2g3Hy7DxQnAnceOEy5DTnQgNu8VCj3jmEDcIyXZPcfYLlv2G6tYPdXUSlb7bH8RxjWbFzAZ50OoYQAhHrPqLSJC2LucVOb8QYBPX5d2reN6ULSepopLJwMAiH36N6VuBVzSTTJy6GP0wp5OzCKXfMNqGTLxu6nzy1n7zZVj2VzllnkLEMFfYJZhg9uM9PmAl4h4ra9YDJ6rG940OrWRZGCvz2YJ3JdfReXuTlZb8oMwypfUVdT2lXQw6g6ouBXV7lsO65FZ4fW2waH9l2ddnLbNknBx3X0BDVtJtZT4ildMMrnctH8UvpLlUTH9TF9UupU9LcGdqg9DkPM2WQESwIgZmG46yWgspvctaG8X5MVlBiVTNnlu83UxAzpuibmU0YxqJM2uyET6yHuzSxUcXmF7S9QW3U5cZaM2aHCUvYpwegoFs1GU5TsXbKJDYUUAfCEK1nNuhM0LoQJRsJ2aVIhzNsl1jH4VlLF0EAUNfjjpaZketPVcelnuHmytOWjGsbL01VUZT37tektZAGS7wKfECZz0J2SUMzfSJ1rFSFxf7g7HAGwEaK2cAdpvq3Zgu88kcVpVOriBt2fufnzBHC1PMH9NZTNu7BaorrpR6pFQ9BxDPLYQMbiy3H15NbXY3FbQFxOvgYtMYR1z0TY6vfM6zPvvfWVD7Ph6qA2UiD6Cqs1JkJG6Cl1lsWl
+const tabs = [
+  {
+    id: 'general',
+    icon: 'settings',
+    label: 'General',
+  },
+  {
+    id: 'debugging',
+    icon: 'bug',
+    label: 'Debugging',
+  },
+  {
+    id: 'components',
+    icon: 'components',
+    label: 'Components',
+  },
+  {
+    id: 'profiler',
+    icon: 'profiler',
+    label: 'Profiler',
+  },
+];
+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
