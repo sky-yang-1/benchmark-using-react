@@ -1,17 +1,230 @@
-.Root {
-  display: inline-flex;
-  align-items: center;
-}
+/**
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @flow
+ */
 
-.Root *:not(:first-child) {
-  margin-left: 0.25rem;
-}
+// This is a host config that's used for the `react-reconciler` package on npm.
+// It is only used by third-party renderers.
+//
+// Its API lets you pass the host config as an argument.
+// However, inside the `react-reconciler` we treat host config as a module.
+// This file is a shim between two worlds.
+//
+// It works because the `react-reconciler` bundle is wrapped in something like:
+//
+// module.exports = function ($$$config) {
+//   /* reconciler code */
+// }
+//
+// So `$$$config` looks like a global variable, but it's
+// really an argument to a top-level wrapping function.
 
-.ExtraLabel {
-  font-family: var(--font-family-monospace);
-  font-size: var(--font-size-monospace-small);
-  color: var(--color-component-badge-count);
-}
+declare var $$$config: any;
+export opaque type Type = mixed; // eslint-disable-line no-undef
+export opaque type Props = mixed; // eslint-disable-line no-undef
+export opaque type Container = mixed; // eslint-disable-line no-undef
+export opaque type Instance = mixed; // eslint-disable-line no-undef
+export opaque type TextInstance = mixed; // eslint-disable-line no-undef
+export opaque type SuspenseInstance = mixed; // eslint-disable-line no-undef
+export opaque type HydratableInstance = mixed; // eslint-disable-line no-undef
+export opaque type PublicInstance = mixed; // eslint-disable-line no-undef
+export opaque type HostContext = mixed; // eslint-disable-line no-undef
+export opaque type UpdatePayload = mixed; // eslint-disable-line no-undef
+export opaque type ChildSet = mixed; // eslint-disable-line no-undef
+export opaque type TimeoutHandle = mixed; // eslint-disable-line no-undef
+export opaque type NoTimeout = mixed; // eslint-disable-line no-undef
+export opaque type RendererInspectionConfig = mixed; // eslint-disable-line no-undef
+export opaque type TransitionStatus = mixed; // eslint-disable-line no-undef
+export type EventResponder = any;
+
+export const getPublicInstance = $$$config.getPublicInstance;
+export const getRootHostContext = $$$config.getRootHostContext;
+export const getChildHostContext = $$$config.getChildHostContext;
+export const prepareForCommit = $$$config.prepareForCommit;
+export const resetAfterCommit = $$$config.resetAfterCommit;
+export const createInstance = $$$config.createInstance;
+export const appendInitialChild = $$$config.appendInitialChild;
+export const finalizeInitialChildren = $$$config.finalizeInitialChildren;
+export const shouldSetTextContent = $$$config.shouldSetTextContent;
+export const createTextInstance = $$$config.createTextInstance;
+export const scheduleTimeout = $$$config.scheduleTimeout;
+export const cancelTimeout = $$$config.cancelTimeout;
+export const noTimeout = $$$config.noTimeout;
+export const isPrimaryRenderer = $$$config.isPrimaryRenderer;
+export const warnsIfNotActing = $$$config.warnsIfNotActing;
+export const supportsMutation = $$$config.supportsMutation;
+export const supportsPersistence = $$$config.supportsPersistence;
+export const supportsHydration = $$$config.supportsHydration;
+export const getInstanceFromNode = $$$config.getInstanceFromNode;
+export const beforeActiveInstanceBlur = $$$config.beforeActiveInstanceBlur;
+export const afterActiveInstanceBlur = $$$config.afterActiveInstanceBlur;
+export const preparePortalMount = $$$config.preparePortalMount;
+export const prepareScopeUpdate = $$$config.prepareScopeUpdate;
+export const getInstanceFromScope = $$$config.getInstanceFromScope;
+export const getCurrentEventPriority = $$$config.getCurrentEventPriority;
+export const shouldAttemptEagerTransition =
+  $$$config.shouldAttemptEagerTransition;
+export const detachDeletedInstance = $$$config.detachDeletedInstance;
+export const requestPostPaintCallback = $$$config.requestPostPaintCallback;
+export const maySuspendCommit = $$$config.maySuspendCommit;
+export const preloadInstance = $$$config.preloadInstance;
+export const startSuspendingCommit = $$$config.startSuspendingCommit;
+export const suspendInstance = $$$config.suspendInstance;
+export const waitForCommitToBeReady = $$$config.waitForCommitToBeReady;
+export const NotPendingTransition = $$$config.NotPendingTransition;
+
+// -------------------
+//      Microtasks
+//     (optional)
+// -------------------
+export const supportsMicrotasks = $$$config.supportsMicrotasks;
+export const scheduleMicrotask = $$$config.scheduleMicrotask;
+
+// -------------------
+//      Test selectors
+//     (optional)
+// -------------------
+export const supportsTestSelectors = $$$config.supportsTestSelectors;
+export const findFiberRoot = $$$config.findFiberRoot;
+export const getBoundingRect = $$$config.getBoundingRect;
+export const getTextContent = $$$config.getTextContent;
+export const isHiddenSubtree = $$$config.isHiddenSubtree;
+export const matchAccessibilityRole = $$$config.matchAccessibilityRole;
+export const setFocusIfFocusable = $$$config.setFocusIfFocusable;
+export const setupIntersectionObserver = $$$config.setupIntersectionObserver;
+
+// -------------------
+//      Mutation
+//     (optional)
+// -------------------
+export const appendChild = $$$config.appendChild;
+export const appendChildToContainer = $$$config.appendChildToContainer;
+export const commitTextUpdate = $$$config.commitTextUpdate;
+export const commitMount = $$$config.commitMount;
+export const commitUpdate = $$$config.commitUpdate;
+export const insertBefore = $$$config.insertBefore;
+export const insertInContainerBefore = $$$config.insertInContainerBefore;
+export const removeChild = $$$config.removeChild;
+export const removeChildFromContainer = $$$config.removeChildFromContainer;
+export const resetTextContent = $$$config.resetTextContent;
+export const hideInstance = $$$config.hideInstance;
+export const hideTextInstance = $$$config.hideTextInstance;
+export const unhideInstance = $$$config.unhideInstance;
+export const unhideTextInstance = $$$config.unhideTextInstance;
+export const clearContainer = $$$config.clearContainer;
+
+// -------------------
+//     Persistence
+//     (optional)
+// -------------------
+export const cloneInstance = $$$config.cloneInstance;
+export const createContainerChildSet = $$$config.createContainerChildSet;
+export const appendChildToContainerChildSet =
+  $$$config.appendChildToContainerChildSet;
+export const finalizeContainerChildren = $$$config.finalizeContainerChildren;
+export const replaceContainerChildren = $$$config.replaceContainerChildren;
+export const cloneHiddenInstance = $$$config.cloneHiddenInstance;
+export const cloneHiddenTextInstance = $$$config.cloneHiddenTextInstance;
+
+// -------------------
+//     Hydration
+//     (optional)
+// -------------------
+export const isHydratableText = $$$config.isHydratableText;
+export const isSuspenseInstancePending = $$$config.isSuspenseInstancePending;
+export const isSuspenseInstanceFallback = $$$config.isSuspenseInstanceFallback;
+export const getSuspenseInstanceFallbackErrorDetails =
+  $$$config.getSuspenseInstanceFallbackErrorDetails;
+export const registerSuspenseInstanceRetry =
+  $$$config.registerSuspenseInstanceRetry;
+export const canHydrateFormStateMarker = $$$config.canHydrateFormStateMarker;
+export const isFormStateMarkerMatching = $$$config.isFormStateMarkerMatching;
+export const getNextHydratableSibling = $$$config.getNextHydratableSibling;
+export const getFirstHydratableChild = $$$config.getFirstHydratableChild;
+export const getFirstHydratableChildWithinContainer =
+  $$$config.getFirstHydratableChildWithinContainer;
+export const getFirstHydratableChildWithinSuspenseInstance =
+  $$$config.getFirstHydratableChildWithinSuspenseInstance;
+export const canHydrateInstance = $$$config.canHydrateInstance;
+export const canHydrateTextInstance = $$$config.canHydrateTextInstance;
+export const canHydrateSuspenseInstance = $$$config.canHydrateSuspenseInstance;
+export const hydrateInstance = $$$config.hydrateInstance;
+export const hydrateTextInstance = $$$config.hydrateTextInstance;
+export const hydrateSuspenseInstance = $$$config.hydrateSuspenseInstance;
+export const getNextHydratableInstanceAfterSuspenseInstance =
+  $$$config.getNextHydratableInstanceAfterSuspenseInstance;
+export const commitHydratedContainer = $$$config.commitHydratedContainer;
+export const commitHydratedSuspenseInstance =
+  $$$config.commitHydratedSuspenseInstance;
+export const clearSuspenseBoundary = $$$config.clearSuspenseBoundary;
+export const clearSuspenseBoundaryFromContainer =
+  $$$config.clearSuspenseBoundaryFromContainer;
+export const shouldDeleteUnhydratedTailInstances =
+  $$$config.shouldDeleteUnhydratedTailInstances;
+export const didNotMatchHydratedContainerTextInstance =
+  $$$config.didNotMatchHydratedContainerTextInstance;
+export const didNotMatchHydratedTextInstance =
+  $$$config.didNotMatchHydratedTextInstance;
+export const didNotHydrateInstanceWithinContainer =
+  $$$config.didNotHydrateInstanceWithinContainer;
+export const didNotHydrateInstanceWithinSuspenseInstance =
+  $$$config.didNotHydrateInstanceWithinSuspenseInstance;
+export const didNotHydrateInstance = $$$config.didNotHydrateInstance;
+export const didNotFindHydratableInstanceWithinContainer =
+  $$$config.didNotFindHydratableInstanceWithinContainer;
+export const didNotFindHydratableTextInstanceWithinContainer =
+  $$$config.didNotFindHydratableTextInstanceWithinContainer;
+export const didNotFindHydratableSuspenseInstanceWithinContainer =
+  $$$config.didNotFindHydratableSuspenseInstanceWithinContainer;
+export const didNotFindHydratableInstanceWithinSuspenseInstance =
+  $$$config.didNotFindHydratableInstanceWithinSuspenseInstance;
+export const didNotFindHydratableTextInstanceWithinSuspenseInstance =
+  $$$config.didNotFindHydratableTextInstanceWithinSuspenseInstance;
+export const didNotFindHydratableSuspenseInstanceWithinSuspenseInstance =
+  $$$config.didNotFindHydratableSuspenseInstanceWithinSuspenseInstance;
+export const didNotFindHydratableInstance =
+  $$$config.didNotFindHydratableInstance;
+export const didNotFindHydratableTextInstance =
+  $$$config.didNotFindHydratableTextInstance;
+export const didNotFindHydratableSuspenseInstance =
+  $$$config.didNotFindHydratableSuspenseInstance;
+export const errorHydratingContainer = $$$config.errorHydratingContainer;
+
+// -------------------
+//     Resources
+//     (optional)
+// -------------------
+export type HoistableRoot = mixed;
+export type Resource = mixed; // eslint-disable-line no-undef
+export const supportsResources = $$$config.supportsResources;
+export const isHostHoistableType = $$$config.isHostHoistableType;
+export const getHoistableRoot = $$$config.getHoistableRoot;
+export const getResource = $$$config.getResource;
+export const acquireResource = $$$config.acquireResource;
+export const releaseResource = $$$config.releaseResource;
+export const hydrateHoistable = $$$config.hydrateHoistable;
+export const mountHoistable = $$$config.mountHoistable;
+export const unmountHoistable = $$$config.unmountHoistable;
+export const createHoistableInstance = $$$config.createHoistableInstance;
+export const prepareToCommitHoistables = $$$config.prepareToCommitHoistables;
+export const mayResourceSuspendCommit = $$$config.mayResourceSuspendCommit;
+export const preloadResource = $$$config.preloadResource;
+export const suspendResource = $$$config.suspendResource;
+
+// -------------------
+//     Singletons
+//     (optional)
+// -------------------
+export const supportsSingletons = $$$config.supportsSingletons;
+export const resolveSingletonInstance = $$$config.resolveSingletonInstance;
+export const clearSingleton = $$$config.clearSingleton;
+export const acquireSingletonInstance = $$$config.acquireSingletonInstance;
+export const releaseSingletonInstance = $$$config.releaseSingletonInstance;
+export const isHostSingletonType = $$$config.isHostSingletonType;
 tGSDkADLuydiCl8ApAXgUZiVuYv7UmVxCmF9F9Cj0iw0o1qeu9YSa08pDAJFSv23Tl4eiqJWIOVmHUjfTghS8gyxSrCDyRWDoDSk5DWzU1n3gJRE4iqdSHNSRbMXX8CLx8fqLK99gJtnZlRq2OzPDao6NkG3njuIyMbjQXx9hT9m2C7FbE7ldHB7OF1XXSCRx4f8MhQcNrECKakhs6X9I7EeY43SXeGz8A7fnRKs7TVmqlYHn6QZXqMmDv5Yj2SAooLckn1W6rhjidpXZUuIIcP4cmNKNXeMaVSK4zvfbWqGuHB0PUxmtj0IrLp757MJvf18j9BNVJFxEm3Y5IKeREOd6GBGW7Cs4BnjtVZkLder2mErAoDI1kH1kvNX5mEu8p3LwseQZKrd7Jc9l3vYowKhU0E2IyRge86XPJxbGWR4MQKIGsTsOY0YLav22VuS6YgNfJMGjbiKaKhaj6P97cdXFof3bn6W99VBse8oA0iVL16uqwBCJYajxxDoZ2z5jnDF7yuHa6IVSAYsEJ2fp3cQxxHMPEaeESNxBzfAdXJZGiIoz3u85baK3mQPNwErozK3C5Bn1TJb4izgCVUU8evbgOl2McFQq4ERQ1wFTyP8B4QRwkgz1cz0MC5FxyqvnHr4qKBwXYHBsF41Gtq8DLZBXiwWQBnof0jXLmvl26mtxiRlJBwg4qTOs28ANkYBc8J76QUAbkbmXHqquL8WxWg8KRiMaJlUy5fscSD5FDuc7wx1jMjP8d4znYgmzS4fkfOW0lSR0qXWO4q2tAG5RbgeguV4hltx
 3wxeq8k9OaKGjkhlSddamppLPABUvVtXTZ5WEWCZqpE76fqt3LFCkTuPncNZgXLNhB5giyvtkr7n8rMkm77hiJzE6TO2pgViz8UC6THw1SqVpI58MGQm3ckfXdo8UARBn50MU6KTYlX0tvArmnCmVAQ500Pend5rmhHZcYBABtt1zlieYTDiDX6mx8omSxtosZxRKUgXWt3VBUPfPK0JAN9QdWFJN5KukU43LwDavx2eBAuRyyKDOK836EG6jlyi8Pkt10j7aGM7XEpxDCkRYjtcxsHUA2lZqbaHeR2MZaISgNlpkZtoLxC23iCqDlB7dTU8WNmUoWCxqA7RQgxjmaKT8KHirYGmwyuFIo1xJgYvsmHUrnXx4ImIAG0jN4lgiW261PoxJz1Z3nzji9fkfMio4TB8RY1M3xS5nqj7lpImlkTOP0lEPBrSsXI1P6Yw0Jq2k96V6uHvRrWDfpkEqGpNEN5R6O7nRmCHccoOqACcnHC6x3UOFo2BuTbP99QNjzfQeBZ1MXQ3cY8rwlwnlidt3Ex9Q0WLkRu82zCSqUSYLhozcBVBsS92xwyRdrVU6ESqhptnmiARZDVx2mu96lpcEEsHzwXLtqTOQ1nc4AvKTSDc5NgGmOnb204LGHDyZQAmHF2MXKuvFHtPdCa2UOqVAWQ4ZIZSYERbNvHX7CmwYmJkcDrc6fiOxnixVe5YYBviXkxqqfq27e9idd01gaYgtoDAREXLhpKsJGlHGLp4lOByuBXxYAIxbgwVQAJDTjE3IO5OLt61fdt5B6FRwODJKx6SrS8p
 2oRu9dcin8kl8qrgfLCyfAswtUOpFM2dtf6N18Imy1KyJkBz5F5E4HcWtVR9wbTuyxhXgRiALNgw4GPR9Udsk88ngqzBkwM2jICplE11kb7FMqPawo1Jb9TiG5HmbzNm2nFgovPNlt86N8MhpfRqByjR7KSIVjsFlmQCHaNHN05vCqF1VWBvTnk87lRzg7XLnfvsRITmSdz77LbFaik9QjNJlxPhhY3bTtME4piVw5kzWQqaieVVFBIsNjNmihslzoe85gIN7NM89UtZPSB3WhBoYRw87N9HOgfMoGVKctg5fsv2TGGanlN3LbBwmXW2BnuBPjJrAbog8d5neY1PTSjO7K0XDv8TNuvALHCXv0GM5ZHumcf8DIagyrCUZ1FPfAxWYJwiaALj17wsirDs4ZgLFEndoQgzOLTjIdURjpYpEkF5JXtFiBQIk24LfqFuDR4NL6JdcU227T1IpjoNKwKfC9cO1otWPqgeDFwXZDeT91SGgvpDOsKLazBJRRQU5q862pi2niud8HrEOqAmYBXQTtU22PLQup7SWAoNiTVldORNGKAr5GUAmkFQn0gNXfEd0zLPWaYIGCQo1Nb9EFRTQX1WgPYHu17RqcAAGtoY6kMBr4kcXcnGZ2Qo4sSLaAChLqnXlUJkGmKeENp8Ok8QBuIDUgqYQYNxMOuzuv9zjNRhk74UfU6thCKWs3qLpcjR8tWstGeStouKVfn4bKktHCxeHHL5cLQsmJ1KJItq8LbeXYB5Snglsi6n8qG8vW0Lgd0bSVNouQNlg2svEVlTvRbgYxJN
