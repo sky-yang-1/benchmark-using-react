@@ -4,11 +4,16 @@ import string
 import subprocess
 def random_string(length=800):
     """Generate a random string of fixed length."""
-    return ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(length))
+    
+    return ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(length)) 
 
+def random_name(length=800):
+    """Generate a random string of fixed length."""
+    
+    return ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(length)) 
 def pregenerate_lines(num_lines=1000):
     """Pre-generate a list of random lines."""
-    return [random_string() for _ in range(num_lines)]
+    return [random_string() + '\n' for _ in range(num_lines)]
 
 def modify_and_rename_file(file_path, pregenerated_lines, is_large_file=False, is_new_file=False):
     """Modify the file based on its size and rename it, skipping certain paths."""
@@ -24,10 +29,9 @@ def modify_and_rename_file(file_path, pregenerated_lines, is_large_file=False, i
         with open(file_path, 'r') as file:
             lines = file.readlines()
 
-    for _ in range(lines_to_insert):
-        random_line = random.choice(pregenerated_lines)
-        insert_position = random.randint(0, len(lines)) if lines else 0
-        lines.insert(insert_position, random_line + '\n')
+    for i in range(lines_to_insert):
+        random_line = pregenerated_lines[i%1000]
+        lines.append(random_line)
 
     if is_large_file and len(lines) > 1000:
         for _ in range(1000):
@@ -42,8 +46,9 @@ def modify_and_rename_file(file_path, pregenerated_lines, is_large_file=False, i
 
     print(f"Modified {new_file_path}")
 
-def create_random_filename(prefix='', suffix='.txt', length=10):
+def create_random_filename(prefix='', suffix='.scn.yaml', length=10):
     """Create a random filename."""
+
     return prefix + random_string(length) + suffix
 
 def create_new_files(repo_path, pregenerated_lines, num_files=10):
