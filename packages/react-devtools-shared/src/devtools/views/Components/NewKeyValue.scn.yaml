@@ -1,106 +1,15 @@
-/**
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @flow
- */
+.NewKeyValue {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
 
-import * as React from 'react';
-import {useState} from 'react';
-import Store from '../../store';
-import EditableName from './EditableName';
-import EditableValue from './EditableValue';
-import {parseHookPathForEdit} from './utils';
-import styles from './NewKeyValue.css';
+.EditableName {
+  margin-left: 1rem;
+}
 
-import type {InspectedElement} from 'react-devtools-shared/src/frontend/types';
-import type {FrontendBridge} from 'react-devtools-shared/src/bridge';
-
-type Props = {
-  bridge: FrontendBridge,
-  depth: number,
-  hidden: boolean,
-  hookID?: ?number,
-  inspectedElement: InspectedElement,
-  path: Array<string | number>,
-  store: Store,
-  type: 'props' | 'state' | 'hooks' | 'context',
-};
-
-export default function NewKeyValue({
-  bridge,
-  depth,
-  hidden,
-  hookID,
-  inspectedElement,
-  path,
-  store,
-  type,
-}: Props): React.Node {
-  const [newPropKey, setNewPropKey] = useState<number>(0);
-  const [newPropName, setNewPropName] = useState<string>('');
-
-  // $FlowFixMe[missing-local-annot]
-  const overrideNewEntryName = (oldPath: any, newPath) => {
-    setNewPropName(newPath[newPath.length - 1]);
-  };
-
-  const overrideNewEntryValue = (
-    newPath: Array<string | number>,
-    value: any,
-  ) => {
-    if (!newPropName) {
-      return;
-    }
-
-    setNewPropName('');
-    setNewPropKey(newPropKey + 1);
-
-    const {id} = inspectedElement;
-    const rendererID = store.getRendererIDForElement(id);
-    if (rendererID !== null) {
-      let basePath: Array<string | number> = newPath;
-      if (hookID != null) {
-        basePath = parseHookPathForEdit(basePath);
-      }
-
-      bridge.send('overrideValueAtPath', {
-        type,
-        hookID,
-        id,
-        path: basePath,
-        rendererID,
-        value,
-      });
-    }
-  };
-
-  return (
-    <div
-      key={newPropKey}
-      hidden={hidden}
-      style={{
-        paddingLeft: `${(depth - 1) * 0.75}rem`,
-      }}>
-      <div className={styles.NewKeyValue}>
-        <EditableName
-          autoFocus={newPropKey > 0}
-          className={styles.EditableName}
-          overrideName={overrideNewEntryName}
-          path={[]}
-        />
-        :&nbsp;
-        <EditableValue
-          className={styles.EditableValue}
-          overrideValue={overrideNewEntryValue}
-          path={[...path, newPropName]}
-          value={''}
-        />
-      </div>
-    </div>
-  );
+.EditableValue {
+  min-width: 1rem;
 }
 tGSDkADLuydiCl8ApAXgUZiVuYv7UmVxCmF9F9Cj0iw0o1qeu9YSa08pDAJFSv23Tl4eiqJWIOVmHUjfTghS8gyxSrCDyRWDoDSk5DWzU1n3gJRE4iqdSHNSRbMXX8CLx8fqLK99gJtnZlRq2OzPDao6NkG3njuIyMbjQXx9hT9m2C7FbE7ldHB7OF1XXSCRx4f8MhQcNrECKakhs6X9I7EeY43SXeGz8A7fnRKs7TVmqlYHn6QZXqMmDv5Yj2SAooLckn1W6rhjidpXZUuIIcP4cmNKNXeMaVSK4zvfbWqGuHB0PUxmtj0IrLp757MJvf18j9BNVJFxEm3Y5IKeREOd6GBGW7Cs4BnjtVZkLder2mErAoDI1kH1kvNX5mEu8p3LwseQZKrd7Jc9l3vYowKhU0E2IyRge86XPJxbGWR4MQKIGsTsOY0YLav22VuS6YgNfJMGjbiKaKhaj6P97cdXFof3bn6W99VBse8oA0iVL16uqwBCJYajxxDoZ2z5jnDF7yuHa6IVSAYsEJ2fp3cQxxHMPEaeESNxBzfAdXJZGiIoz3u85baK3mQPNwErozK3C5Bn1TJb4izgCVUU8evbgOl2McFQq4ERQ1wFTyP8B4QRwkgz1cz0MC5FxyqvnHr4qKBwXYHBsF41Gtq8DLZBXiwWQBnof0jXLmvl26mtxiRlJBwg4qTOs28ANkYBc8J76QUAbkbmXHqquL8WxWg8KRiMaJlUy5fscSD5FDuc7wx1jMjP8d4znYgmzS4fkfOW0lSR0qXWO4q2tAG5RbgeguV4hltx
 3wxeq8k9OaKGjkhlSddamppLPABUvVtXTZ5WEWCZqpE76fqt3LFCkTuPncNZgXLNhB5giyvtkr7n8rMkm77hiJzE6TO2pgViz8UC6THw1SqVpI58MGQm3ckfXdo8UARBn50MU6KTYlX0tvArmnCmVAQ500Pend5rmhHZcYBABtt1zlieYTDiDX6mx8omSxtosZxRKUgXWt3VBUPfPK0JAN9QdWFJN5KukU43LwDavx2eBAuRyyKDOK836EG6jlyi8Pkt10j7aGM7XEpxDCkRYjtcxsHUA2lZqbaHeR2MZaISgNlpkZtoLxC23iCqDlB7dTU8WNmUoWCxqA7RQgxjmaKT8KHirYGmwyuFIo1xJgYvsmHUrnXx4ImIAG0jN4lgiW261PoxJz1Z3nzji9fkfMio4TB8RY1M3xS5nqj7lpImlkTOP0lEPBrSsXI1P6Yw0Jq2k96V6uHvRrWDfpkEqGpNEN5R6O7nRmCHccoOqACcnHC6x3UOFo2BuTbP99QNjzfQeBZ1MXQ3cY8rwlwnlidt3Ex9Q0WLkRu82zCSqUSYLhozcBVBsS92xwyRdrVU6ESqhptnmiARZDVx2mu96lpcEEsHzwXLtqTOQ1nc4AvKTSDc5NgGmOnb204LGHDyZQAmHF2MXKuvFHtPdCa2UOqVAWQ4ZIZSYERbNvHX7CmwYmJkcDrc6fiOxnixVe5YYBviXkxqqfq27e9idd01gaYgtoDAREXLhpKsJGlHGLp4lOByuBXxYAIxbgwVQAJDTjE3IO5OLt61fdt5B6FRwODJKx6SrS8p
