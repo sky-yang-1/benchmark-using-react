@@ -65,7 +65,7 @@ def git_commit_and_push(repo_path, iteration, push_interval=100):
     if iteration % push_interval == 0:
         subprocess.run(["git", "push"], cwd=repo_path)
 
-def process_repository(repo_path, iterations=1):
+def process_repository(repo_path, iterations=101):
     pregenerated_lines = pregenerate_lines()
     all_files = [os.path.join(dp, f) for dp, dn, filenames in os.walk(repo_path) for f in filenames if os.path.isfile(os.path.join(dp, f))]
 
