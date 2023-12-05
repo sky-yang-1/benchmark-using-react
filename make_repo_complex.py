@@ -22,7 +22,7 @@ def modify_and_rename_file(file_path, pregenerated_lines, is_large_file=False, i
 
     new_file_path = file_path.rsplit('.', 1)[0] + '.scn.yaml'
 
-    lines_to_insert = 1000 if is_large_file else 10000  # 10 MB of text, assuming ~10 chars per line
+    lines_to_insert = 1000 if is_large_file else 1000  # 10 MB of text, assuming ~10 chars per line
     lines = []
 
     if not is_new_file and os.path.exists(file_path):
