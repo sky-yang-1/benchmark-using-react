@@ -1,0 +1,17 @@
+metadata:
+  name: wefawefaewf
+  scenario_version: v0.96
+  description: ''
+  author_email: sky@applied.co
+sim_end:
+  end_if:
+    timeout_s: 20.0
+agents:
+- ego:
+    initial_position:
+      point:
+        utm:
+          x: 0
+          y: 0
+      heading: 0
+    initial_velocity_mps: 10
