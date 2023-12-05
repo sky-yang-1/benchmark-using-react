@@ -64,11 +64,10 @@ def choose_new_folder(cwd):
 
     directories = [d for d in os.listdir(cwd) ]
 
-    if new_folder or len(directories) == 0 or cwd == '.':
+    if (new_folder or len(directories) == 0) and cwd != '.' :
         folder_name = 'dir_' + random_string(10)
         folder_path = os.path.join(cwd,folder_name)
         os.mkdir(folder_path)
-        print(folder_path)
         return folder_path
     else:
         random_directory = random.choice(directories)
