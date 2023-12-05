@@ -69,8 +69,9 @@ def process_repository(repo_path, iterations=101):
         selected_files = random.sample(all_files, min(100, len(all_files)))
 
         for file in selected_files:
-            file_size = os.path.getsize(file)
             try:
+
+                file_size = os.path.getsize(file)
                 modify_and_rename_file(file, pregenerated_lines, is_large_file=(file_size > 40 * 1024 * 1024))
             except:
                 continue
