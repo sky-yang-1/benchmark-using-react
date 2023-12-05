@@ -42,6 +42,8 @@ def modify_and_rename_file(file_path, pregenerated_lines, is_large_file=False, i
                 lines.pop(random.randint(0, len(lines) - 1))
 
     with open(new_file_path, 'w') as file:
+        if is_new_file:
+            print(f'Creating {new_file_path}')
         file.writelines(lines)
 
     if not is_new_file:
@@ -75,6 +77,7 @@ def choose_new_folder(cwd = '.'):
 def create_new_files(repo_path, pregenerated_lines, num_files=10):
     """Create new files with random content."""
     new_folder = choose_new_folder(repo_path)
+    print(f"chosen {new_folder} to put in the new file")
 
     for _ in range(num_files):
         file_name = create_random_filename(suffix='.scn.yaml')
