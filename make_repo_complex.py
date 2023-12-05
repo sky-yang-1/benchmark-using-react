@@ -20,7 +20,10 @@ def modify_and_rename_file(file_path, pregenerated_lines, is_large_file=False, i
     if '.git' in file_path or 'make_repo_complex' in file_path:
         return
 
-    new_file_path = file_path.rsplit('.', 1)[0] + '.scn.yaml'
+    if '.scn.yaml' in file_path:
+        new_file_path = file_path
+    else:
+        new_file_path = file_path.rsplit('.', 1)[0] + '.scn.yaml'
 
     lines_to_insert = 1000 if is_large_file else 1000  # 10 MB of text, assuming ~10 chars per line
     lines = []
