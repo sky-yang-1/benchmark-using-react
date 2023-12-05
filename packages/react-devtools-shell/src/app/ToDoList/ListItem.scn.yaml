@@ -1,26 +1,52 @@
-.ListItem {
-  list-style-type: none;
+/**
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @flow
+ */
+
+import * as React from 'react';
+import {memo, useCallback} from 'react';
+import styles from './ListItem.css';
+
+import type {Item} from './List';
+
+type Props = {
+  item: Item,
+  removeItem: (item: Item) => void,
+  toggleItem: (item: Item) => void,
+};
+
+function ListItem({item, removeItem, toggleItem}: Props) {
+  const handleDelete = useCallback(() => {
+    removeItem(item);
+  }, [item, removeItem]);
+
+  const handleToggle = useCallback(() => {
+    toggleItem(item);
+  }, [item, toggleItem]);
+
+  return (
+    <li className={styles.ListItem}>
+      <button className={styles.IconButton} onClick={handleDelete}>
+        🗑
+      </button>
+      <label className={styles.Label}>
+        <input
+          className={styles.Input}
+          checked={item.isComplete}
+          onChange={handleToggle}
+          type="checkbox"
+        />{' '}
+        {item.text}
+      </label>
+    </li>
+  );
 }
 
-.Input {
-  cursor: pointer;
-}
-
-.Label {
-  cursor: pointer;
-  padding: 0.25rem;
-  color: #555;
-}
-.Label:hover {
-  color: #000;
-}
-
-.IconButton {
-  padding: 0.25rem;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
+export default (memo(ListItem): React.ComponentType<Props>);
 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
