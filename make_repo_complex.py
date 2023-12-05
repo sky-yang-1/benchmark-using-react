@@ -54,12 +54,33 @@ def create_random_filename(prefix='', suffix='.scn.yaml', length=10):
 
     return prefix + random_string(length) + suffix
 
+def choose_new_folder(cwd = '.'):
+    all_files = os.listdir(cwd) 
+    if len(all_files) < 1000:
+        return cwd
+    new_folder = random.random() > 0.5 
+
+    directories = [d for d in os.listdir(cwd) ]
+
+    if new_folder or len(directories) == 0:
+        folder_name = 'dir_' +random_string(10)
+        folder_path = os.mkdir(os.path.join(cwd,folder_name) )
+        return folder_path
+    else:
+        random_directory = random.choice(directories)
+        return choose_new_folder(os.path.join(cwd, random_directory))
+
+    
+
 def create_new_files(repo_path, pregenerated_lines, num_files=10):
     """Create new files with random content."""
+    new_folder = choose_new_folder(repo_path)
+
     for _ in range(num_files):
         file_name = create_random_filename(suffix='.scn.yaml')
-        file_path = os.path.join(repo_path, file_name)
+        file_path = os.path.join(new_folder, file_name)
         modify_and_rename_file(file_path, pregenerated_lines, is_new_file=True)
+
 def git_commit_and_push(repo_path, iteration, push_interval=100):
     """Perform git add, commit, and push at specified intervals."""
     subprocess.run(["git", "add", "-A"], cwd=repo_path)
